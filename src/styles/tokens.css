@@ -1,0 +1,63 @@
+:root {
+  --tl-color-bg: #f7f6f2;
+  --tl-color-surface: #ffffff;
+  --tl-color-surface-alt: #f1efe8;
+  --tl-color-axis: #1f2937;
+  --tl-color-major-tick: #374151;
+  --tl-color-minor-tick: #9ca3af;
+  --tl-color-label: #111827;
+  --tl-color-label-muted: #6b7280;
+  --tl-color-border: #d1d5db;
+  --tl-color-range: #dbeafe;
+  --tl-color-range-edge: #2563eb;
+  --tl-color-cluster-bg: #111827;
+  --tl-color-cluster-text: #ffffff;
+  --tl-color-focus: #0f766e;
+  --tl-color-shadow: rgba(17, 24, 39, 0.08);
+
+  --tl-font-ui: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --tl-font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+
+  --tl-font-size-xs: 12px;
+  --tl-font-size-sm: 13px;
+  --tl-font-size-md: 15px;
+  --tl-font-size-lg: 18px;
+
+  --tl-line-height-tight: 1.2;
+  --tl-line-height-normal: 1.45;
+
+  --tl-space-1: 4px;
+  --tl-space-2: 8px;
+  --tl-space-3: 12px;
+  --tl-space-4: 16px;
+  --tl-space-5: 20px;
+  --tl-space-6: 24px;
+  --tl-space-8: 32px;
+  --tl-space-10: 40px;
+
+  --tl-radius-sm: 6px;
+  --tl-radius-md: 10px;
+  --tl-radius-lg: 14px;
+
+  --tl-axis-width: 88px;
+  --tl-lane-gap: 12px;
+  --tl-card-width: 280px;
+  --tl-card-max-width: 320px;
+  --tl-marker-size: 10px;
+  --tl-range-width: 6px;
+
+  --tl-shadow-sm: 0 1px 2px var(--tl-color-shadow);
+  --tl-shadow-md: 0 6px 18px var(--tl-color-shadow);
+
+  --tl-category-kits-bundles: #7c3aed;
+  --tl-category-motion: #2563eb;
+  --tl-category-electronics: #0891b2;
+  --tl-category-game-elements-fields: #dc2626;
+  --tl-category-hardware: #b45309;
+  --tl-category-structure: #4b5563;
+  --tl-category-tools: #0f766e;
+  --tl-category-pneumatics: #0284c7;
+  --tl-category-classroom-organization: #65a30d;
+  --tl-category-misc: #6b7280;
+}
+
