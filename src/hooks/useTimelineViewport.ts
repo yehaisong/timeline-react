@@ -13,6 +13,8 @@ type UseTimelineViewportArgs = {
   maxZoomUnit: TimelineZoomUnit;
   minZoomUnit: TimelineZoomUnit;
   initialZoomUnit: TimelineZoomUnit;
+  viewportHeight: number;
+  unitHeight: number;
   initialStart?: string | Date;
   initialEnd?: string | Date;
   initialCenter?: string | Date;
@@ -44,7 +46,7 @@ function deriveInitialViewport(args: UseTimelineViewportArgs): TimelineViewport 
     Date.now();
 
   return clampViewportToBounds(
-    createViewportAround(initialCenterMs, args.initialZoomUnit),
+    createViewportAround(initialCenterMs, args.initialZoomUnit, args.viewportHeight, args.unitHeight),
     startBoundMs,
     endBoundMs
   );
@@ -79,4 +81,3 @@ export function useTimelineViewport(args: UseTimelineViewportArgs) {
     endBoundMs: normalizeDateInput(args.endBound),
   };
 }
-

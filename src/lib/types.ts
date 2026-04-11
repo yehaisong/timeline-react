@@ -111,6 +111,7 @@ export type VerticalTimelineProps = {
   renderEvent?: (event: NormalizedTimelineEvent) => ReactNode;
   onEventClick?: (event: NormalizedTimelineEvent) => void;
   height?: number | string;
+  unitHeight?: number;
   clusterLaneLimit?: number;
   className?: string;
   style?: CSSProperties;

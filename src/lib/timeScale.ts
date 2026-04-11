@@ -17,16 +17,6 @@ const UNIT_ORDER: TimelineZoomUnit[] = [
   'day',
 ];
 
-const DEFAULT_VISIBLE_UNITS: Record<TimelineZoomUnit, number> = {
-  century: 4,
-  decade: 6,
-  year: 12,
-  quarter: 8,
-  month: 6,
-  week: 8,
-  day: 14,
-};
-
 const MINOR_UNIT: Record<TimelineZoomUnit, TimelineZoomUnit | null> = {
   century: 'decade',
   decade: 'year',
@@ -139,8 +129,19 @@ export function addUnits(ts: number, unit: TimelineZoomUnit, amount: number): nu
   return ts + amount * 24 * 60 * 60 * 1000;
 }
 
-export function createViewportAround(centerMs: number, zoomUnit: TimelineZoomUnit): TimelineViewport {
-  const visibleUnits = DEFAULT_VISIBLE_UNITS[zoomUnit];
+export function getVisibleUnitCount(viewportHeight: number, unitHeight: number): number {
+  const safeHeight = Number.isFinite(viewportHeight) && viewportHeight > 0 ? viewportHeight : 800;
+  const safeUnitHeight = Number.isFinite(unitHeight) && unitHeight > 0 ? unitHeight : 100;
+  return Math.max(1, Math.round(safeHeight / safeUnitHeight));
+}
+
+export function createViewportAround(
+  centerMs: number,
+  zoomUnit: TimelineZoomUnit,
+  viewportHeight: number,
+  unitHeight: number
+): TimelineViewport {
+  const visibleUnits = getVisibleUnitCount(viewportHeight, unitHeight);
   const centered = startOfUnit(centerMs, zoomUnit);
   const beforeUnits = Math.floor(visibleUnits / 2);
   const start = addUnits(centered, zoomUnit, -beforeUnits);
@@ -217,6 +218,8 @@ export function zoomViewport(
   viewport: TimelineViewport,
   nextZoomUnit: TimelineZoomUnit,
   focalMs: number,
+  viewportHeight: number,
+  unitHeight: number,
   startBoundMs?: number | null,
   endBoundMs?: number | null
 ): TimelineViewport {
@@ -225,7 +228,7 @@ export function zoomViewport(
   }
   const currentDuration = viewport.visibleEndMs - viewport.visibleStartMs;
   const currentRatio = currentDuration <= 0 ? 0.5 : (focalMs - viewport.visibleStartMs) / currentDuration;
-  const target = createViewportAround(focalMs, nextZoomUnit);
+  const target = createViewportAround(focalMs, nextZoomUnit, viewportHeight, unitHeight);
   const nextDuration = target.visibleEndMs - target.visibleStartMs;
   const nextStart = focalMs - currentRatio * nextDuration;
   const nextEnd = nextStart + nextDuration;
@@ -240,7 +243,11 @@ export function zoomViewport(
   );
 }
 
-export function mapTimeToY(viewport: TimelineViewport, ts: number, height: number): number {
+export function mapTimeToY(
+  viewport: TimelineViewport,
+  ts: number,
+  height: number
+): number {
   const duration = viewport.visibleEndMs - viewport.visibleStartMs;
   if (duration <= 0 || height <= 0) {
     return 0;
@@ -324,4 +331,3 @@ export function generateTicks(viewport: TimelineViewport): {
 
   return { majorTicks, minorTicks };
 }
-

@@ -9,7 +9,12 @@ type TimelineAxisProps = {
   height: number;
 };
 
-export function TimelineAxis({ viewport, majorTicks, minorTicks, height }: TimelineAxisProps) {
+export function TimelineAxis({
+  viewport,
+  majorTicks,
+  minorTicks,
+  height,
+}: TimelineAxisProps) {
   return (
     <div className="tl-axis">
       <div className="tl-axis-line" />
