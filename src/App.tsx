@@ -1,286 +1,21 @@
 import { useState } from 'react';
 import { VerticalTimeline } from './components/VerticalTimeline';
 import type { NormalizedTimelineEvent, TimelineEvent, TimelineGeoJSONGeometry } from './lib/types';
+import { normalizeDateInput } from './lib/timeScale';
+import sampleEventsData from './data/myevents_cht_timeline.json';
 import './styles/app.css';
 
-const baseEvents: TimelineEvent[] = [
-  {
-    id: 'printing-press',
-    title: 'Printing Press Expansion',
-    start: '1450-01-01',
-    end: '1500-12-31',
-    description: 'Spread of movable type printing across Europe.',
-    color: '#7c3aed',
-    importance: 6,
-    attachments: [
-      {
-        name: 'Reference Notes',
-        url: 'https://example.com/printing-press-notes.pdf',
-        mimeType: 'application/pdf',
-      },
-    ],
-  },
-  {
-    id: 'ren-1',
-    title: 'Renaissance Workshop Opens',
-    start: '1500-06-15',
-    description: 'Point event sharing the same day as two other events.',
-    color: '#b45309',
-    importance: 9,
-  },
-  {
-    id: 'ren-2',
-    title: 'Patronage Contract Signed',
-    start: '1500-06-15',
-    description: 'Same-time event to exercise clustering.',
-    color: '#2563eb',
-    importance: 7,
-    media: [
-      {
-        type: 'image',
-        url: 'https://example.com/patronage.jpg',
-      },
-    ],
-  },
-  {
-    id: 'ren-3',
-    title: 'Studio Fire Rebuild Begins',
-    start: '1500-06-15',
-    description: 'Third same-point event for +N more behavior.',
-    color: '#0891b2',
-    importance: 5,
-    geo: {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [12.4964, 41.9028],
-      },
-      properties: {
-        label: 'Rome',
-      },
-    },
-  },
-  {
-    id: 'ren-4',
-    title: 'Guild Ledger Entry',
-    start: '1500-06-15',
-    description: 'Fourth same-time event to guarantee an overflow badge.',
-    color: '#0f766e',
-    importance: 4,
-  },
-  {
-    id: 'apollo',
-    title: 'Apollo 11 Moon Landing',
-    start: '1969-07-20',
-    description: 'First crewed lunar landing.',
-    color: '#2563eb',
-    importance: 10,
-    media: [
-      {
-        type: 'image',
-        url: 'https://example.com/moon.jpg',
-        thumbnailUrl: 'https://example.com/moon-thumb.jpg',
-      },
-    ],
-    geo: {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [23.4729, 0.6741],
-      },
-      properties: {
-        label: 'Sea of Tranquility',
-      },
-    },
-  },
-  {
-    id: 'web',
-    title: 'Public Web Adoption',
-    start: '1993-01-01',
-    end: '2000-12-31',
-    description: 'Rapid global adoption of the web.',
-    color: '#0f766e',
-    importance: 8,
-  },
-  {
-    id: 'today-1',
-    title: 'Project Kickoff',
-    start: '2026-04-10',
-    description: 'Modern day event for day-level zoom.',
-    color: '#dc2626',
-    importance: 8,
-  },
-  {
-    id: 'today-2',
-    title: 'Architecture Review',
-    start: '2026-04-10',
-    description: 'Another same-point event on the current day.',
-    color: '#0284c7',
-    importance: 6,
-  },
-  {
-    id: 'today-3',
-    title: 'Release Notes Draft',
-    start: '2026-04-10',
-    description: 'Third same-day event around the current demo date.',
-    color: '#7c3aed',
-    importance: 5,
-  },
-  {
-    id: 'today-range',
-    title: 'Implementation Sprint',
-    start: '2026-04-08',
-    end: '2026-04-14',
-    description: 'Range event spanning several days.',
-    color: '#65a30d',
-    importance: 4,
-  },
-];
-
-const historicalThemes = [
-  {
-    prefix: 'structure',
-    title: 'Civic Works Program',
-    color: '#4b5563',
-    description: 'Long-running infrastructure and civic design work.',
-  },
-  {
-    prefix: 'motion',
-    title: 'Trade Route Expansion',
-    color: '#2563eb',
-    description: 'Movement of goods and people across new corridors.',
-  },
-  {
-    prefix: 'hardware',
-    title: 'Workshop Tooling Upgrade',
-    color: '#b45309',
-    description: 'Incremental tooling improvements across local workshops.',
-  },
-  {
-    prefix: 'electronics',
-    title: 'Communications Milestone',
-    color: '#0891b2',
-    description: 'New capability in signaling, networks, or computation.',
-  },
-  {
-    prefix: 'misc',
-    title: 'Cultural Exchange Summit',
-    color: '#7c3aed',
-    description: 'Regional exchange event with archival media and notes.',
-  },
-];
-
-function pad2(value: number) {
-  return String(value).padStart(2, '0');
-}
-
-function generateHistoricalEvents(): TimelineEvent[] {
-  const events: TimelineEvent[] = [];
-  const startYear = 1410;
-  const count = 72;
-
-  for (let index = 0; index < count; index += 1) {
-    const year = startYear + index * 8;
-    const theme = historicalThemes[index % historicalThemes.length];
-    const month = (index % 12) + 1;
-    const day = ((index * 3) % 24) + 1;
-    const start = `${year}-${pad2(month)}-${pad2(day)}`;
-    const rangeLengthYears = (index % 4) + 1;
-
-    events.push({
-      id: `${theme.prefix}-${year}`,
-      title: `${theme.title} ${year}`,
-      start,
-      end: `${year + rangeLengthYears}-${pad2(month)}-${pad2(Math.min(day + 2, 28))}`,
-      description: theme.description,
-      color: theme.color,
-      importance: (index % 5) + 3,
-      attachments:
-        index % 6 === 0
-          ? [
-              {
-                name: `${theme.title} Brief`,
-                url: `https://example.com/archive/${theme.prefix}-${year}.pdf`,
-                mimeType: 'application/pdf',
-              },
-            ]
-          : undefined,
-    });
-
-    if (index % 9 === 0) {
-      events.push({
-        id: `${theme.prefix}-${year}-cluster-a`,
-        title: `Turning Point ${year}`,
-        start,
-        description: 'Clustered point event to stress same-position rendering.',
-        color: theme.color,
-        importance: 8,
-      });
-      events.push({
-        id: `${theme.prefix}-${year}-cluster-b`,
-        title: `Archive Note ${year}`,
-        start,
-        description: 'Companion point event sharing the same anchor.',
-        color: '#dc2626',
-        importance: 6,
-      });
-    }
-  }
-
-  return events;
-}
-
-function generateModernEvents(): TimelineEvent[] {
-  const events: TimelineEvent[] = [];
-  const anchor = Date.UTC(2026, 2, 1);
-
-  for (let index = 0; index < 42; index += 1) {
-    const ts = anchor + index * 3 * 24 * 60 * 60 * 1000;
-    const date = new Date(ts);
-    const month = pad2(date.getUTCMonth() + 1);
-    const day = pad2(date.getUTCDate());
-    const dateLabel = `${date.getUTCFullYear()}-${month}-${day}`;
-
-    events.push({
-      id: `modern-${index + 1}`,
-      title: `Delivery Checkpoint ${index + 1}`,
-      start: dateLabel,
-      description: 'Near-present event for week and day zoom testing.',
-      color: index % 2 === 0 ? '#0f766e' : '#0284c7',
-      importance: (index % 4) + 4,
-      media:
-        index % 7 === 0
-          ? [
-              {
-                type: 'image',
-                url: `https://example.com/media/checkpoint-${index + 1}.jpg`,
-                thumbnailUrl: `https://example.com/media/checkpoint-${index + 1}-thumb.jpg`,
-              },
-            ]
-          : undefined,
-    });
-
-    if (index % 6 === 0) {
-      events.push({
-        id: `modern-range-${index + 1}`,
-        title: `Iteration Window ${index + 1}`,
-        start: dateLabel,
-        end: `${date.getUTCFullYear()}-${month}-${pad2(Math.min(date.getUTCDate() + 4, 28))}`,
-        description: 'Short range event layered among dense point events.',
-        color: '#65a30d',
-        importance: 5,
-      });
-    }
-  }
-
-  return events;
-}
-
-const sampleEvents: TimelineEvent[] = [
-  ...baseEvents,
-  ...generateHistoricalEvents(),
-  ...generateModernEvents(),
-];
+const sampleEvents = sampleEventsData as TimelineEvent[];
+const timelineTimestamps = sampleEvents
+  .flatMap((event) => [normalizeDateInput(event.start), normalizeDateInput(event.end ?? event.start)])
+  .filter((value): value is number => value !== null);
+const timelineStartMs = Math.min(...timelineTimestamps);
+const timelineEndMs = Math.max(...timelineTimestamps);
+const timelineStartDate = new Date(timelineStartMs);
+const timelineEndDate = new Date(timelineEndMs);
+const timelineCenterDate = new Date(0);
+timelineCenterDate.setUTCFullYear(0, 0, 1);
+timelineCenterDate.setUTCHours(0, 0, 0, 0);
 
 function formatEventDate(startMs: number, endMs: number, isRange: boolean) {
   const start = new Date(startMs).toLocaleDateString('en-US', {
@@ -330,14 +65,14 @@ export default function App() {
       <section className="app-stage">
         <VerticalTimeline
           events={sampleEvents}
-          startBound="1400-01-01"
-          endBound="2030-12-31"
+          startBound={timelineStartDate}
+          endBound={timelineEndDate}
           maxZoomUnit="century"
-          minZoomUnit="day"
+          minZoomUnit="year"
           initialZoomUnit="decade"
-          initialCenter="1969-07-20"
-          height={800}
-          unitHeight={300}
+          initialCenter={timelineCenterDate}
+          height="100%"
+          unitHeight={100}
           clusterLaneLimit={2}
           onEventClick={setSelectedEvent}
         />

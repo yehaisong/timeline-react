@@ -63,6 +63,34 @@ function getDensityColor(intensity: number) {
   return `hsl(212 ${saturation}% ${lightness}%)`;
 }
 
+function centerViewportOnRatio(
+  ratio: number,
+  viewport: TimelineViewport,
+  domainStartMs: number,
+  domainEndMs: number
+) {
+  const domainDuration = domainEndMs - domainStartMs;
+  const viewportDuration = viewport.visibleEndMs - viewport.visibleStartMs;
+
+  if (domainDuration <= 0 || viewportDuration <= 0) {
+    return viewport;
+  }
+
+  const clampedRatio = clamp01(ratio);
+  const targetMs = domainStartMs + clampedRatio * domainDuration;
+  const maxStartMs = Math.max(domainStartMs, domainEndMs - viewportDuration);
+  const nextStartMs = Math.min(
+    Math.max(domainStartMs, targetMs - viewportDuration / 2),
+    maxStartMs
+  );
+
+  return {
+    ...viewport,
+    visibleStartMs: nextStartMs,
+    visibleEndMs: nextStartMs + viewportDuration,
+  };
+}
+
 export function TimelineMiniMap({
   events,
   viewport,
@@ -169,6 +197,20 @@ export function TimelineMiniMap({
   );
   const binHeight = binCount > 0 ? miniMapHeight / binCount : miniMapHeight;
 
+  function jumpToPointerY(clientY: number) {
+    if (!onViewportChange || miniMapHeight <= 0) {
+      return;
+    }
+
+    const rect = bodyRef.current?.getBoundingClientRect();
+    if (!rect || rect.height <= 0) {
+      return;
+    }
+
+    const ratio = (clientY - rect.top) / rect.height;
+    onViewportChange(centerViewportOnRatio(ratio, viewport, domainStartMs, domainEndMs));
+  }
+
   return (
     <aside className="tl-minimap" aria-label="Timeline overview">
       <div className="tl-minimap-header">
@@ -177,7 +219,13 @@ export function TimelineMiniMap({
           {new Date(domainStartMs).getUTCFullYear()} - {new Date(domainEndMs).getUTCFullYear()}
         </span>
       </div>
-      <div ref={bodyRef} className="tl-minimap-body">
+      <div
+        ref={bodyRef}
+        className="tl-minimap-body"
+        onPointerDown={(event) => {
+          jumpToPointerY(event.clientY);
+        }}
+      >
         <div className="tl-minimap-track" />
         <div className="tl-minimap-density">
           {bins.map((count, index) => {
@@ -206,6 +254,7 @@ export function TimelineMiniMap({
           className="tl-minimap-viewport"
           onPointerDown={(event) => {
             event.preventDefault();
+            event.stopPropagation();
             setDragState({
               pointerStartY: event.clientY,
               viewportTopStart: viewportSafeTop,

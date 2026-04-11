@@ -17,6 +17,8 @@ type TimelineEventLayerProps = {
 type Cluster = {
   key: string;
   y: number;
+  groupId: string;
+  groupLane: number;
   events: NormalizedTimelineEvent[];
   visibleEvents: NormalizedTimelineEvent[];
   hiddenCount: number;
@@ -34,9 +36,17 @@ type ClusterRenderData = {
   badgeLane: number;
 };
 
+type GroupLane = {
+  id: string;
+  label: string;
+  lane: number;
+};
+
 const CARD_BASE_HEIGHT = 52;
 const BADGE_GAP = 12;
 const BADGE_HEIGHT = 26;
+const STACK_VERTICAL_OFFSET = 10;
+const STACK_HORIZONTAL_OFFSET = 10;
 
 function formatEventDate(startMs: number, endMs: number, isRange: boolean) {
   const start = new Date(startMs).toLocaleDateString('en-US', {
@@ -64,36 +74,55 @@ function getVisibleEvents(events: NormalizedTimelineEvent[], viewport: TimelineV
   );
 }
 
+function getEventGroupId(event: NormalizedTimelineEvent) {
+  return event.groupId?.trim() || 'Ungrouped';
+}
+
+function buildGroupLanes(events: NormalizedTimelineEvent[]): GroupLane[] {
+  const groupIds = Array.from(new Set(events.map(getEventGroupId)));
+  return groupIds.map((id, lane) => ({ id, label: id, lane }));
+}
+
 function clusterEvents(
   events: NormalizedTimelineEvent[],
   viewport: TimelineViewport,
   height: number,
-  laneLimit: number
+  laneLimit: number,
+  groupLanes: GroupLane[]
 ): Cluster[] {
-  const sorted = getVisibleEvents(events, viewport)
-    .map((event) => ({
-      event,
-      y: mapTimeToY(viewport, event.startMs, height),
-    }))
-    .sort((a, b) => a.y - b.y || b.event.importance - a.event.importance);
-
   const clusters: Cluster[] = [];
   const threshold = 18;
 
-  for (const item of sorted) {
-    const existing = clusters[clusters.length - 1];
-    if (existing && Math.abs(existing.y - item.y) <= threshold) {
-      existing.events.push(item.event);
-      existing.y = Math.round((existing.y + item.y) / 2);
-      continue;
+  for (const groupLane of groupLanes) {
+    const sorted = getVisibleEvents(events, viewport)
+      .filter((event) => getEventGroupId(event) === groupLane.id)
+      .map((event) => ({
+        event,
+        y: mapTimeToY(viewport, event.startMs, height),
+      }))
+      .sort((a, b) => a.y - b.y || b.event.importance - a.event.importance);
+
+    for (const item of sorted) {
+      const existing = clusters[clusters.length - 1];
+      if (
+        existing &&
+        existing.groupId === groupLane.id &&
+        Math.abs(existing.y - item.y) <= threshold
+      ) {
+        existing.events.push(item.event);
+        existing.y = Math.round((existing.y + item.y) / 2);
+        continue;
+      }
+      clusters.push({
+        key: `cluster-${groupLane.id}-${item.event.id}-${item.y}`,
+        y: item.y,
+        groupId: groupLane.id,
+        groupLane: groupLane.lane,
+        events: [item.event],
+        visibleEvents: [],
+        hiddenCount: 0,
+      });
     }
-    clusters.push({
-      key: `cluster-${item.event.id}-${item.y}`,
-      y: item.y,
-      events: [item.event],
-      visibleEvents: [],
-      hiddenCount: 0,
-    });
   }
 
   for (const cluster of clusters) {
@@ -145,7 +174,9 @@ export function TimelineEventLayer({
   const [clusterOffsets, setClusterOffsets] = useState<Record<string, number>>({});
   const [popoverOffsets, setPopoverOffsets] = useState<Record<string, number>>({});
   const [openClusterKey, setOpenClusterKey] = useState<string | null>(null);
-  const clusters = clusterEvents(events, viewport, height, laneLimit);
+  const [activeEventId, setActiveEventId] = useState<string | null>(null);
+  const groupLanes = buildGroupLanes(events);
+  const clusters = clusterEvents(events, viewport, height, laneLimit, groupLanes);
   const clusterRenderData = buildClusterRenderData(clusters);
 
   useEffect(() => {
@@ -153,6 +184,12 @@ export function TimelineEventLayer({
       setOpenClusterKey(null);
     }
   }, [clusterRenderData, openClusterKey]);
+
+  useEffect(() => {
+    if (activeEventId && !clusterRenderData.some(({ cluster }) => cluster.events.some((event) => event.id === activeEventId))) {
+      setActiveEventId(null);
+    }
+  }, [activeEventId, clusterRenderData]);
 
   useEffect(() => {
     if (!openClusterKey) {
@@ -269,19 +306,43 @@ export function TimelineEventLayer({
 
   return (
     <div ref={layerRef} className="tl-event-layer">
+      <div className="tl-group-lanes" aria-hidden="true">
+        {groupLanes.map((groupLane) => (
+          <div
+            key={groupLane.id}
+            className="tl-group-lane"
+            style={{
+              left: `calc(${groupLane.lane} * (100% / ${groupLanes.length}))`,
+              width: `calc(100% / ${groupLanes.length})`,
+            }}
+          >
+            <div className="tl-group-lane-label">{groupLane.label}</div>
+          </div>
+        ))}
+      </div>
       {clusterRenderData.map(({ cluster, placements, badgeSide, badgeLane }) => {
         const leadEvent = cluster.visibleEvents[0];
+        const activeEventInCluster = cluster.events.some((event) => event.id === activeEventId);
+        const hasStackedCards = cluster.visibleEvents.length > 1;
         const clusterStyle = {
           top: cluster.y + (clusterOffsets[cluster.key] ?? 0),
+          left: `calc(${cluster.groupLane} * (100% / ${groupLanes.length}))`,
+          width: `calc(100% / ${groupLanes.length})`,
           height:
             CARD_BASE_HEIGHT +
+            Math.max(0, cluster.visibleEvents.length - 1) * STACK_VERTICAL_OFFSET +
             (cluster.hiddenCount > 0 ? BADGE_GAP + BADGE_HEIGHT : 0),
+          ['--tl-card-width' as string]: 'fit-content',
+          ['--tl-card-max-width' as string]: 'min(200px, calc(100% - 52px))',
+          ['--tl-card-stack-offset' as string]: `${STACK_HORIZONTAL_OFFSET}px`,
           zIndex:
-            openClusterKey === cluster.key
-              ? 300
-              : cluster.events.length > 1
-                ? 200
-                : 10,
+            activeEventInCluster
+              ? 350
+              : openClusterKey === cluster.key
+                ? 300
+                : cluster.events.length > 1
+                  ? 200
+                  : 10,
           ...(leadEvent?.color ? { ['--tl-event-accent' as string]: leadEvent.color } : {}),
         } as CSSProperties;
 
@@ -302,14 +363,16 @@ export function TimelineEventLayer({
             const placement = placements.get(event.id)!;
             const startY = mapTimeToY(viewport, event.startMs, height);
             const endY = mapTimeToY(viewport, event.endMs, height);
+            const isActive = event.id === activeEventId;
+            const stackOffsetIndex = hasStackedCards ? placement.lane + 1 : placement.lane;
             return (
               <div
                 key={event.id}
                 className={`tl-cluster-item tl-cluster-item-${placement.side}`}
                 style={{
-                  top: '0px',
-                  left: `calc(${placement.lane} * var(--tl-card-stack-offset))`,
-                  zIndex: cluster.visibleEvents.length - placement.lane,
+                  top: `${stackOffsetIndex * STACK_VERTICAL_OFFSET}px`,
+                  left: `calc(${stackOffsetIndex} * var(--tl-card-stack-offset))`,
+                  zIndex: isActive ? cluster.visibleEvents.length + laneLimit + 1 : cluster.visibleEvents.length - placement.lane,
                 }}
               >
                 {event.isRange ? (
@@ -321,7 +384,25 @@ export function TimelineEventLayer({
                     }}
                   />
                 ) : null}
-                {renderEvent ? renderEvent(event) : <TimelineEventCard event={event} onClick={onEventClick} />}
+                {renderEvent ? (
+                  <div
+                    onClick={() => {
+                      setActiveEventId(event.id);
+                      onEventClick?.(event);
+                    }}
+                  >
+                    {renderEvent(event)}
+                  </div>
+                ) : (
+                  <TimelineEventCard
+                    event={event}
+                    isActive={isActive}
+                    onClick={(clickedEvent) => {
+                      setActiveEventId(clickedEvent.id);
+                      onEventClick?.(clickedEvent);
+                    }}
+                  />
+                )}
               </div>
             );
           })}
@@ -332,8 +413,8 @@ export function TimelineEventLayer({
               }}
               className="tl-cluster-overlay"
               style={{
-                top: `${CARD_BASE_HEIGHT + BADGE_GAP}px`,
-                left: `calc(${Math.max(0, cluster.visibleEvents.length - 1)} * var(--tl-card-stack-offset))`,
+                top: `${CARD_BASE_HEIGHT + (hasStackedCards ? cluster.visibleEvents.length : Math.max(0, cluster.visibleEvents.length - 1)) * STACK_VERTICAL_OFFSET + BADGE_GAP}px`,
+                left: `calc(${hasStackedCards ? cluster.visibleEvents.length : Math.max(0, cluster.visibleEvents.length - 1)} * var(--tl-card-stack-offset))`,
               }}
             >
               <button

@@ -27,6 +27,90 @@ const MINOR_UNIT: Record<TimelineZoomUnit, TimelineZoomUnit | null> = {
   day: null,
 };
 
+const SIGNED_ISO_DATE_PATTERN =
+  /^([+-]\d{4,}|0000)-(\d{2})-(\d{2})(?:T(\d{2}):(\d{2})(?::(\d{2})(?:\.(\d{1,3}))?)?(Z|[+-]\d{2}:\d{2})?)?$/;
+
+function createUtcTimestamp(
+  year: number,
+  month = 0,
+  day = 1,
+  hour = 0,
+  minute = 0,
+  second = 0,
+  millisecond = 0
+) {
+  const date = new Date(0);
+  date.setUTCFullYear(year, month, day);
+  date.setUTCHours(hour, minute, second, millisecond);
+  return date.getTime();
+}
+
+function parseSignedIsoDate(value: string): number | null {
+  const match = value.match(SIGNED_ISO_DATE_PATTERN);
+  if (!match) {
+    return null;
+  }
+
+  const [
+    ,
+    yearText,
+    monthText,
+    dayText,
+    hourText,
+    minuteText,
+    secondText,
+    millisecondText,
+    offsetText,
+  ] = match;
+
+  const year = Number(yearText);
+  const month = Number(monthText);
+  const day = Number(dayText);
+  const hour = hourText ? Number(hourText) : 0;
+  const minute = minuteText ? Number(minuteText) : 0;
+  const second = secondText ? Number(secondText) : 0;
+  const millisecond = millisecondText ? Number(millisecondText.padEnd(3, '0')) : 0;
+
+  if (
+    !Number.isInteger(year) ||
+    month < 1 ||
+    month > 12 ||
+    day < 1 ||
+    day > 31 ||
+    hour > 23 ||
+    minute > 59 ||
+    second > 59
+  ) {
+    return null;
+  }
+
+  const date = new Date(0);
+  date.setUTCFullYear(year, month - 1, day);
+  date.setUTCHours(hour, minute, second, millisecond);
+
+  if (
+    date.getUTCFullYear() !== year ||
+    date.getUTCMonth() !== month - 1 ||
+    date.getUTCDate() !== day ||
+    date.getUTCHours() !== hour ||
+    date.getUTCMinutes() !== minute ||
+    date.getUTCSeconds() !== second ||
+    date.getUTCMilliseconds() !== millisecond
+  ) {
+    return null;
+  }
+
+  let ms = date.getTime();
+  if (offsetText && offsetText !== 'Z') {
+    const sign = offsetText.startsWith('-') ? -1 : 1;
+    const [offsetHourText, offsetMinuteText] = offsetText.slice(1).split(':');
+    const offsetMinutes = Number(offsetHourText) * 60 + Number(offsetMinuteText);
+    ms -= sign * offsetMinutes * 60 * 1000;
+  }
+
+  return Number.isFinite(ms) ? ms : null;
+}
+
 export function getZoomUnits(): TimelineZoomUnit[] {
   return [...UNIT_ORDER];
 }
@@ -72,6 +156,10 @@ export function normalizeDateInput(value: string | Date | undefined): number | n
     const ms = value.getTime();
     return Number.isFinite(ms) ? ms : null;
   }
+  const signedIsoMs = parseSignedIsoDate(value);
+  if (signedIsoMs !== null) {
+    return signedIsoMs;
+  }
   const ms = new Date(value).getTime();
   return Number.isFinite(ms) ? ms : null;
 }
@@ -80,48 +168,48 @@ export function startOfUnit(ts: number, unit: TimelineZoomUnit): number {
   const date = new Date(ts);
   if (unit === 'century') {
     const year = Math.floor(date.getUTCFullYear() / 100) * 100;
-    return Date.UTC(year, 0, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(year, 0, 1, 0, 0, 0, 0);
   }
   if (unit === 'decade') {
     const year = Math.floor(date.getUTCFullYear() / 10) * 10;
-    return Date.UTC(year, 0, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(year, 0, 1, 0, 0, 0, 0);
   }
   if (unit === 'year') {
-    return Date.UTC(date.getUTCFullYear(), 0, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear(), 0, 1, 0, 0, 0, 0);
   }
   if (unit === 'quarter') {
     const quarterMonth = Math.floor(date.getUTCMonth() / 3) * 3;
-    return Date.UTC(date.getUTCFullYear(), quarterMonth, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear(), quarterMonth, 1, 0, 0, 0, 0);
   }
   if (unit === 'month') {
-    return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear(), date.getUTCMonth(), 1, 0, 0, 0, 0);
   }
   if (unit === 'week') {
-    const copy = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
+    const copy = new Date(createUtcTimestamp(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
     const day = copy.getUTCDay();
     const offset = day === 0 ? -6 : 1 - day;
     copy.setUTCDate(copy.getUTCDate() + offset);
     return copy.getTime();
   }
-  return Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), 0, 0, 0, 0);
+  return createUtcTimestamp(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), 0, 0, 0, 0);
 }
 
 export function addUnits(ts: number, unit: TimelineZoomUnit, amount: number): number {
   const date = new Date(ts);
   if (unit === 'century') {
-    return Date.UTC(date.getUTCFullYear() + amount * 100, 0, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear() + amount * 100, 0, 1, 0, 0, 0, 0);
   }
   if (unit === 'decade') {
-    return Date.UTC(date.getUTCFullYear() + amount * 10, 0, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear() + amount * 10, 0, 1, 0, 0, 0, 0);
   }
   if (unit === 'year') {
-    return Date.UTC(date.getUTCFullYear() + amount, 0, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear() + amount, 0, 1, 0, 0, 0, 0);
   }
   if (unit === 'quarter') {
-    return Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + amount * 3, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear(), date.getUTCMonth() + amount * 3, 1, 0, 0, 0, 0);
   }
   if (unit === 'month') {
-    return Date.UTC(date.getUTCFullYear(), date.getUTCMonth() + amount, 1, 0, 0, 0, 0);
+    return createUtcTimestamp(date.getUTCFullYear(), date.getUTCMonth() + amount, 1, 0, 0, 0, 0);
   }
   if (unit === 'week') {
     return ts + amount * 7 * 24 * 60 * 60 * 1000;

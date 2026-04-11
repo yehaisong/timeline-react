@@ -1,0 +1,1440 @@
+[
+  {
+    "id": "printing-press",
+    "title": "Printing Press Expansion",
+    "start": "1450-01-01",
+    "end": "1500-12-31",
+    "description": "Spread of movable type printing across Europe.",
+    "color": "#7c3aed",
+    "importance": 6,
+    "attachments": [
+      {
+        "name": "Reference Notes",
+        "url": "https://example.com/printing-press-notes.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "ren-1",
+    "title": "Renaissance Workshop Opens",
+    "start": "1500-06-15",
+    "description": "Point event sharing the same day as two other events.",
+    "color": "#b45309",
+    "importance": 9
+  },
+  {
+    "id": "ren-2",
+    "title": "Patronage Contract Signed",
+    "start": "1500-06-15",
+    "description": "Same-time event to exercise clustering.",
+    "color": "#2563eb",
+    "importance": 7,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/patronage.jpg"
+      }
+    ]
+  },
+  {
+    "id": "ren-3",
+    "title": "Studio Fire Rebuild Begins",
+    "start": "1500-06-15",
+    "description": "Third same-point event for +N more behavior.",
+    "color": "#0891b2",
+    "importance": 5,
+    "geo": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.4964,
+          41.9028
+        ]
+      },
+      "properties": {
+        "label": "Rome"
+      }
+    }
+  },
+  {
+    "id": "ren-4",
+    "title": "Guild Ledger Entry",
+    "start": "1500-06-15",
+    "description": "Fourth same-time event to guarantee an overflow badge.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "apollo",
+    "title": "Apollo 11 Moon Landing",
+    "start": "1969-07-20",
+    "description": "First crewed lunar landing.",
+    "color": "#2563eb",
+    "importance": 10,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/moon.jpg",
+        "thumbnailUrl": "https://example.com/moon-thumb.jpg"
+      }
+    ],
+    "geo": {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.4729,
+          0.6741
+        ]
+      },
+      "properties": {
+        "label": "Sea of Tranquility"
+      }
+    }
+  },
+  {
+    "id": "web",
+    "title": "Public Web Adoption",
+    "start": "1993-01-01",
+    "end": "2000-12-31",
+    "description": "Rapid global adoption of the web.",
+    "color": "#0f766e",
+    "importance": 8
+  },
+  {
+    "id": "today-1",
+    "title": "Project Kickoff",
+    "start": "2026-04-10",
+    "description": "Modern day event for day-level zoom.",
+    "color": "#dc2626",
+    "importance": 8
+  },
+  {
+    "id": "today-2",
+    "title": "Architecture Review",
+    "start": "2026-04-10",
+    "description": "Another same-point event on the current day.",
+    "color": "#0284c7",
+    "importance": 6
+  },
+  {
+    "id": "today-3",
+    "title": "Release Notes Draft",
+    "start": "2026-04-10",
+    "description": "Third same-day event around the current demo date.",
+    "color": "#7c3aed",
+    "importance": 5
+  },
+  {
+    "id": "today-range",
+    "title": "Implementation Sprint",
+    "start": "2026-04-08",
+    "end": "2026-04-14",
+    "description": "Range event spanning several days.",
+    "color": "#65a30d",
+    "importance": 4
+  },
+  {
+    "id": "structure-1410",
+    "title": "Civic Works Program 1410",
+    "start": "1410-01-01",
+    "end": "1411-01-03",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3,
+    "attachments": [
+      {
+        "name": "Civic Works Program Brief",
+        "url": "https://example.com/archive/structure-1410.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "structure-1410-cluster-a",
+    "title": "Turning Point 1410",
+    "start": "1410-01-01",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#4b5563",
+    "importance": 8
+  },
+  {
+    "id": "structure-1410-cluster-b",
+    "title": "Archive Note 1410",
+    "start": "1410-01-01",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "motion-1418",
+    "title": "Trade Route Expansion 1418",
+    "start": "1418-02-04",
+    "end": "1420-02-06",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1426",
+    "title": "Workshop Tooling Upgrade 1426",
+    "start": "1426-03-07",
+    "end": "1429-03-09",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1434",
+    "title": "Communications Milestone 1434",
+    "start": "1434-04-10",
+    "end": "1438-04-12",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1442",
+    "title": "Cultural Exchange Summit 1442",
+    "start": "1442-05-13",
+    "end": "1443-05-15",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1450",
+    "title": "Civic Works Program 1450",
+    "start": "1450-06-16",
+    "end": "1452-06-18",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1458",
+    "title": "Trade Route Expansion 1458",
+    "start": "1458-07-19",
+    "end": "1461-07-21",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4,
+    "attachments": [
+      {
+        "name": "Trade Route Expansion Brief",
+        "url": "https://example.com/archive/motion-1458.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "hardware-1466",
+    "title": "Workshop Tooling Upgrade 1466",
+    "start": "1466-08-22",
+    "end": "1470-08-24",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1474",
+    "title": "Communications Milestone 1474",
+    "start": "1474-09-01",
+    "end": "1475-09-03",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1482",
+    "title": "Cultural Exchange Summit 1482",
+    "start": "1482-10-04",
+    "end": "1484-10-06",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "misc-1482-cluster-a",
+    "title": "Turning Point 1482",
+    "start": "1482-10-04",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#7c3aed",
+    "importance": 8
+  },
+  {
+    "id": "misc-1482-cluster-b",
+    "title": "Archive Note 1482",
+    "start": "1482-10-04",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "structure-1490",
+    "title": "Civic Works Program 1490",
+    "start": "1490-11-07",
+    "end": "1493-11-09",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1498",
+    "title": "Trade Route Expansion 1498",
+    "start": "1498-12-10",
+    "end": "1502-12-12",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1506",
+    "title": "Workshop Tooling Upgrade 1506",
+    "start": "1506-01-13",
+    "end": "1507-01-15",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5,
+    "attachments": [
+      {
+        "name": "Workshop Tooling Upgrade Brief",
+        "url": "https://example.com/archive/hardware-1506.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "electronics-1514",
+    "title": "Communications Milestone 1514",
+    "start": "1514-02-16",
+    "end": "1516-02-18",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1522",
+    "title": "Cultural Exchange Summit 1522",
+    "start": "1522-03-19",
+    "end": "1525-03-21",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1530",
+    "title": "Civic Works Program 1530",
+    "start": "1530-04-22",
+    "end": "1534-04-24",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1538",
+    "title": "Trade Route Expansion 1538",
+    "start": "1538-05-01",
+    "end": "1539-05-03",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1546",
+    "title": "Workshop Tooling Upgrade 1546",
+    "start": "1546-06-04",
+    "end": "1548-06-06",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1554",
+    "title": "Communications Milestone 1554",
+    "start": "1554-07-07",
+    "end": "1557-07-09",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6,
+    "attachments": [
+      {
+        "name": "Communications Milestone Brief",
+        "url": "https://example.com/archive/electronics-1554.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "electronics-1554-cluster-a",
+    "title": "Turning Point 1554",
+    "start": "1554-07-07",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#0891b2",
+    "importance": 8
+  },
+  {
+    "id": "electronics-1554-cluster-b",
+    "title": "Archive Note 1554",
+    "start": "1554-07-07",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "misc-1562",
+    "title": "Cultural Exchange Summit 1562",
+    "start": "1562-08-10",
+    "end": "1566-08-12",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1570",
+    "title": "Civic Works Program 1570",
+    "start": "1570-09-13",
+    "end": "1571-09-15",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1578",
+    "title": "Trade Route Expansion 1578",
+    "start": "1578-10-16",
+    "end": "1580-10-18",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1586",
+    "title": "Workshop Tooling Upgrade 1586",
+    "start": "1586-11-19",
+    "end": "1589-11-21",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1594",
+    "title": "Communications Milestone 1594",
+    "start": "1594-12-22",
+    "end": "1598-12-24",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1602",
+    "title": "Cultural Exchange Summit 1602",
+    "start": "1602-01-01",
+    "end": "1603-01-03",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7,
+    "attachments": [
+      {
+        "name": "Cultural Exchange Summit Brief",
+        "url": "https://example.com/archive/misc-1602.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "structure-1610",
+    "title": "Civic Works Program 1610",
+    "start": "1610-02-04",
+    "end": "1612-02-06",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1618",
+    "title": "Trade Route Expansion 1618",
+    "start": "1618-03-07",
+    "end": "1621-03-09",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1626",
+    "title": "Workshop Tooling Upgrade 1626",
+    "start": "1626-04-10",
+    "end": "1630-04-12",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "hardware-1626-cluster-a",
+    "title": "Turning Point 1626",
+    "start": "1626-04-10",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#b45309",
+    "importance": 8
+  },
+  {
+    "id": "hardware-1626-cluster-b",
+    "title": "Archive Note 1626",
+    "start": "1626-04-10",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "electronics-1634",
+    "title": "Communications Milestone 1634",
+    "start": "1634-05-13",
+    "end": "1635-05-15",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1642",
+    "title": "Cultural Exchange Summit 1642",
+    "start": "1642-06-16",
+    "end": "1644-06-18",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1650",
+    "title": "Civic Works Program 1650",
+    "start": "1650-07-19",
+    "end": "1653-07-21",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3,
+    "attachments": [
+      {
+        "name": "Civic Works Program Brief",
+        "url": "https://example.com/archive/structure-1650.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "motion-1658",
+    "title": "Trade Route Expansion 1658",
+    "start": "1658-08-22",
+    "end": "1662-08-24",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1666",
+    "title": "Workshop Tooling Upgrade 1666",
+    "start": "1666-09-01",
+    "end": "1667-09-03",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1674",
+    "title": "Communications Milestone 1674",
+    "start": "1674-10-04",
+    "end": "1676-10-06",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1682",
+    "title": "Cultural Exchange Summit 1682",
+    "start": "1682-11-07",
+    "end": "1685-11-09",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1690",
+    "title": "Civic Works Program 1690",
+    "start": "1690-12-10",
+    "end": "1694-12-12",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1698",
+    "title": "Trade Route Expansion 1698",
+    "start": "1698-01-13",
+    "end": "1699-01-15",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4,
+    "attachments": [
+      {
+        "name": "Trade Route Expansion Brief",
+        "url": "https://example.com/archive/motion-1698.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "motion-1698-cluster-a",
+    "title": "Turning Point 1698",
+    "start": "1698-01-13",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#2563eb",
+    "importance": 8
+  },
+  {
+    "id": "motion-1698-cluster-b",
+    "title": "Archive Note 1698",
+    "start": "1698-01-13",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "hardware-1706",
+    "title": "Workshop Tooling Upgrade 1706",
+    "start": "1706-02-16",
+    "end": "1708-02-18",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1714",
+    "title": "Communications Milestone 1714",
+    "start": "1714-03-19",
+    "end": "1717-03-21",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1722",
+    "title": "Cultural Exchange Summit 1722",
+    "start": "1722-04-22",
+    "end": "1726-04-24",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1730",
+    "title": "Civic Works Program 1730",
+    "start": "1730-05-01",
+    "end": "1731-05-03",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1738",
+    "title": "Trade Route Expansion 1738",
+    "start": "1738-06-04",
+    "end": "1740-06-06",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1746",
+    "title": "Workshop Tooling Upgrade 1746",
+    "start": "1746-07-07",
+    "end": "1749-07-09",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5,
+    "attachments": [
+      {
+        "name": "Workshop Tooling Upgrade Brief",
+        "url": "https://example.com/archive/hardware-1746.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "electronics-1754",
+    "title": "Communications Milestone 1754",
+    "start": "1754-08-10",
+    "end": "1758-08-12",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1762",
+    "title": "Cultural Exchange Summit 1762",
+    "start": "1762-09-13",
+    "end": "1763-09-15",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1770",
+    "title": "Civic Works Program 1770",
+    "start": "1770-10-16",
+    "end": "1772-10-18",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "structure-1770-cluster-a",
+    "title": "Turning Point 1770",
+    "start": "1770-10-16",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#4b5563",
+    "importance": 8
+  },
+  {
+    "id": "structure-1770-cluster-b",
+    "title": "Archive Note 1770",
+    "start": "1770-10-16",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "motion-1778",
+    "title": "Trade Route Expansion 1778",
+    "start": "1778-11-19",
+    "end": "1781-11-21",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1786",
+    "title": "Workshop Tooling Upgrade 1786",
+    "start": "1786-12-22",
+    "end": "1790-12-24",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1794",
+    "title": "Communications Milestone 1794",
+    "start": "1794-01-01",
+    "end": "1795-01-03",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6,
+    "attachments": [
+      {
+        "name": "Communications Milestone Brief",
+        "url": "https://example.com/archive/electronics-1794.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "misc-1802",
+    "title": "Cultural Exchange Summit 1802",
+    "start": "1802-02-04",
+    "end": "1804-02-06",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1810",
+    "title": "Civic Works Program 1810",
+    "start": "1810-03-07",
+    "end": "1813-03-09",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1818",
+    "title": "Trade Route Expansion 1818",
+    "start": "1818-04-10",
+    "end": "1822-04-12",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1826",
+    "title": "Workshop Tooling Upgrade 1826",
+    "start": "1826-05-13",
+    "end": "1827-05-15",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1834",
+    "title": "Communications Milestone 1834",
+    "start": "1834-06-16",
+    "end": "1836-06-18",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1842",
+    "title": "Cultural Exchange Summit 1842",
+    "start": "1842-07-19",
+    "end": "1845-07-21",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7,
+    "attachments": [
+      {
+        "name": "Cultural Exchange Summit Brief",
+        "url": "https://example.com/archive/misc-1842.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "misc-1842-cluster-a",
+    "title": "Turning Point 1842",
+    "start": "1842-07-19",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#7c3aed",
+    "importance": 8
+  },
+  {
+    "id": "misc-1842-cluster-b",
+    "title": "Archive Note 1842",
+    "start": "1842-07-19",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "structure-1850",
+    "title": "Civic Works Program 1850",
+    "start": "1850-08-22",
+    "end": "1854-08-24",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1858",
+    "title": "Trade Route Expansion 1858",
+    "start": "1858-09-01",
+    "end": "1859-09-03",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1866",
+    "title": "Workshop Tooling Upgrade 1866",
+    "start": "1866-10-04",
+    "end": "1868-10-06",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1874",
+    "title": "Communications Milestone 1874",
+    "start": "1874-11-07",
+    "end": "1877-11-09",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1882",
+    "title": "Cultural Exchange Summit 1882",
+    "start": "1882-12-10",
+    "end": "1886-12-12",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1890",
+    "title": "Civic Works Program 1890",
+    "start": "1890-01-13",
+    "end": "1891-01-15",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3,
+    "attachments": [
+      {
+        "name": "Civic Works Program Brief",
+        "url": "https://example.com/archive/structure-1890.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "motion-1898",
+    "title": "Trade Route Expansion 1898",
+    "start": "1898-02-16",
+    "end": "1900-02-18",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "hardware-1906",
+    "title": "Workshop Tooling Upgrade 1906",
+    "start": "1906-03-19",
+    "end": "1909-03-21",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1914",
+    "title": "Communications Milestone 1914",
+    "start": "1914-04-22",
+    "end": "1918-04-24",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "electronics-1914-cluster-a",
+    "title": "Turning Point 1914",
+    "start": "1914-04-22",
+    "description": "Clustered point event to stress same-position rendering.",
+    "color": "#0891b2",
+    "importance": 8
+  },
+  {
+    "id": "electronics-1914-cluster-b",
+    "title": "Archive Note 1914",
+    "start": "1914-04-22",
+    "description": "Companion point event sharing the same anchor.",
+    "color": "#dc2626",
+    "importance": 6
+  },
+  {
+    "id": "misc-1922",
+    "title": "Cultural Exchange Summit 1922",
+    "start": "1922-05-01",
+    "end": "1923-05-03",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1930",
+    "title": "Civic Works Program 1930",
+    "start": "1930-06-04",
+    "end": "1932-06-06",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1938",
+    "title": "Trade Route Expansion 1938",
+    "start": "1938-07-07",
+    "end": "1941-07-09",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4,
+    "attachments": [
+      {
+        "name": "Trade Route Expansion Brief",
+        "url": "https://example.com/archive/motion-1938.pdf",
+        "mimeType": "application/pdf"
+      }
+    ]
+  },
+  {
+    "id": "hardware-1946",
+    "title": "Workshop Tooling Upgrade 1946",
+    "start": "1946-08-10",
+    "end": "1950-08-12",
+    "description": "Incremental tooling improvements across local workshops.",
+    "color": "#b45309",
+    "importance": 5
+  },
+  {
+    "id": "electronics-1954",
+    "title": "Communications Milestone 1954",
+    "start": "1954-09-13",
+    "end": "1955-09-15",
+    "description": "New capability in signaling, networks, or computation.",
+    "color": "#0891b2",
+    "importance": 6
+  },
+  {
+    "id": "misc-1962",
+    "title": "Cultural Exchange Summit 1962",
+    "start": "1962-10-16",
+    "end": "1964-10-18",
+    "description": "Regional exchange event with archival media and notes.",
+    "color": "#7c3aed",
+    "importance": 7
+  },
+  {
+    "id": "structure-1970",
+    "title": "Civic Works Program 1970",
+    "start": "1970-11-19",
+    "end": "1973-11-21",
+    "description": "Long-running infrastructure and civic design work.",
+    "color": "#4b5563",
+    "importance": 3
+  },
+  {
+    "id": "motion-1978",
+    "title": "Trade Route Expansion 1978",
+    "start": "1978-12-22",
+    "end": "1982-12-24",
+    "description": "Movement of goods and people across new corridors.",
+    "color": "#2563eb",
+    "importance": 4
+  },
+  {
+    "id": "modern-1",
+    "title": "Delivery Checkpoint 1",
+    "start": "2026-03-01",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/media/checkpoint-1.jpg",
+        "thumbnailUrl": "https://example.com/media/checkpoint-1-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": "modern-range-1",
+    "title": "Iteration Window 1",
+    "start": "2026-03-01",
+    "end": "2026-03-05",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-2",
+    "title": "Delivery Checkpoint 2",
+    "start": "2026-03-04",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-3",
+    "title": "Delivery Checkpoint 3",
+    "start": "2026-03-07",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-4",
+    "title": "Delivery Checkpoint 4",
+    "start": "2026-03-10",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-5",
+    "title": "Delivery Checkpoint 5",
+    "start": "2026-03-13",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-6",
+    "title": "Delivery Checkpoint 6",
+    "start": "2026-03-16",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-7",
+    "title": "Delivery Checkpoint 7",
+    "start": "2026-03-19",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-range-7",
+    "title": "Iteration Window 7",
+    "start": "2026-03-19",
+    "end": "2026-03-23",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-8",
+    "title": "Delivery Checkpoint 8",
+    "start": "2026-03-22",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/media/checkpoint-8.jpg",
+        "thumbnailUrl": "https://example.com/media/checkpoint-8-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": "modern-9",
+    "title": "Delivery Checkpoint 9",
+    "start": "2026-03-25",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-10",
+    "title": "Delivery Checkpoint 10",
+    "start": "2026-03-28",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-11",
+    "title": "Delivery Checkpoint 11",
+    "start": "2026-03-31",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-12",
+    "title": "Delivery Checkpoint 12",
+    "start": "2026-04-03",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-13",
+    "title": "Delivery Checkpoint 13",
+    "start": "2026-04-06",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-range-13",
+    "title": "Iteration Window 13",
+    "start": "2026-04-06",
+    "end": "2026-04-10",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-14",
+    "title": "Delivery Checkpoint 14",
+    "start": "2026-04-09",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-15",
+    "title": "Delivery Checkpoint 15",
+    "start": "2026-04-12",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/media/checkpoint-15.jpg",
+        "thumbnailUrl": "https://example.com/media/checkpoint-15-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": "modern-16",
+    "title": "Delivery Checkpoint 16",
+    "start": "2026-04-15",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-17",
+    "title": "Delivery Checkpoint 17",
+    "start": "2026-04-18",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-18",
+    "title": "Delivery Checkpoint 18",
+    "start": "2026-04-21",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-19",
+    "title": "Delivery Checkpoint 19",
+    "start": "2026-04-24",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-range-19",
+    "title": "Iteration Window 19",
+    "start": "2026-04-24",
+    "end": "2026-04-28",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-20",
+    "title": "Delivery Checkpoint 20",
+    "start": "2026-04-27",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-21",
+    "title": "Delivery Checkpoint 21",
+    "start": "2026-04-30",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-22",
+    "title": "Delivery Checkpoint 22",
+    "start": "2026-05-03",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/media/checkpoint-22.jpg",
+        "thumbnailUrl": "https://example.com/media/checkpoint-22-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": "modern-23",
+    "title": "Delivery Checkpoint 23",
+    "start": "2026-05-06",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-24",
+    "title": "Delivery Checkpoint 24",
+    "start": "2026-05-09",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-25",
+    "title": "Delivery Checkpoint 25",
+    "start": "2026-05-12",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-range-25",
+    "title": "Iteration Window 25",
+    "start": "2026-05-12",
+    "end": "2026-05-16",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-26",
+    "title": "Delivery Checkpoint 26",
+    "start": "2026-05-15",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-27",
+    "title": "Delivery Checkpoint 27",
+    "start": "2026-05-18",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-28",
+    "title": "Delivery Checkpoint 28",
+    "start": "2026-05-21",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-29",
+    "title": "Delivery Checkpoint 29",
+    "start": "2026-05-24",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/media/checkpoint-29.jpg",
+        "thumbnailUrl": "https://example.com/media/checkpoint-29-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": "modern-30",
+    "title": "Delivery Checkpoint 30",
+    "start": "2026-05-27",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-31",
+    "title": "Delivery Checkpoint 31",
+    "start": "2026-05-30",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-range-31",
+    "title": "Iteration Window 31",
+    "start": "2026-05-30",
+    "end": "2026-05-28",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-32",
+    "title": "Delivery Checkpoint 32",
+    "start": "2026-06-02",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-33",
+    "title": "Delivery Checkpoint 33",
+    "start": "2026-06-05",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-34",
+    "title": "Delivery Checkpoint 34",
+    "start": "2026-06-08",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-35",
+    "title": "Delivery Checkpoint 35",
+    "start": "2026-06-11",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-36",
+    "title": "Delivery Checkpoint 36",
+    "start": "2026-06-14",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7,
+    "media": [
+      {
+        "type": "image",
+        "url": "https://example.com/media/checkpoint-36.jpg",
+        "thumbnailUrl": "https://example.com/media/checkpoint-36-thumb.jpg"
+      }
+    ]
+  },
+  {
+    "id": "modern-37",
+    "title": "Delivery Checkpoint 37",
+    "start": "2026-06-17",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-range-37",
+    "title": "Iteration Window 37",
+    "start": "2026-06-17",
+    "end": "2026-06-21",
+    "description": "Short range event layered among dense point events.",
+    "color": "#65a30d",
+    "importance": 5
+  },
+  {
+    "id": "modern-38",
+    "title": "Delivery Checkpoint 38",
+    "start": "2026-06-20",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  },
+  {
+    "id": "modern-39",
+    "title": "Delivery Checkpoint 39",
+    "start": "2026-06-23",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 6
+  },
+  {
+    "id": "modern-40",
+    "title": "Delivery Checkpoint 40",
+    "start": "2026-06-26",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 7
+  },
+  {
+    "id": "modern-41",
+    "title": "Delivery Checkpoint 41",
+    "start": "2026-06-29",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0f766e",
+    "importance": 4
+  },
+  {
+    "id": "modern-42",
+    "title": "Delivery Checkpoint 42",
+    "start": "2026-07-02",
+    "description": "Near-present event for week and day zoom testing.",
+    "color": "#0284c7",
+    "importance": 5
+  }
+]

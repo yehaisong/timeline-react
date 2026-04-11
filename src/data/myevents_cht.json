@@ -1,0 +1,4262 @@
+[
+    {
+        "year_num": -5000.000,
+        "year_text": "Before Time",
+        "event_type": "Bible",
+        "event": "太初有道"
+    },
+    {
+        "year_num": -4000.000,
+        "year_text": "Before 4000 BC",
+        "event_type": "Bible",
+        "event": "世界的起源"
+    },
+    {
+        "year_num": -4000.000,
+        "year_text": "Before 4000 BC",
+        "event_type": "Bible",
+        "event": "人的墮落"
+    },
+    {
+        "year_num": -4000.000,
+        "year_text": "Before 4000 BC",
+        "event_type": "Bible",
+        "event": "伊甸園"
+    },
+    {
+        "year_num": -3000.000,
+        "year_text": "Before 3000 BC",
+        "event_type": "Bible",
+        "event": "從亞當到諾亞"
+    },
+    {
+        "year_num": -3000.000,
+        "year_text": "Before 3000 BC",
+        "event_type": "Bible",
+        "event": "該隱殺亞伯"
+    },
+    {
+        "year_num": -2630.000,
+        "year_text": "2630 BC",
+        "event_type": "World",
+        "event": "埃及人建造金字塔"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "2500 BC",
+        "event_type": "World",
+        "event": "鐵器的使用"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "2500 BC",
+        "event_type": "World",
+        "event": "埃及人用紙莎草紙和墨水書寫"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "Before 2500 BC",
+        "event_type": "Bible",
+        "event": "大洪水"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "Before 2500 BC",
+        "event_type": "Bible",
+        "event": "彩虹之約"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "Before 2500 BC",
+        "event_type": "Bible",
+        "event": "洪水消退"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "Before 2500 BC",
+        "event_type": "Bible",
+        "event": "邪惡觸動上帝的怒氣"
+    },
+    {
+        "year_num": -2500.000,
+        "year_text": "Before 2500 BC",
+        "event_type": "Bible",
+        "event": "閃，含和耶弗"
+    },
+    {
+        "year_num": -2400.000,
+        "year_text": "2400 BC",
+        "event_type": "World",
+        "event": "埃及從非洲其他地區進口黃金"
+    },
+    {
+        "year_num": -2331.000,
+        "year_text": "2331 BC",
+        "event_type": "World",
+        "event": "撒珥根建立世界第一個帝國-阿卡德帝國"
+    },
+    {
+        "year_num": -2300.000,
+        "year_text": "2300 BC",
+        "event_type": "World",
+        "event": "馬在埃及被馴化飼養"
+    },
+    {
+        "year_num": -2100.000,
+        "year_text": "2100 BC",
+        "event_type": "World",
+        "event": "金字形神塔建於米所波大米"
+    },
+    {
+        "year_num": -2100.000,
+        "year_text": "Before 2100 BC",
+        "event_type": "Bible",
+        "event": "巴別塔"
+    },
+    {
+        "year_num": -2100.000,
+        "year_text": "Before 2100 BC",
+        "event_type": "Bible",
+        "event": "約伯的苦難與信心"
+    },
+    {
+        "year_num": -2091.000,
+        "year_text": "2091 BC",
+        "event_type": "Bible",
+        "event": "上帝差遣亞伯蘭回埃及"
+    },
+    {
+        "year_num": -2090.000,
+        "year_text": "2090 BC",
+        "event_type": "Bible",
+        "event": "迦南地飢荒"
+    },
+    {
+        "year_num": -2085.000,
+        "year_text": "2085 BC",
+        "event_type": "Bible",
+        "event": "亞伯蘭和羅得分手"
+    },
+    {
+        "year_num": -2085.000,
+        "year_text": "2085 BC",
+        "event_type": "Bible",
+        "event": "亞伯蘭得許多後裔的應許"
+    },
+    {
+        "year_num": -2084.000,
+        "year_text": "2084 BC",
+        "event_type": "Bible",
+        "event": "亞伯蘭搶救羅得"
+    },
+    {
+        "year_num": -2081.000,
+        "year_text": "2081 BC",
+        "event_type": "Bible",
+        "event": "撒萊和夏甲"
+    },
+    {
+        "year_num": -2081.000,
+        "year_text": "2081 BC",
+        "event_type": "Bible",
+        "event": "神與亞伯蘭立約"
+    },
+    {
+        "year_num": -2080.000,
+        "year_text": "2080 BC",
+        "event_type": "Bible",
+        "event": "以實瑪利的出生"
+    },
+    {
+        "year_num": -2067.000,
+        "year_text": "2067 BC",
+        "event_type": "Bible",
+        "event": "上帝應許以撒的誕生"
+    },
+    {
+        "year_num": -2067.000,
+        "year_text": "2067 BC",
+        "event_type": "Bible",
+        "event": "亞伯拉罕，莎拉和亞比米勒"
+    },
+    {
+        "year_num": -2067.000,
+        "year_text": "2067 BC",
+        "event_type": "Bible",
+        "event": "割禮-立約的記號"
+    },
+    {
+        "year_num": -2067.000,
+        "year_text": "2067 BC",
+        "event_type": "Bible",
+        "event": "所多瑪的毀滅"
+    },
+    {
+        "year_num": -2066.000,
+        "year_text": "2066 BC",
+        "event_type": "Bible",
+        "event": "以撒的出生"
+    },
+    {
+        "year_num": -2064.000,
+        "year_text": "2064 BC",
+        "event_type": "Bible",
+        "event": "夏甲和以實瑪利被逐"
+    },
+    {
+        "year_num": -2057.000,
+        "year_text": "2057 BC",
+        "event_type": "Bible",
+        "event": "別是巴的約定"
+    },
+    {
+        "year_num": -2054.000,
+        "year_text": "2054 BC",
+        "event_type": "Bible",
+        "event": "亞伯拉罕獻以撒"
+    },
+    {
+        "year_num": -2030.000,
+        "year_text": "2030 BC",
+        "event_type": "Bible",
+        "event": "撒拉的死與埋葬"
+    },
+    {
+        "year_num": -2026.000,
+        "year_text": "2026 BC",
+        "event_type": "Bible",
+        "event": "以撒娶利百加"
+    },
+    {
+        "year_num": -2006.000,
+        "year_text": "2006 BC",
+        "event_type": "Bible",
+        "event": "雅各和以掃的出生"
+    },
+    {
+        "year_num": -2000.000,
+        "year_text": "2000 BC",
+        "event_type": "World",
+        "event": "英格蘭巨石陣"
+    },
+    {
+        "year_num": -2000.000,
+        "year_text": "2000 BC",
+        "event_type": "World",
+        "event": "埃及的灌溉技術，巴比倫尼亞的數學"
+    },
+    {
+        "year_num": -1991.000,
+        "year_text": "1991 BC",
+        "event_type": "Bible",
+        "event": "亞伯拉罕之死"
+    },
+    {
+        "year_num": -1978.000,
+        "year_text": "1978 BC",
+        "event_type": "Bible",
+        "event": "以掃出賣長子的名分"
+    },
+    {
+        "year_num": -1977.000,
+        "year_text": "1977 BC",
+        "event_type": "Bible",
+        "event": "以撒和亞比米勒"
+    },
+    {
+        "year_num": -1929.000,
+        "year_text": "1929 BC",
+        "event_type": "Bible",
+        "event": "以撒祝福雅各"
+    },
+    {
+        "year_num": -1928.000,
+        "year_text": "1928 BC",
+        "event_type": "Bible",
+        "event": "雅各得天梯的異象"
+    },
+    {
+        "year_num": -1928.000,
+        "year_text": "1928 BC",
+        "event_type": "Bible",
+        "event": "雅各服事拉班"
+    },
+    {
+        "year_num": -1928.000,
+        "year_text": "1928 BC",
+        "event_type": "Bible",
+        "event": "雅各逃往拉班"
+    },
+    {
+        "year_num": -1921.000,
+        "year_text": "1921 BC",
+        "event_type": "Bible",
+        "event": "雅各和他的眾子"
+    },
+    {
+        "year_num": -1921.000,
+        "year_text": "1921 BC",
+        "event_type": "Bible",
+        "event": "雅各娶拉結"
+    },
+    {
+        "year_num": -1916.000,
+        "year_text": "1916 BC",
+        "event_type": "Bible",
+        "event": "拉結生約瑟"
+    },
+    {
+        "year_num": -1908.000,
+        "year_text": "1908 BC",
+        "event_type": "Bible",
+        "event": "雅各逃離拉班往迦南"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "以掃和雅各相見"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "以掃的子孫"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "底拿受辱"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "雅各回到伯特利"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "雅各定居示劍"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "雅各改名為以色列"
+    },
+    {
+        "year_num": -1906.000,
+        "year_text": "1906 BC",
+        "event_type": "Bible",
+        "event": "雅各與神摔跤"
+    },
+    {
+        "year_num": -1903.000,
+        "year_text": "1903 BC",
+        "event_type": "Bible",
+        "event": "拉結之死"
+    },
+    {
+        "year_num": -1900.000,
+        "year_text": "1900 BC",
+        "event_type": "World",
+        "event": "輻條輪的發明"
+    },
+    {
+        "year_num": -1898.000,
+        "year_text": "1898 BC",
+        "event_type": "Bible",
+        "event": "她瑪欺瞞猶大"
+    },
+    {
+        "year_num": -1898.000,
+        "year_text": "1898 BC",
+        "event_type": "Bible",
+        "event": "約瑟服事波提乏"
+    },
+    {
+        "year_num": -1898.000,
+        "year_text": "1898 BC",
+        "event_type": "Bible",
+        "event": "約瑟的夢與遭背叛"
+    },
+    {
+        "year_num": -1898.000,
+        "year_text": "1898 BC",
+        "event_type": "Bible",
+        "event": "約瑟被賣為奴"
+    },
+    {
+        "year_num": -1889.000,
+        "year_text": "1889 BC",
+        "event_type": "Bible",
+        "event": "波提乏妻污告約瑟"
+    },
+    {
+        "year_num": -1889.000,
+        "year_text": "1889 BC",
+        "event_type": "Bible",
+        "event": "約瑟夫被囚"
+    },
+    {
+        "year_num": -1887.000,
+        "year_text": "1887 BC",
+        "event_type": "Bible",
+        "event": "約瑟為酒政和膳長解夢"
+    },
+    {
+        "year_num": -1886.000,
+        "year_text": "1886 BC",
+        "event_type": "Bible",
+        "event": "七個大豐年的開始"
+    },
+    {
+        "year_num": -1886.000,
+        "year_text": "1886 BC",
+        "event_type": "Bible",
+        "event": "約瑟為法老解夢"
+    },
+    {
+        "year_num": -1886.000,
+        "year_text": "1886 BC",
+        "event_type": "Bible",
+        "event": "約瑟被立為埃及的宰相"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "七個荒年的開始"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "便雅憫到埃及"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "便雅憫和失落的銀杯"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "約瑟和兄弟相認"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "約瑟差人請雅各到埃及"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "約瑟的哥哥們往埃及買糧"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "西緬被約瑟夫拘留"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "雅各住在歌珊"
+    },
+    {
+        "year_num": -1875.000,
+        "year_text": "1875 BC",
+        "event_type": "Bible",
+        "event": "雅各和家屬上埃及"
+    },
+    {
+        "year_num": -1859.000,
+        "year_text": "1859 BC",
+        "event_type": "Bible",
+        "event": "雅各死期的臨近"
+    },
+    {
+        "year_num": -1859.000,
+        "year_text": "1859 BC",
+        "event_type": "Bible",
+        "event": "雅各的埋葬"
+    },
+    {
+        "year_num": -1859.000,
+        "year_text": "1859 BC",
+        "event_type": "Bible",
+        "event": "雅各的祝福與死亡"
+    },
+    {
+        "year_num": -1806.000,
+        "year_text": "1806 BC",
+        "event_type": "Bible",
+        "event": "約瑟之死"
+    },
+    {
+        "year_num": -1800.000,
+        "year_text": "1800 BC",
+        "event_type": "Bible",
+        "event": "雅各一家住在埃及"
+    },
+    {
+        "year_num": -1750.000,
+        "year_text": "1750 BC",
+        "event_type": "World",
+        "event": "巴比倫人寫成漢摩拉比法典"
+    },
+    {
+        "year_num": -1700.000,
+        "year_text": "1700 BC",
+        "event_type": "Bible",
+        "event": "以色列人在埃及漸漸強盛"
+    },
+    {
+        "year_num": -1645.000,
+        "year_text": "1645 BC",
+        "event_type": "World",
+        "event": "在愛琴海的聖托里尼火山爆發"
+    },
+    {
+        "year_num": -1640.000,
+        "year_text": "1640 BC",
+        "event_type": "World",
+        "event": "西克索人的騎兵征服埃及"
+    },
+    {
+        "year_num": -1600.000,
+        "year_text": "1600 BC",
+        "event_type": "Bible",
+        "event": "以色列人受新王的壓迫"
+    },
+    {
+        "year_num": -1539.000,
+        "year_text": "1539 BC",
+        "event_type": "Bible",
+        "event": "法老下令殺以色列人的長子"
+    },
+    {
+        "year_num": -1525.000,
+        "year_text": "1525 BC",
+        "event_type": "Bible",
+        "event": "摩西的出生和領養"
+    },
+    {
+        "year_num": -1500.000,
+        "year_text": "1500 BC",
+        "event_type": "World",
+        "event": "太陽金字塔建於墨西哥"
+    },
+    {
+        "year_num": -1500.000,
+        "year_text": "1500 BC",
+        "event_type": "World",
+        "event": "美國中西部種植向日葵; 奥克美種植可可豆"
+    },
+    {
+        "year_num": -1500.000,
+        "year_text": "1500 BC",
+        "event_type": "World",
+        "event": "最早期的梵語原文"
+    },
+    {
+        "year_num": -1486.000,
+        "year_text": "1486 BC",
+        "event_type": "Bible",
+        "event": "摩西逃往米甸"
+    },
+    {
+        "year_num": -1450.000,
+        "year_text": "1450 BC",
+        "event_type": "World",
+        "event": "米諾文明結束"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "以色列人在西奈山"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "以色列人成為奴隸的哀聲"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "出埃及的開始"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "埃及十災"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "摩西接受十誡"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "摩西接受律法"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "曠野之旅開始"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "會幕的預備"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "神呼召摩西拯救以色列"
+    },
+    {
+        "year_num": -1446.000,
+        "year_text": "1446 BC",
+        "event_type": "Bible",
+        "event": "金牛犢和摩西的憤怒"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "12個探子"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "亞倫和其子孫做祭司"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "人口普查、支派、職責"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "奉獻的條例"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "拿答和亞比戶犯罪"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "會幕的建立和雲彩的覆蓋"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "民眾因探子回報而發的怨言"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "潔淨的條例"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "獻會幕"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "百姓發怨言"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "節期和禧年"
+    },
+    {
+        "year_num": -1445.000,
+        "year_text": "1445 BC",
+        "event_type": "Bible",
+        "event": "背逆者的處罰"
+    },
+    {
+        "year_num": -1440.000,
+        "year_text": "1440 BC",
+        "event_type": "World",
+        "event": "南美首批金屬加工"
+    },
+    {
+        "year_num": -1426.000,
+        "year_text": "1426 BC",
+        "event_type": "Bible",
+        "event": "亞倫的杖發芽"
+    },
+    {
+        "year_num": -1426.000,
+        "year_text": "1426 BC",
+        "event_type": "Bible",
+        "event": "可拉的叛變"
+    },
+    {
+        "year_num": -1426.000,
+        "year_text": "1426 BC",
+        "event_type": "Bible",
+        "event": "祭司、紅母牛的灰"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "亞倫之死"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "以色列出埃及歷程摘要"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "巴蘭和天使"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "征服米甸"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "承業女子結婚的條例"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "摩西對以色列歷史的總結"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "摩西的詩篇"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "日常和節期的獻祭條例"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "第二次人口普查"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "米利巴水"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "約但河東的2支派"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "約書亞被選為摩西的繼承人"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "西非哈的女兒們"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "許願的條例"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "迦南地的分割"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "邊境和逃城(庇護城)"
+    },
+    {
+        "year_num": -1407.000,
+        "year_text": "1407 BC",
+        "event_type": "Bible",
+        "event": "銅蛇"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "上帝呼召約書亞"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "以色列人過約旦河"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "喇合接待以色列探子"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "律法的重申"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "摩西之歌"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "摩西之死"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "摩西的祝福"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "摩西祝福十二個支派"
+    },
+    {
+        "year_num": -1406.000,
+        "year_text": "1406 BC",
+        "event_type": "Bible",
+        "event": "耶利哥和艾的征服"
+    },
+    {
+        "year_num": -1405.000,
+        "year_text": "1405 BC",
+        "event_type": "Bible",
+        "event": "列王共同抵抗以色列"
+    },
+    {
+        "year_num": -1405.000,
+        "year_text": "1405 BC",
+        "event_type": "Bible",
+        "event": "征服巴勒斯坦北部˙"
+    },
+    {
+        "year_num": -1405.000,
+        "year_text": "1405 BC",
+        "event_type": "Bible",
+        "event": "日頭停住"
+    },
+    {
+        "year_num": -1400.000,
+        "year_text": "1400 BC",
+        "event_type": "World",
+        "event": "埃及人發明水鐘"
+    },
+    {
+        "year_num": -1399.000,
+        "year_text": "1399 BC",
+        "event_type": "Bible",
+        "event": "眾支派的土地分配"
+    },
+    {
+        "year_num": -1380.000,
+        "year_text": "1380 BC",
+        "event_type": "World",
+        "event": "革哩底島的克諾索斯宮殿毀於地震"
+    },
+    {
+        "year_num": -1375.000,
+        "year_text": "1375 BC",
+        "event_type": "Bible",
+        "event": "以色列人擊敗便雅憫人"
+    },
+    {
+        "year_num": -1375.000,
+        "year_text": "1375 BC",
+        "event_type": "Bible",
+        "event": "但支派定居拉億，和米迦的偶像"
+    },
+    {
+        "year_num": -1375.000,
+        "year_text": "1375 BC",
+        "event_type": "Bible",
+        "event": "利未人和他的妾"
+    },
+    {
+        "year_num": -1375.000,
+        "year_text": "1375 BC",
+        "event_type": "Bible",
+        "event": "為便雅憫支派人找妻"
+    },
+    {
+        "year_num": -1375.000,
+        "year_text": "1375 BC",
+        "event_type": "Bible",
+        "event": "米迦的偶像崇拜"
+    },
+    {
+        "year_num": -1375.000,
+        "year_text": "1375 BC",
+        "event_type": "Bible",
+        "event": "約書亞的遺言"
+    },
+    {
+        "year_num": -1374.000,
+        "year_text": "1374 BC",
+        "event_type": "Bible",
+        "event": "以色列人佔領耶路撒冷，希伯倫"
+    },
+    {
+        "year_num": -1374.000,
+        "year_text": "1374 BC",
+        "event_type": "Bible",
+        "event": "以色列的偶像崇拜；俄陀聶"
+    },
+    {
+        "year_num": -1374.000,
+        "year_text": "1374 BC",
+        "event_type": "Bible",
+        "event": "以色列離棄耶和華"
+    },
+    {
+        "year_num": -1358.000,
+        "year_text": "1358 BC ",
+        "event_type": "World",
+        "event": "埃及法老王圖坦卡門的安葬"
+    },
+    {
+        "year_num": -1334.000,
+        "year_text": "1334 BC",
+        "event_type": "Bible",
+        "event": "摩押王伊磯倫"
+    },
+    {
+        "year_num": -1316.000,
+        "year_text": "1316 BC",
+        "event_type": "Bible",
+        "event": "以笏"
+    },
+    {
+        "year_num": -1280.000,
+        "year_text": "1280 BC",
+        "event_type": "World",
+        "event": "摩西帶領猶太人出走埃及"
+    },
+    {
+        "year_num": -1269.000,
+        "year_text": "1269 BC",
+        "event_type": "World",
+        "event": "埃及和赫人之間的和平條約"
+    },
+    {
+        "year_num": -1250.000,
+        "year_text": "1250 BC",
+        "event_type": "World",
+        "event": "中國生產絲綢"
+    },
+    {
+        "year_num": -1240.000,
+        "year_text": "1240 BC",
+        "event_type": "World",
+        "event": "亞述人洗劫巴比倫"
+    },
+    {
+        "year_num": -1235.000,
+        "year_text": "1235 BC",
+        "event_type": "Bible",
+        "event": "底波拉和巴拉"
+    },
+    {
+        "year_num": -1235.000,
+        "year_text": "1235 BC",
+        "event_type": "Bible",
+        "event": "底波拉和巴拉之歌"
+    },
+    {
+        "year_num": -1200.000,
+        "year_text": "1200 BC",
+        "event_type": "World",
+        "event": "第一本中國字典"
+    },
+    {
+        "year_num": -1200.000,
+        "year_text": "1200 BC",
+        "event_type": "World",
+        "event": "中美洲的奥美克文明開始"
+    },
+    {
+        "year_num": -1183.000,
+        "year_text": "1183 BC",
+        "event_type": "World",
+        "event": "特洛伊(Trojan)戰爭"
+    },
+    {
+        "year_num": -1169.000,
+        "year_text": "1169 BC",
+        "event_type": "Bible",
+        "event": "基甸和米甸人"
+    },
+    {
+        "year_num": -1140.000,
+        "year_text": "1140 BC",
+        "event_type": "Bible",
+        "event": "拿俄米，路得和波阿斯"
+    },
+    {
+        "year_num": -1129.000,
+        "year_text": "1129 BC",
+        "event_type": "Bible",
+        "event": "亞比米勒合謀成王"
+    },
+    {
+        "year_num": -1126.000,
+        "year_text": "1126 BC",
+        "event_type": "Bible",
+        "event": "亞比米勒被殺"
+    },
+    {
+        "year_num": -1126.000,
+        "year_text": "1126 BC",
+        "event_type": "Bible",
+        "event": "示劍人陰謀反對亞比米勒"
+    },
+    {
+        "year_num": -1118.000,
+        "year_text": "1118 BC",
+        "event_type": "Bible",
+        "event": "陀拉、睚珥的興起"
+    },
+    {
+        "year_num": -1100.000,
+        "year_text": "1100 BC",
+        "event_type": "Bible",
+        "event": "哈拿之歌"
+    },
+    {
+        "year_num": -1100.000,
+        "year_text": "1100 BC",
+        "event_type": "Bible",
+        "event": "撒母耳的誕生"
+    },
+    {
+        "year_num": -1100.000,
+        "year_text": "1100 BC",
+        "event_type": "World",
+        "event": "中東的鐵器時代"
+    },
+    {
+        "year_num": -1100.000,
+        "year_text": "1100 BC",
+        "event_type": "World",
+        "event": "亞利安人(米底斯人和波斯人)進入伊朗高原"
+    },
+    {
+        "year_num": -1097.000,
+        "year_text": "1097 BC",
+        "event_type": "Bible",
+        "event": "耶弗他與基列人的約"
+    },
+    {
+        "year_num": -1090.000,
+        "year_text": "1090 BC",
+        "event_type": "Bible",
+        "event": "士師耶弗他、以法蓮、以比讚、以倫、押頓"
+    },
+    {
+        "year_num": -1090.000,
+        "year_text": "1090 BC",
+        "event_type": "Bible",
+        "event": "非利士人對以色列的壓迫"
+    },
+    {
+        "year_num": -1075.000,
+        "year_text": "1075 BC",
+        "event_type": "Bible",
+        "event": "參孫和大力拉"
+    },
+    {
+        "year_num": -1075.000,
+        "year_text": "1075 BC",
+        "event_type": "Bible",
+        "event": "參孫燒毀非利士人農作物"
+    },
+    {
+        "year_num": -1075.000,
+        "year_text": "1075 BC",
+        "event_type": "Bible",
+        "event": "參孫的婚宴和謎語"
+    },
+    {
+        "year_num": -1070.000,
+        "year_text": "1070 BC",
+        "event_type": "Bible",
+        "event": "約櫃停留在亞比拿達家"
+    },
+    {
+        "year_num": -1070.000,
+        "year_text": "1070 BC",
+        "event_type": "Bible",
+        "event": "約櫃被擄"
+    },
+    {
+        "year_num": -1070.000,
+        "year_text": "1070 BC",
+        "event_type": "Bible",
+        "event": "耶和華向撒母耳顯現"
+    },
+    {
+        "year_num": -1070.000,
+        "year_text": "1070 BC",
+        "event_type": "Bible",
+        "event": "非利士人送回約櫃"
+    },
+    {
+        "year_num": -1050.000,
+        "year_text": "1050 BC",
+        "event_type": "Bible",
+        "event": "以色列人在米斯巴重新悔改"
+    },
+    {
+        "year_num": -1043.000,
+        "year_text": "1043 BC",
+        "event_type": "Bible",
+        "event": "掃羅成為王"
+    },
+    {
+        "year_num": -1042.000,
+        "year_text": "1042 BC",
+        "event_type": "Bible",
+        "event": "掃羅擊敗亞捫人"
+    },
+    {
+        "year_num": -1041.000,
+        "year_text": "1041 BC",
+        "event_type": "Bible",
+        "event": "掃羅與非利士人的戰爭"
+    },
+    {
+        "year_num": -1041.000,
+        "year_text": "1041 BC",
+        "event_type": "Bible",
+        "event": "約拿單的勇敢戰績"
+    },
+    {
+        "year_num": -1028.000,
+        "year_text": "1028 BC",
+        "event_type": "Bible",
+        "event": "掃羅的悖逆與撒母耳的斥責"
+    },
+    {
+        "year_num": -1024.000,
+        "year_text": "1024 BC",
+        "event_type": "Bible",
+        "event": "大衛和歌利亞"
+    },
+    {
+        "year_num": -1024.000,
+        "year_text": "1024 BC",
+        "event_type": "Bible",
+        "event": "撒母耳在伯利恆膏立大衛為王"
+    },
+    {
+        "year_num": -1015.000,
+        "year_text": "1015 BC",
+        "event_type": "Bible",
+        "event": "大衛和約拿單的友情"
+    },
+    {
+        "year_num": -1014.000,
+        "year_text": "1014 BC",
+        "event_type": "Bible",
+        "event": "掃羅逼迫大衛"
+    },
+    {
+        "year_num": -1013.000,
+        "year_text": "1013 BC",
+        "event_type": "Bible",
+        "event": "大衛的拯救詩篇（撒上 20）"
+    },
+    {
+        "year_num": -1013.000,
+        "year_text": "1013 BC",
+        "event_type": "Bible",
+        "event": "約拿單幫助大衛"
+    },
+    {
+        "year_num": -1012.000,
+        "year_text": "1012 BC",
+        "event_type": "Bible",
+        "event": "大衛在挪伯和迦特"
+    },
+    {
+        "year_num": -1012.000,
+        "year_text": "1012 BC",
+        "event_type": "Bible",
+        "event": "大衛的詩篇-逃離掃羅（撒上 21）"
+    },
+    {
+        "year_num": -1012.000,
+        "year_text": "1012 BC",
+        "event_type": "Bible",
+        "event": "大衛面對亞希米勒的詩篇（撒上 21）"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "大衛再次饒掃羅的命"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "大衛在基拉的詩篇（撒上23）"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "大衛在山洞裡的詩篇（撒上 22）"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "大衛在迦特的詩篇（撒上 21）"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "大衛逃離掃羅之手"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "大衛饒掃羅的命"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "掃羅殘殺挪伯祭司"
+    },
+    {
+        "year_num": -1011.000,
+        "year_text": "1011 BC",
+        "event_type": "Bible",
+        "event": "撒母耳去世"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "亞吉遣走大衛"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "大衛受膏作猶大王"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "大衛在非利士人間"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "大衛打敗亞瑪力人"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "大衛為掃羅和約拿單舉哀"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "掃羅和他的眾子被殺"
+    },
+    {
+        "year_num": -1010.000,
+        "year_text": "1010 BC",
+        "event_type": "Bible",
+        "event": "掃羅求問隱多珥女巫"
+    },
+    {
+        "year_num": -1008.000,
+        "year_text": "1008 BC",
+        "event_type": "Bible",
+        "event": "押尼珥與約押之間的內戰"
+    },
+    {
+        "year_num": -1006.000,
+        "year_text": "1006 BC",
+        "event_type": "Bible",
+        "event": "大衛家日見強盛"
+    },
+    {
+        "year_num": -1005.000,
+        "year_text": "1005 BC",
+        "event_type": "Bible",
+        "event": "約押謀殺押尼珥"
+    },
+    {
+        "year_num": -1004.000,
+        "year_text": "1004 BC",
+        "event_type": "Bible",
+        "event": "伊施波設被殺"
+    },
+    {
+        "year_num": -1003.000,
+        "year_text": "1003 BC",
+        "event_type": "Bible",
+        "event": "以色列人的家譜"
+    },
+    {
+        "year_num": -1003.000,
+        "year_text": "1003 BC",
+        "event_type": "Bible",
+        "event": "大衛統治整個以色列"
+    },
+    {
+        "year_num": -1003.000,
+        "year_text": "1003 BC",
+        "event_type": "Bible",
+        "event": "掃羅的被推翻與失敗"
+    },
+    {
+        "year_num": -1002.000,
+        "year_text": "1002 BC",
+        "event_type": "Bible",
+        "event": "大衛軍力的壯大"
+    },
+    {
+        "year_num": -1000.000,
+        "year_text": "1000 BC",
+        "event_type": "Bible",
+        "event": "大衛家的成長"
+    },
+    {
+        "year_num": -1000.000,
+        "year_text": "1000 BC",
+        "event_type": "Bible",
+        "event": "大衛計劃建造聖殿"
+    },
+    {
+        "year_num": -1000.000,
+        "year_text": "1000 BC",
+        "event_type": "Bible",
+        "event": "大衛遷移約櫃"
+    },
+    {
+        "year_num": -1000.000,
+        "year_text": "1000 BC",
+        "event_type": "Bible",
+        "event": "約櫃被帶到耶路撒冷"
+    },
+    {
+        "year_num": -1000.000,
+        "year_text": "1000 BC",
+        "event_type": "World",
+        "event": "馬雅文明進入猶加敦半島"
+    },
+    {
+        "year_num": -1000.000,
+        "year_text": "1000 BC",
+        "event_type": "World",
+        "event": "美洲原住民在加洲用木頭-蘆葦蓋房"
+    },
+    {
+        "year_num": -998.000,
+        "year_text": "998 BC",
+        "event_type": "Bible",
+        "event": "大衛在約櫃前的獻祭和敬拜"
+    },
+    {
+        "year_num": -998.000,
+        "year_text": "998 BC",
+        "event_type": "Bible",
+        "event": "大衛擊敗非利士人"
+    },
+    {
+        "year_num": -998.000,
+        "year_text": "998 BC",
+        "event_type": "Bible",
+        "event": "大衛榮耀上帝的詩篇"
+    },
+    {
+        "year_num": -998.000,
+        "year_text": "998 BC",
+        "event_type": "Bible",
+        "event": "大衛的勝利詩篇（撒下 8）"
+    },
+    {
+        "year_num": -998.000,
+        "year_text": "998 BC",
+        "event_type": "Bible",
+        "event": "大衛的讚美詩"
+    },
+    {
+        "year_num": -998.000,
+        "year_text": "998 BC",
+        "event_type": "Bible",
+        "event": "大衛的錫安詩篇"
+    },
+    {
+        "year_num": -997.000,
+        "year_text": "997 BC",
+        "event_type": "Bible",
+        "event": "拿單傳給大衛有關建聖殿的信息"
+    },
+    {
+        "year_num": -996.000,
+        "year_text": "996 BC",
+        "event_type": "Bible",
+        "event": "大衛日漸強盛的國力"
+    },
+    {
+        "year_num": -995.000,
+        "year_text": "995 BC",
+        "event_type": "Bible",
+        "event": "大衛和米非波設"
+    },
+    {
+        "year_num": -995.000,
+        "year_text": "995 BC",
+        "event_type": "Bible",
+        "event": "大衛擊敗亞捫人和亞蘭人"
+    },
+    {
+        "year_num": -995.000,
+        "year_text": "995 BC",
+        "event_type": "Bible",
+        "event": "大衛攻取拉巴城"
+    },
+    {
+        "year_num": -993.000,
+        "year_text": "993 BC",
+        "event_type": "Bible",
+        "event": "大衛和拔示巴"
+    },
+    {
+        "year_num": -991.000,
+        "year_text": "991 BC",
+        "event_type": "Bible",
+        "event": "大衛的悔改詩篇（撒下 12）"
+    },
+    {
+        "year_num": -991.000,
+        "year_text": "991 BC",
+        "event_type": "Bible",
+        "event": "拿單斥責大衛"
+    },
+    {
+        "year_num": -990.000,
+        "year_text": "990 BC",
+        "event_type": "Bible",
+        "event": "所羅門的出生"
+    },
+    {
+        "year_num": -990.000,
+        "year_text": "990 BC",
+        "event_type": "Bible",
+        "event": "押沙龍殺暗嫩"
+    },
+    {
+        "year_num": -990.000,
+        "year_text": "990 BC",
+        "event_type": "Bible",
+        "event": "暗嫩和她瑪"
+    },
+    {
+        "year_num": -988.000,
+        "year_text": "988 BC",
+        "event_type": "Bible",
+        "event": "提哥亞的寡婦"
+    },
+    {
+        "year_num": -980.000,
+        "year_text": "980 BC",
+        "event_type": "Bible",
+        "event": "召回押沙龍"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "亞撒的詩篇"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "利未眾支派"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "可拉詩篇"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "大衛強制進行人口普查"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "大衛的詩篇"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "未知作者的詩篇"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "準備建造聖殿"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "祭司聖職準備"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "聖殿中的聖樂人員"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "聖殿的衛隊和掌府庫人員"
+    },
+    {
+        "year_num": -979.000,
+        "year_text": "979 BC",
+        "event_type": "Bible",
+        "event": "軍事長官名單"
+    },
+    {
+        "year_num": -976.000,
+        "year_text": "976 BC",
+        "event_type": "Bible",
+        "event": "大衛逃離耶路撒冷"
+    },
+    {
+        "year_num": -976.000,
+        "year_text": "976 BC",
+        "event_type": "Bible",
+        "event": "押沙龍的陰謀"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "大衛和洗巴、示每"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "大衛渴慕神的詩篇（撒下16)"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "大衛的拯救詩篇（撒下 17）"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "戶篩破壞亞希多弗的計謀"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "示巴反叛"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "示每詛咒大衛"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "約押勸諫大衛"
+    },
+    {
+        "year_num": -972.000,
+        "year_text": "972 BC",
+        "event_type": "Bible",
+        "event": "約押殺押沙龍"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "基遍人復仇"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "大衛堅定的讚美詩（撒下 23）"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "大衛數點軍力"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "大衛的拯救之歌"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "大衛的救贖詩（王上 2）"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "大衛的晚年"
+    },
+    {
+        "year_num": -970.000,
+        "year_text": "970 BC",
+        "event_type": "Bible",
+        "event": "大衛的最後詩歌"
+    },
+    {
+        "year_num": -967.000,
+        "year_text": "967 BC",
+        "event_type": "Bible",
+        "event": "可拉詩篇（王上 3）"
+    },
+    {
+        "year_num": -967.000,
+        "year_text": "967 BC",
+        "event_type": "Bible",
+        "event": "所羅門尋求智慧"
+    },
+    {
+        "year_num": -967.000,
+        "year_text": "967 BC",
+        "event_type": "Bible",
+        "event": "所羅門的智慧"
+    },
+    {
+        "year_num": -967.000,
+        "year_text": "967 BC",
+        "event_type": "Bible",
+        "event": "所羅門的詩篇（代下 1）"
+    },
+    {
+        "year_num": -967.000,
+        "year_text": "967 BC",
+        "event_type": "Bible",
+        "event": "所羅門聖殿的準備"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "上帝與所羅門的約"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "所羅門在耶路撒冷建造聖殿"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "所羅門建聖殿"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "所羅門建自己的王宮"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "所羅門為聖殿和宮殿做準備"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "約櫃進到聖殿"
+    },
+    {
+        "year_num": -966.000,
+        "year_text": "966 BC",
+        "event_type": "Bible",
+        "event": "聖殿的設備"
+    },
+    {
+        "year_num": -959.000,
+        "year_text": "959 BC",
+        "event_type": "Bible",
+        "event": "所羅門獻殿的禱告"
+    },
+    {
+        "year_num": -959.000,
+        "year_text": "959 BC",
+        "event_type": "Bible",
+        "event": "所羅門的成就"
+    },
+    {
+        "year_num": -959.000,
+        "year_text": "959 BC",
+        "event_type": "Bible",
+        "event": "所羅門的詩篇（代下 7）"
+    },
+    {
+        "year_num": -959.000,
+        "year_text": "959 BC",
+        "event_type": "Bible",
+        "event": "神的榮耀充滿聖殿"
+    },
+    {
+        "year_num": -959.000,
+        "year_text": "959 BC",
+        "event_type": "Bible",
+        "event": "運約櫃入殿"
+    },
+    {
+        "year_num": -950.000,
+        "year_text": "950 BC",
+        "event_type": "Bible",
+        "event": "亞古珥的箴言"
+    },
+    {
+        "year_num": -950.000,
+        "year_text": "950 BC",
+        "event_type": "Bible",
+        "event": "利慕伊勒王的言語"
+    },
+    {
+        "year_num": -950.000,
+        "year_text": "950 BC",
+        "event_type": "Bible",
+        "event": "所羅門的祝福詩篇"
+    },
+    {
+        "year_num": -950.000,
+        "year_text": "950 BC",
+        "event_type": "Bible",
+        "event": "所羅門的雅歌"
+    },
+    {
+        "year_num": -950.000,
+        "year_text": "950 BC",
+        "event_type": "Bible",
+        "event": "所羅門箴言"
+    },
+    {
+        "year_num": -950.000,
+        "year_text": "950 BC",
+        "event_type": "World",
+        "event": "金器和珠寶流行於北歐"
+    },
+    {
+        "year_num": -946.000,
+        "year_text": "946 BC",
+        "event_type": "Bible",
+        "event": "所羅門和希蘭訂約"
+    },
+    {
+        "year_num": -946.000,
+        "year_text": "946 BC",
+        "event_type": "Bible",
+        "event": "示巴女王拜訪所羅門"
+    },
+    {
+        "year_num": -939.000,
+        "year_text": "939 BC",
+        "event_type": "Bible",
+        "event": "所羅門的妻子和偶像崇拜"
+    },
+    {
+        "year_num": -937.000,
+        "year_text": "937 BC",
+        "event_type": "Bible",
+        "event": "傳道者的話"
+    },
+    {
+        "year_num": -931.000,
+        "year_text": "931 BC",
+        "event_type": "Bible",
+        "event": "所羅門之死"
+    },
+    {
+        "year_num": -931.000,
+        "year_text": "931 BC",
+        "event_type": "Bible",
+        "event": "王國分裂"
+    },
+    {
+        "year_num": -931.000,
+        "year_text": "931 BC",
+        "event_type": "World",
+        "event": "以色列王朝分裂為北(以色列)和南(猶大)"
+    },
+    {
+        "year_num": -930.000,
+        "year_text": "930 BC",
+        "event_type": "Bible",
+        "event": "以色列人反叛羅波安"
+    },
+    {
+        "year_num": -930.000,
+        "year_text": "930 BC",
+        "event_type": "Bible",
+        "event": "羅波安統治猶大"
+    },
+    {
+        "year_num": -927.000,
+        "year_text": "927 BC",
+        "event_type": "Bible",
+        "event": "羅波安的過犯"
+    },
+    {
+        "year_num": -925.000,
+        "year_text": "925 BC",
+        "event_type": "Bible",
+        "event": "亞希雅對耶羅波安的預言"
+    },
+    {
+        "year_num": -913.000,
+        "year_text": "913 BC",
+        "event_type": "Bible",
+        "event": "亞撒除掉偶像崇拜"
+    },
+    {
+        "year_num": -913.000,
+        "year_text": "913 BC",
+        "event_type": "Bible",
+        "event": "亞比央的惡政"
+    },
+    {
+        "year_num": -913.000,
+        "year_text": "913 BC",
+        "event_type": "Bible",
+        "event": "反對耶羅波安的內戰"
+    },
+    {
+        "year_num": -913.000,
+        "year_text": "913 BC",
+        "event_type": "Bible",
+        "event": "羅波安的惡政"
+    },
+    {
+        "year_num": -909.000,
+        "year_text": "909 BC",
+        "event_type": "Bible",
+        "event": "耶戶責備巴沙"
+    },
+    {
+        "year_num": -900.000,
+        "year_text": "900 BC",
+        "event_type": "World",
+        "event": "凱爾特人入侵不列顛"
+    },
+    {
+        "year_num": -895.000,
+        "year_text": "895 BC",
+        "event_type": "Bible",
+        "event": "亞撒的改革"
+    },
+    {
+        "year_num": -894.000,
+        "year_text": "894 BC",
+        "event_type": "Bible",
+        "event": "哈拿尼斥責亞撒"
+    },
+    {
+        "year_num": -886.000,
+        "year_text": "886 BC",
+        "event_type": "Bible",
+        "event": "以色列王以拉、心利和暗利"
+    },
+    {
+        "year_num": -874.000,
+        "year_text": "874 BC",
+        "event_type": "Bible",
+        "event": "亞哈的惡政"
+    },
+    {
+        "year_num": -869.000,
+        "year_text": "869 BC",
+        "event_type": "Bible",
+        "event": "約沙法接續亞撒為王"
+    },
+    {
+        "year_num": -863.000,
+        "year_text": "863 BC",
+        "event_type": "Bible",
+        "event": "以利亞和旱災"
+    },
+    {
+        "year_num": -863.000,
+        "year_text": "863 BC",
+        "event_type": "Bible",
+        "event": "以利亞在迦密山"
+    },
+    {
+        "year_num": -863.000,
+        "year_text": "863 BC",
+        "event_type": "Bible",
+        "event": "撒勒法的寡婦"
+    },
+    {
+        "year_num": -863.000,
+        "year_text": "863 BC",
+        "event_type": "Bible",
+        "event": "烏鴉餵養以利亞"
+    },
+    {
+        "year_num": -858.000,
+        "year_text": "858 BC",
+        "event_type": "Bible",
+        "event": "以利亞因耶洗別的恐嚇而逃命"
+    },
+    {
+        "year_num": -858.000,
+        "year_text": "858 BC",
+        "event_type": "Bible",
+        "event": "以利沙被呼召"
+    },
+    {
+        "year_num": -857.000,
+        "year_text": "857 BC",
+        "event_type": "Bible",
+        "event": "亞哈擊敗便哈達"
+    },
+    {
+        "year_num": -857.000,
+        "year_text": "857 BC",
+        "event_type": "Bible",
+        "event": "便哈達襲擊撒瑪利亞"
+    },
+    {
+        "year_num": -855.000,
+        "year_text": "855 BC",
+        "event_type": "Bible",
+        "event": "亞哈搶走拿伯的葡萄園"
+    },
+    {
+        "year_num": -853.000,
+        "year_text": "853 BC",
+        "event_type": "Bible",
+        "event": "以色列和猶大反叛敘利亞"
+    },
+    {
+        "year_num": -853.000,
+        "year_text": "853 BC",
+        "event_type": "Bible",
+        "event": "俄巴底亞的異象"
+    },
+    {
+        "year_num": -853.000,
+        "year_text": "853 BC",
+        "event_type": "Bible",
+        "event": "約沙法的事蹟"
+    },
+    {
+        "year_num": -853.000,
+        "year_text": "853 BC",
+        "event_type": "Bible",
+        "event": "約沙法與亞哈結盟"
+    },
+    {
+        "year_num": -853.000,
+        "year_text": "853 BC",
+        "event_type": "Bible",
+        "event": "與亞捫和摩押的爭戰"
+    },
+    {
+        "year_num": -852.000,
+        "year_text": "852 BC",
+        "event_type": "Bible",
+        "event": "摩押的背叛"
+    },
+    {
+        "year_num": -852.000,
+        "year_text": "852 BC",
+        "event_type": "Bible",
+        "event": "約蘭在猶大的惡政"
+    },
+    {
+        "year_num": -851.000,
+        "year_text": "851 BC",
+        "event_type": "Bible",
+        "event": "以利亞被接升天"
+    },
+    {
+        "year_num": -851.000,
+        "year_text": "851 BC",
+        "event_type": "Bible",
+        "event": "以利沙接續以利亞"
+    },
+    {
+        "year_num": -850.000,
+        "year_text": "850 BC",
+        "event_type": "Bible",
+        "event": "約蘭與摩押爭戰"
+    },
+    {
+        "year_num": -850.000,
+        "year_text": "850 BC",
+        "event_type": "World",
+        "event": "非洲金屬雕刻和石雕的盛行"
+    },
+    {
+        "year_num": -849.000,
+        "year_text": "849 BC",
+        "event_type": "Bible",
+        "event": "乃縵的醫治"
+    },
+    {
+        "year_num": -849.000,
+        "year_text": "849 BC",
+        "event_type": "Bible",
+        "event": "以利沙使書念男孩復活"
+    },
+    {
+        "year_num": -849.000,
+        "year_text": "849 BC",
+        "event_type": "Bible",
+        "event": "寡婦的油"
+    },
+    {
+        "year_num": -848.000,
+        "year_text": "848 BC",
+        "event_type": "Bible",
+        "event": "以利沙和浮起的斧頭"
+    },
+    {
+        "year_num": -848.000,
+        "year_text": "848 BC",
+        "event_type": "Bible",
+        "event": "以利沙預言撒瑪利城的解困"
+    },
+    {
+        "year_num": -847.000,
+        "year_text": "847 BC",
+        "event_type": "Bible",
+        "event": "書念婦人回原住地"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "亞哈全家被殺"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "亞哈謝接替約蘭為猶大王"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "拜巴力人被殺"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "約阿施逃脫亞她利雅"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "耶何耶大助約阿施成為猶大王"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "耶戶弒以色列王約蘭"
+    },
+    {
+        "year_num": -841.000,
+        "year_text": "841 BC",
+        "event_type": "Bible",
+        "event": "耶戶為以色列王"
+    },
+    {
+        "year_num": -835.000,
+        "year_text": "835 BC",
+        "event_type": "Bible",
+        "event": "猶大王約阿施的善政"
+    },
+    {
+        "year_num": -835.000,
+        "year_text": "835 BC",
+        "event_type": "Bible",
+        "event": "約珥領受神的話"
+    },
+    {
+        "year_num": -814.000,
+        "year_text": "814 BC",
+        "event_type": "World",
+        "event": "腓尼基人向外拓展殖民地到地中海東部和迦太基"
+    },
+    {
+        "year_num": -812.000,
+        "year_text": "812 BC",
+        "event_type": "Bible",
+        "event": "以色列王約阿斯的惡政"
+    },
+    {
+        "year_num": -812.000,
+        "year_text": "812 BC",
+        "event_type": "Bible",
+        "event": "約阿施修理聖殿"
+    },
+    {
+        "year_num": -800.000,
+        "year_text": "800 BC",
+        "event_type": "World",
+        "event": "荷馬創作“伊利亞特\"和\"奧德賽\"史詩"
+    },
+    {
+        "year_num": -800.000,
+        "year_text": "800 BC",
+        "event_type": "World",
+        "event": "西歐開始了鐵器時代"
+    },
+    {
+        "year_num": -796.000,
+        "year_text": "796 BC",
+        "event_type": "Bible",
+        "event": "猶大王亞瑪謝的善政"
+    },
+    {
+        "year_num": -790.000,
+        "year_text": "790 BC",
+        "event_type": "Bible",
+        "event": "烏西雅在猶大作王"
+    },
+    {
+        "year_num": -790.000,
+        "year_text": "790 BC",
+        "event_type": "Bible",
+        "event": "猶大王亞撒利雅(烏西雅)的善政"
+    },
+    {
+        "year_num": -776.000,
+        "year_text": "776 BC",
+        "event_type": "World",
+        "event": "第一個有文字記載的奧運會"
+    },
+    {
+        "year_num": -766.000,
+        "year_text": "766 BC",
+        "event_type": "Bible",
+        "event": "阿摩司的話"
+    },
+    {
+        "year_num": -760.000,
+        "year_text": "760 BC",
+        "event_type": "Bible",
+        "event": "派約拿往尼尼微"
+    },
+    {
+        "year_num": -753.000,
+        "year_text": "753 BC",
+        "event_type": "Bible",
+        "event": "何西阿的預言"
+    },
+    {
+        "year_num": -753.000,
+        "year_text": "753 BC",
+        "event_type": "World",
+        "event": "羅馬的建城日"
+    },
+    {
+        "year_num": -750.000,
+        "year_text": "750 BC",
+        "event_type": "World",
+        "event": "最早的記譜法始於希臘"
+    },
+    {
+        "year_num": -750.000,
+        "year_text": "750 BC",
+        "event_type": "World",
+        "event": "希臘的黑暗時代結束"
+    },
+    {
+        "year_num": -750.000,
+        "year_text": "750 BC",
+        "event_type": "Bible",
+        "event": "約坦接替烏西雅為猶大王"
+    },
+    {
+        "year_num": -742.000,
+        "year_text": "742 BC",
+        "event_type": "Bible",
+        "event": "猶大王亞哈斯的惡政"
+    },
+    {
+        "year_num": -739.000,
+        "year_text": "739 BC",
+        "event_type": "Bible",
+        "event": "以賽亞抱怨錫安腐敗"
+    },
+    {
+        "year_num": -739.000,
+        "year_text": "739 BC",
+        "event_type": "Bible",
+        "event": "以賽亞的異象與使命"
+    },
+    {
+        "year_num": -735.000,
+        "year_text": "735 BC",
+        "event_type": "Bible",
+        "event": "以賽亞之以馬內利預言"
+    },
+    {
+        "year_num": -735.000,
+        "year_text": "735 BC",
+        "event_type": "Bible",
+        "event": "彌迦領受神的話"
+    },
+    {
+        "year_num": -734.000,
+        "year_text": "734 BC",
+        "event_type": "Bible",
+        "event": "用以賽亞的兒子作為記號"
+    },
+    {
+        "year_num": -732.000,
+        "year_text": "732 BC",
+        "event_type": "World",
+        "event": "亞述人推翻了大馬色"
+    },
+    {
+        "year_num": -730.000,
+        "year_text": "730 BC",
+        "event_type": "Bible",
+        "event": "以賽亞的感恩頌"
+    },
+    {
+        "year_num": -730.000,
+        "year_text": "730 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言對亞述的審判"
+    },
+    {
+        "year_num": -730.000,
+        "year_text": "730 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言對以色列的審判"
+    },
+    {
+        "year_num": -730.000,
+        "year_text": "730 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言救主的出生"
+    },
+    {
+        "year_num": -730.000,
+        "year_text": "730 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言耶西的根源"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以色列國的最後一個王-何細亞"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞宣告上帝的審判"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞宣告錫安興旺"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞的其他警告"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞的讚美歌"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞論推羅的默示"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞論異象谷的默示"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言公義王的統治"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言列國的審判"
+    },
+    {
+        "year_num": -725.000,
+        "year_text": "725 BC",
+        "event_type": "Bible",
+        "event": "全宇宙的毀滅預言"
+    },
+    {
+        "year_num": -722.000,
+        "year_text": "722 BC",
+        "event_type": "Bible",
+        "event": "以色列國被擄"
+    },
+    {
+        "year_num": -722.000,
+        "year_text": "722 BC",
+        "event_type": "World",
+        "event": "亞述人征服以色列"
+    },
+    {
+        "year_num": -721.000,
+        "year_text": "721 BC",
+        "event_type": "Bible",
+        "event": "其他民族被遷移到撒瑪利亞"
+    },
+    {
+        "year_num": -716.000,
+        "year_text": "716 BC",
+        "event_type": "Bible",
+        "event": "希西家的善政"
+    },
+    {
+        "year_num": -715.000,
+        "year_text": "715 BC",
+        "event_type": "Bible",
+        "event": "希西家守逾越節"
+    },
+    {
+        "year_num": -715.000,
+        "year_text": "715 BC",
+        "event_type": "Bible",
+        "event": "希西家摧毀偶像"
+    },
+    {
+        "year_num": -712.000,
+        "year_text": "712 BC",
+        "event_type": "Bible",
+        "event": "希西家的疾病與康復"
+    },
+    {
+        "year_num": -711.000,
+        "year_text": "711 BC",
+        "event_type": "Bible",
+        "event": "以賽亞預言的被擄和歸回"
+    },
+    {
+        "year_num": -711.000,
+        "year_text": "711 BC",
+        "event_type": "Bible",
+        "event": "希西家向巴比倫使者示寶"
+    },
+    {
+        "year_num": -710.000,
+        "year_text": "710 BC",
+        "event_type": "World",
+        "event": "亞述王宮最早使用鎖和鑰匙"
+    },
+    {
+        "year_num": -701.000,
+        "year_text": "701 BC",
+        "event_type": "Bible",
+        "event": "可拉的避難詩（代下 32）"
+    },
+    {
+        "year_num": -701.000,
+        "year_text": "701 BC",
+        "event_type": "Bible",
+        "event": "希西家的禱告"
+    },
+    {
+        "year_num": -701.000,
+        "year_text": "701 BC",
+        "event_type": "Bible",
+        "event": "西拿基立圍困耶路撒冷"
+    },
+    {
+        "year_num": -700.000,
+        "year_text": "700 BC",
+        "event_type": "World",
+        "event": "義大利人發明假牙"
+    },
+    {
+        "year_num": -697.000,
+        "year_text": "697 BC",
+        "event_type": "Bible",
+        "event": "那鴻的異象"
+    },
+    {
+        "year_num": -687.000,
+        "year_text": "687 BC",
+        "event_type": "Bible",
+        "event": "瑪拿西的邪惡統治"
+    },
+    {
+        "year_num": -672.000,
+        "year_text": "672 BC",
+        "event_type": "World",
+        "event": "腓尼基人航繞非洲"
+    },
+    {
+        "year_num": -660.000,
+        "year_text": "660 BC",
+        "event_type": "World",
+        "event": "日本立國"
+    },
+    {
+        "year_num": -660.000,
+        "year_text": "660 BC",
+        "event_type": "World",
+        "event": "古希臘人建立拜占庭"
+    },
+    {
+        "year_num": -650.000,
+        "year_text": "650 BC",
+        "event_type": "World",
+        "event": "鐵鎔接法的發明"
+    },
+    {
+        "year_num": -650.000,
+        "year_text": "650 BC",
+        "event_type": "World",
+        "event": "最早期的硬幣鑄造於呂底亞"
+    },
+    {
+        "year_num": -648.000,
+        "year_text": "648 BC ",
+        "event_type": "World",
+        "event": "賽馬始於第33屆奧林匹克運動會"
+    },
+    {
+        "year_num": -640.000,
+        "year_text": "640 BC",
+        "event_type": "Bible",
+        "event": "約西亞的善政"
+    },
+    {
+        "year_num": -639.000,
+        "year_text": "639 BC",
+        "event_type": "World",
+        "event": "亞述巴尼伯摧毁伊勒姆人"
+    },
+    {
+        "year_num": -638.000,
+        "year_text": "638 BC",
+        "event_type": "Bible",
+        "event": "西番雅得神的默示"
+    },
+    {
+        "year_num": -627.000,
+        "year_text": "627 BC",
+        "event_type": "Bible",
+        "event": "耶利米在聖殿門前的訊息"
+    },
+    {
+        "year_num": -627.000,
+        "year_text": "627 BC",
+        "event_type": "Bible",
+        "event": "耶利米宣告猶大將背離耶和華"
+    },
+    {
+        "year_num": -627.000,
+        "year_text": "627 BC",
+        "event_type": "Bible",
+        "event": "耶利米的被呼召"
+    },
+    {
+        "year_num": -625.000,
+        "year_text": "625 BC",
+        "event_type": "Bible",
+        "event": "哈巴谷得默示"
+    },
+    {
+        "year_num": -622.000,
+        "year_text": "622 BC",
+        "event_type": "Bible",
+        "event": "耶利米宣告神的約"
+    },
+    {
+        "year_num": -621.000,
+        "year_text": "621 BC",
+        "event_type": "Bible",
+        "event": "希勒家得丟失的律法書"
+    },
+    {
+        "year_num": -621.000,
+        "year_text": "621 BC",
+        "event_type": "Bible",
+        "event": "約西亞慶祝逾越節"
+    },
+    {
+        "year_num": -621.000,
+        "year_text": "621 BC",
+        "event_type": "Bible",
+        "event": "約西亞為聖殿修復做準備"
+    },
+    {
+        "year_num": -612.000,
+        "year_text": "612 BC",
+        "event_type": "World",
+        "event": "尼尼微被毀"
+    },
+    {
+        "year_num": -609.000,
+        "year_text": "609 BC",
+        "event_type": "Bible",
+        "event": "約雅敬的惡政"
+    },
+    {
+        "year_num": -609.000,
+        "year_text": "609 BC",
+        "event_type": "Bible",
+        "event": "耶利米宣告約的破壞"
+    },
+    {
+        "year_num": -609.000,
+        "year_text": "609 BC",
+        "event_type": "Bible",
+        "event": "耶利米對埃及的預言"
+    },
+    {
+        "year_num": -609.000,
+        "year_text": "609 BC",
+        "event_type": "Bible",
+        "event": "耶利米對非利士的預言"
+    },
+    {
+        "year_num": -605.000,
+        "year_text": "605 BC",
+        "event_type": "Bible",
+        "event": "但以理拒絕王膳"
+    },
+    {
+        "year_num": -604.000,
+        "year_text": "604 BC",
+        "event_type": "Bible",
+        "event": "但以理為尼布甲尼撒解夢"
+    },
+    {
+        "year_num": -601.000,
+        "year_text": "601 BC",
+        "event_type": "Bible",
+        "event": "約雅敬的叛變"
+    },
+    {
+        "year_num": -600.000,
+        "year_text": "600 BC",
+        "event_type": "World",
+        "event": "阿提蜜絲(亞底米)神殿建於以弗所"
+    },
+    {
+        "year_num": -597.000,
+        "year_text": "597 BC",
+        "event_type": "Bible",
+        "event": "約雅斤的流放"
+    },
+    {
+        "year_num": -597.000,
+        "year_text": "597 BC",
+        "event_type": "Bible",
+        "event": "西底家在猶大作王"
+    },
+    {
+        "year_num": -594.000,
+        "year_text": "594 BC",
+        "event_type": "Bible",
+        "event": "耶利米對亞捫的預言"
+    },
+    {
+        "year_num": -594.000,
+        "year_text": "594 BC",
+        "event_type": "Bible",
+        "event": "耶利米對摩押的預言"
+    },
+    {
+        "year_num": -593.000,
+        "year_text": "593 BC",
+        "event_type": "Bible",
+        "event": "以西結吃書卷的異象"
+    },
+    {
+        "year_num": -593.000,
+        "year_text": "593 BC",
+        "event_type": "Bible",
+        "event": "以西結在迦巴魯河邊得異象"
+    },
+    {
+        "year_num": -593.000,
+        "year_text": "593 BC",
+        "event_type": "Bible",
+        "event": "以西結得以色列終局的默示"
+    },
+    {
+        "year_num": -593.000,
+        "year_text": "593 BC",
+        "event_type": "Bible",
+        "event": "以西結的被召與啟示"
+    },
+    {
+        "year_num": -593.000,
+        "year_text": "593 BC",
+        "event_type": "Bible",
+        "event": "以西結預言耶路撒冷成為圍城"
+    },
+    {
+        "year_num": -592.000,
+        "year_text": "592 BC",
+        "event_type": "Bible",
+        "event": "以西結的第一個聖殿異象"
+    },
+    {
+        "year_num": -591.000,
+        "year_text": "591 BC",
+        "event_type": "Bible",
+        "event": "以西結對兩個犯罪姐妹的預言"
+    },
+    {
+        "year_num": -591.000,
+        "year_text": "591 BC",
+        "event_type": "Bible",
+        "event": "以西結對耶路撒冷的預言"
+    },
+    {
+        "year_num": -591.000,
+        "year_text": "591 BC",
+        "event_type": "Bible",
+        "event": "以西結看見上帝拒絕長老們"
+    },
+    {
+        "year_num": -588.000,
+        "year_text": "588 BC",
+        "event_type": "Bible",
+        "event": "耶利米的警語"
+    },
+    {
+        "year_num": -588.000,
+        "year_text": "588 BC",
+        "event_type": "Bible",
+        "event": "耶利米預言對猶大的審判"
+    },
+    {
+        "year_num": -588.000,
+        "year_text": "588 BC",
+        "event_type": "Bible",
+        "event": "耶路撒冷圍城的開始"
+    },
+    {
+        "year_num": -587.000,
+        "year_text": "587 BC",
+        "event_type": "Bible",
+        "event": "上帝對亞們和以東的審判"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "以西結在推羅宣告神的審判"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "以西結對埃及的預言"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "守望者以西結"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "耶利米對巴比倫的預言"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "耶利米的哀歌"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "耶路撒冷的陷落"
+    },
+    {
+        "year_num": -586.000,
+        "year_text": "586 BC",
+        "event_type": "Bible",
+        "event": "荒涼的詩篇（耶利米52）"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "Bible",
+        "event": "以西結看到見枯骨的復甦"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "Bible",
+        "event": "以西結解釋耶路撒冷的淪陷"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "Bible",
+        "event": "以西結預見上帝對歌革的審判"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "Bible",
+        "event": "以西結預見以色列的復興"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "Bible",
+        "event": "以西結預言將來的戰爭"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "Bible",
+        "event": "沙得拉、米煞、亞伯尼歌"
+    },
+    {
+        "year_num": -585.000,
+        "year_text": "585 BC",
+        "event_type": "World",
+        "event": "希臘天文學家泰勒斯預測日蝕"
+    },
+    {
+        "year_num": -582.000,
+        "year_text": "582 BC",
+        "event_type": "World",
+        "event": "希臘哲學家和數學家畢達哥拉斯的出生"
+    },
+    {
+        "year_num": -582.000,
+        "year_text": "582 BC",
+        "event_type": "Bible",
+        "event": "但以理解釋尼布甲尼撒的夢"
+    },
+    {
+        "year_num": -582.000,
+        "year_text": "582 BC",
+        "event_type": "Bible",
+        "event": "尼布甲尼撒的夢"
+    },
+    {
+        "year_num": -573.000,
+        "year_text": "573 BC",
+        "event_type": "Bible",
+        "event": "以西結的第二個聖殿異象"
+    },
+    {
+        "year_num": -563.000,
+        "year_text": "563 BC",
+        "event_type": "World",
+        "event": "釋迦牟尼佛出生於印度"
+    },
+    {
+        "year_num": -560.000,
+        "year_text": "560 BC",
+        "event_type": "World",
+        "event": "伊索寓言的成書"
+    },
+    {
+        "year_num": -551.000,
+        "year_text": "551 BC",
+        "event_type": "World",
+        "event": "孔子出生於中國"
+    },
+    {
+        "year_num": -550.000,
+        "year_text": "550 BC",
+        "event_type": "World",
+        "event": "古列征服瑪代(Medes)，建立波斯王朝"
+    },
+    {
+        "year_num": -540.000,
+        "year_text": "540 BC",
+        "event_type": "World",
+        "event": "古波斯使用急使馬騎信差傳遞郵件"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "World",
+        "event": "波斯王古列征服巴比倫帝國"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理在獅子穴中倖存"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理的公羊異象"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理的四獸異象"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理的禱告和加百列的回應"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理解釋牆上的筆跡"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理預言以色列獲拯救"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "但以理預言波斯的毀滅"
+    },
+    {
+        "year_num": -539.000,
+        "year_text": "539 BC",
+        "event_type": "Bible",
+        "event": "天使安慰但以理"
+    },
+    {
+        "year_num": -537.000,
+        "year_text": "537 BC",
+        "event_type": "Bible",
+        "event": "古列下令猶太人返國"
+    },
+    {
+        "year_num": -537.000,
+        "year_text": "537 BC",
+        "event_type": "Bible",
+        "event": "被擄歸回的名單"
+    },
+    {
+        "year_num": -535.000,
+        "year_text": "535 BC",
+        "event_type": "Bible",
+        "event": "開始重修聖殿"
+    },
+    {
+        "year_num": -534.000,
+        "year_text": "534 BC",
+        "event_type": "Bible",
+        "event": "亞達薛西王下令停止修殿"
+    },
+    {
+        "year_num": -534.000,
+        "year_text": "534 BC",
+        "event_type": "Bible",
+        "event": "建殿之工受阻"
+    },
+    {
+        "year_num": -525.000,
+        "year_text": "525 BC",
+        "event_type": "World",
+        "event": "波斯開始馬球運動"
+    },
+    {
+        "year_num": -520.000,
+        "year_text": "520 BC",
+        "event_type": "World",
+        "event": "公立圖書館始於希臘雅典"
+    },
+    {
+        "year_num": -520.000,
+        "year_text": "520 BC",
+        "event_type": "Bible",
+        "event": "哈該得默示"
+    },
+    {
+        "year_num": -520.000,
+        "year_text": "520 BC",
+        "event_type": "Bible",
+        "event": "大流士頒法恢復聖殿工作"
+    },
+    {
+        "year_num": -520.000,
+        "year_text": "520 BC",
+        "event_type": "Bible",
+        "event": "耶和華對撒迦利亞的默示"
+    },
+    {
+        "year_num": -520.000,
+        "year_text": "520 BC",
+        "event_type": "Bible",
+        "event": "達乃下書大利烏王"
+    },
+    {
+        "year_num": -515.000,
+        "year_text": "515 BC",
+        "event_type": "Bible",
+        "event": "聖殿的建成和奉獻"
+    },
+    {
+        "year_num": -509.000,
+        "year_text": "509 BC",
+        "event_type": "World",
+        "event": "拉丁人放逐伊特魯里亞國王並組成羅馬共和國"
+    },
+    {
+        "year_num": -500.000,
+        "year_text": "500 BC",
+        "event_type": "World",
+        "event": "釋迦摩尼創始佛教"
+    },
+    {
+        "year_num": -500.000,
+        "year_text": "500 BC",
+        "event_type": "World",
+        "event": "丹麥的鐵器時代(結束於西元750年)"
+    },
+    {
+        "year_num": -490.000,
+        "year_text": "490 BC",
+        "event_type": "World",
+        "event": "馬拉松戰役，希臘聯軍戰勝波斯"
+    },
+    {
+        "year_num": -483.000,
+        "year_text": "483 BC",
+        "event_type": "Bible",
+        "event": "瓦實提王后被廢"
+    },
+    {
+        "year_num": -478.000,
+        "year_text": "478 BC",
+        "event_type": "Bible",
+        "event": "以斯帖被立為王后"
+    },
+    {
+        "year_num": -478.000,
+        "year_text": "478 BC",
+        "event_type": "Bible",
+        "event": "末底改救王的命"
+    },
+    {
+        "year_num": -474.000,
+        "year_text": "474 BC",
+        "event_type": "Bible",
+        "event": "哈曼陰謀除滅猶太人"
+    },
+    {
+        "year_num": -473.000,
+        "year_text": "473 BC",
+        "event_type": "Bible",
+        "event": "亞哈隨魯王因以斯帖和末底改，下令保護猶大人"
+    },
+    {
+        "year_num": -473.000,
+        "year_text": "473 BC",
+        "event_type": "Bible",
+        "event": "以斯帖為王和哈曼設筵席"
+    },
+    {
+        "year_num": -473.000,
+        "year_text": "473 BC",
+        "event_type": "Bible",
+        "event": "哈曼被處死"
+    },
+    {
+        "year_num": -473.000,
+        "year_text": "473 BC",
+        "event_type": "Bible",
+        "event": "末底改求以斯帖幫助"
+    },
+    {
+        "year_num": -473.000,
+        "year_text": "473 BC",
+        "event_type": "Bible",
+        "event": "王賜末底改榮耀"
+    },
+    {
+        "year_num": -472.000,
+        "year_text": "472 BC",
+        "event_type": "Bible",
+        "event": "亞哈隨魯王抬舉末底改"
+    },
+    {
+        "year_num": -472.000,
+        "year_text": "472 BC",
+        "event_type": "Bible",
+        "event": "普珥日的由來"
+    },
+    {
+        "year_num": -469.000,
+        "year_text": "469 BC",
+        "event_type": "World",
+        "event": "蘇格拉底的出生"
+    },
+    {
+        "year_num": -460.000,
+        "year_text": "460 BC",
+        "event_type": "World",
+        "event": "希波克拉底-現代醫學之父的出生"
+    },
+    {
+        "year_num": -458.000,
+        "year_text": "458 BC",
+        "event_type": "Bible",
+        "event": "亞達薛西賜以斯拉諭旨"
+    },
+    {
+        "year_num": -458.000,
+        "year_text": "458 BC",
+        "event_type": "Bible",
+        "event": "以斯拉回耶路撒冷"
+    },
+    {
+        "year_num": -457.000,
+        "year_text": "457 BC",
+        "event_type": "Bible",
+        "event": "以斯拉的改革"
+    },
+    {
+        "year_num": -457.000,
+        "year_text": "457 BC",
+        "event_type": "Bible",
+        "event": "與以斯拉同回耶路撒冷的人"
+    },
+    {
+        "year_num": -457.000,
+        "year_text": "457 BC",
+        "event_type": "World",
+        "event": "希臘雅典進入黃金時代"
+    },
+    {
+        "year_num": -456.000,
+        "year_text": "456 BC",
+        "event_type": "Bible",
+        "event": "以斯拉為與異族通婚者的禱告"
+    },
+    {
+        "year_num": -448.000,
+        "year_text": "448 BC",
+        "event_type": "World",
+        "event": "巴特農神殿建於希臘雅典"
+    },
+    {
+        "year_num": -445.000,
+        "year_text": "445 BC",
+        "event_type": "Bible",
+        "event": "尼希米記的流亡禱告"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "亞達薛西派尼希米到耶路撒冷"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "以斯拉宣讀律法"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "以色列人禁食悔改"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "以色列人重立確實的約"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "參巴拉的陰謀"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "回歸住在耶路撒冷的人"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "城牆建造者名單"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "尼希米勝過阻撓者"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "尼希米處理官長們的剝削"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "聖城城牆的完工"
+    },
+    {
+        "year_num": -444.000,
+        "year_text": "444 BC",
+        "event_type": "Bible",
+        "event": "被擄歸回者的名單"
+    },
+    {
+        "year_num": -432.000,
+        "year_text": "432 BC",
+        "event_type": "Bible",
+        "event": "尼希米重申摩西律法"
+    },
+    {
+        "year_num": -430.000,
+        "year_text": "430 BC",
+        "event_type": "Bible",
+        "event": "瑪拉基得耶和華的默示"
+    },
+    {
+        "year_num": -429.000,
+        "year_text": "429 BC",
+        "event_type": "World",
+        "event": "偉大哲學家柏拉圖的出生"
+    },
+    {
+        "year_num": -399.000,
+        "year_text": "399 BC",
+        "event_type": "World",
+        "event": "蘇格拉底被處死"
+    },
+    {
+        "year_num": -390.000,
+        "year_text": "390 BC",
+        "event_type": "World",
+        "event": "倫敦建立；凱爾特人移入英格蘭"
+    },
+    {
+        "year_num": -390.000,
+        "year_text": "390 BC",
+        "event_type": "World",
+        "event": "凱爾特人(高盧人)侵掠羅馬"
+    },
+    {
+        "year_num": -384.000,
+        "year_text": "384 BC",
+        "event_type": "World",
+        "event": "亞里士多德的出生"
+    },
+    {
+        "year_num": -370.000,
+        "year_text": "370 BC",
+        "event_type": "World",
+        "event": "柏拉圖寫共和國"
+    },
+    {
+        "year_num": -347.000,
+        "year_text": "347 BC",
+        "event_type": "World",
+        "event": "中國出現用手工鑽出的油井，深約800英尺"
+    },
+    {
+        "year_num": -343.000,
+        "year_text": "343 BC",
+        "event_type": "World",
+        "event": "波斯征服埃及"
+    },
+    {
+        "year_num": -339.000,
+        "year_text": "339 BC ",
+        "event_type": "World",
+        "event": "腓力戰勝雅典"
+    },
+    {
+        "year_num": -338.000,
+        "year_text": "338 BC",
+        "event_type": "World",
+        "event": "第一枚羅馬硬幣"
+    },
+    {
+        "year_num": -336.000,
+        "year_text": "336 BC",
+        "event_type": "World",
+        "event": "希臘古典時期結束"
+    },
+    {
+        "year_num": -330.000,
+        "year_text": "330 BC",
+        "event_type": "World",
+        "event": "亞力山大大帝擊敗波斯王達瑞斯大帝"
+    },
+    {
+        "year_num": -323.000,
+        "year_text": "323 BC",
+        "event_type": "World",
+        "event": "亞力山大大帝殁於波斯"
+    },
+    {
+        "year_num": -323.000,
+        "year_text": "323 BC",
+        "event_type": "World",
+        "event": "希臘化時代開始"
+    },
+    {
+        "year_num": -312.000,
+        "year_text": "312 BC",
+        "event_type": "World",
+        "event": "羅馬人修建第一條道路\"阿庇亞古道\""
+    },
+    {
+        "year_num": -241.000,
+        "year_text": "241 BC",
+        "event_type": "World",
+        "event": "羅馬人征服西西里島"
+    },
+    {
+        "year_num": -221.000,
+        "year_text": "221 BC",
+        "event_type": "World",
+        "event": "秦朝統一中國"
+    },
+    {
+        "year_num": -215.000,
+        "year_text": "215 BC",
+        "event_type": "World",
+        "event": "中國人修築長城"
+    },
+    {
+        "year_num": -200.000,
+        "year_text": "200 BC",
+        "event_type": "World",
+        "event": "中國使用降落傘"
+    },
+    {
+        "year_num": -195.000,
+        "year_text": "195 BC",
+        "event_type": "World",
+        "event": "厄拉托斯德尼兹(Eratosthenes)測量地球的周長"
+    },
+    {
+        "year_num": -169.000,
+        "year_text": "169 BC",
+        "event_type": "World",
+        "event": "安提阿哥四世搶奪耶路撒冷聖殿"
+    },
+    {
+        "year_num": -165.000,
+        "year_text": "165 BC",
+        "event_type": "World",
+        "event": "猶大祭司馬克比的叛變"
+    },
+    {
+        "year_num": -147.000,
+        "year_text": "147 BC",
+        "event_type": "World",
+        "event": "羅馬征服希臘"
+    },
+    {
+        "year_num": -139.000,
+        "year_text": "139 BC",
+        "event_type": "World",
+        "event": "羅馬放逐以色列人和占星家"
+    },
+    {
+        "year_num": -102.000,
+        "year_text": "102 BC",
+        "event_type": "World",
+        "event": "第一艘中國船隻到達印度東海岸"
+    },
+    {
+        "year_num": -100.000,
+        "year_text": "100 BC",
+        "event_type": "World",
+        "event": "該撒的出生"
+    },
+    {
+        "year_num": -55.000,
+        "year_text": "55 BC",
+        "event_type": "World",
+        "event": "羅馬征服英格蘭"
+    },
+    {
+        "year_num": -51.000,
+        "year_text": "51 BC",
+        "event_type": "World",
+        "event": "克麗奥佩脫拉七世(埃及豔后)成為托勒密王朝最后一位女王"
+    },
+    {
+        "year_num": -46.000,
+        "year_text": "46 BC",
+        "event_type": "World",
+        "event": "該撒成為古羅馬的專制君主, 2年後被刺殺"
+    },
+    {
+        "year_num": -37.000,
+        "year_text": "37 BC",
+        "event_type": "World",
+        "event": "羅馬委任大希律為猶太人的王"
+    },
+    {
+        "year_num": -30.000,
+        "year_text": "30 BC",
+        "event_type": "World",
+        "event": "克麗奥佩脫拉七世和馬克.安東尼自殺"
+    },
+    {
+        "year_num": -27.000,
+        "year_text": "27 BC",
+        "event_type": "World",
+        "event": "亞古士督成為羅馬帝國的第一位皇帝"
+    },
+    {
+        "year_num": -23.000,
+        "year_text": "23 BC",
+        "event_type": "World",
+        "event": "日本相撲運動的開始"
+    },
+    {
+        "year_num": -20.000,
+        "year_text": "20 BC",
+        "event_type": "World",
+        "event": "大希律建築宮殿於耶路撒冷西牆"
+    },
+    {
+        "year_num": -6.000,
+        "year_text": "6 BC",
+        "event_type": "Bible",
+        "event": "亞古士督命天下人報名上冊"
+    },
+    {
+        "year_num": -6.000,
+        "year_text": "6 BC",
+        "event_type": "Bible",
+        "event": "施洗約翰的誕生"
+    },
+    {
+        "year_num": -5.000,
+        "year_text": "5 BC",
+        "event_type": "Bible",
+        "event": "三位博士來訪耶穌"
+    },
+    {
+        "year_num": -5.000,
+        "year_text": "5 BC",
+        "event_type": "Bible",
+        "event": "耶穌的誕生"
+    },
+    {
+        "year_num": -5.000,
+        "year_text": "5 BC",
+        "event_type": "Bible",
+        "event": "逃到埃及"
+    },
+    {
+        "year_num": -4.000,
+        "year_text": "4 BC",
+        "event_type": "Bible",
+        "event": "屠殺男嬰孩"
+    },
+    {
+        "year_num": -4.000,
+        "year_text": "4 BC",
+        "event_type": "Bible",
+        "event": "返回拿撒勒"
+    },
+    {
+        "year_num": 1.000,
+        "year_text": "1 AD",
+        "event_type": "World",
+        "event": "歐洲開始使用馬鞍"
+    },
+    {
+        "year_num": 1.000,
+        "year_text": "1 AD",
+        "event_type": "World",
+        "event": "北美洲出現弓和箭"
+    },
+    {
+        "year_num": 6.000,
+        "year_text": "6 AD",
+        "event_type": "World",
+        "event": "猶大成為羅馬的一個省份"
+    },
+    {
+        "year_num": 7.000,
+        "year_text": "7 AD",
+        "event_type": "World",
+        "event": "奮銳黨反抗羅馬統治"
+    },
+    {
+        "year_num": 8.000,
+        "year_text": "8 AD",
+        "event_type": "Bible",
+        "event": "孩童耶穌在聖殿裡"
+    },
+    {
+        "year_num": 14.000,
+        "year_text": "14 AD",
+        "event_type": "World",
+        "event": "該撒提庇接替亞古士督成為羅馬皇帝"
+    },
+    {
+        "year_num": 26.000,
+        "year_text": "26 AD",
+        "event_type": "Bible",
+        "event": "施洗約翰為主預備道路"
+    },
+    {
+        "year_num": 26.000,
+        "year_text": "26 AD",
+        "event_type": "Bible",
+        "event": "耶穌的洗禮"
+    },
+    {
+        "year_num": 27.000,
+        "year_text": "27 AD",
+        "event_type": "Bible",
+        "event": "登山寶訓"
+    },
+    {
+        "year_num": 27.000,
+        "year_text": "27 AD",
+        "event_type": "Bible",
+        "event": "耶穌受試探"
+    },
+    {
+        "year_num": 27.000,
+        "year_text": "27 AD",
+        "event_type": "Bible",
+        "event": "耶穌呼召第一批門徒"
+    },
+    {
+        "year_num": 27.000,
+        "year_text": "27 AD",
+        "event_type": "Bible",
+        "event": "耶穌和撒瑪利亞婦人"
+    },
+    {
+        "year_num": 27.000,
+        "year_text": "27 AD",
+        "event_type": "Bible",
+        "event": "耶穌教導尼哥底母"
+    },
+    {
+        "year_num": 27.000,
+        "year_text": "27 AD",
+        "event_type": "Bible",
+        "event": "迦拿的婚宴"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "在畢士大池邊治病"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "禱告的教訓"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "耶穌回答施洗約翰的門徒"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "耶穌在加利利的傳道"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "耶穌是安息日的主"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "耶穌治好癱瘓病人"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "耶穌治好被鬼附的人"
+    },
+    {
+        "year_num": 28.000,
+        "year_text": "28 AD",
+        "event_type": "Bible",
+        "event": "耶穌的比喻-撒種、稗子、芥菜種、麵酵、藏寶、尋珠、撒網"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "天國裏最大和最小的人"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "好牧人和他的羊群"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "彼得認耶穌為基督"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "施洗約翰被斬首"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "有關潔淨與不潔淨的教導"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "登山變象"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "耶穌在住棚節的教導"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "耶穌差遣70人"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "耶穌差遣十二使徒"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "耶穌治好生來瞎眼的"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "耶穌餵飽5,000人"
+    },
+    {
+        "year_num": 29.000,
+        "year_text": "29 AD",
+        "event_type": "Bible",
+        "event": "行淫時被捉的婦人"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "五旬節聖靈降臨"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "亞拿尼亞和撒非喇的死亡"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "使徒的傳道和醫病神蹟"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "信徒凡物公用"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "光榮地進耶路撒冷"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "彼得和約翰的被捕和被釋放"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "彼得治愈瘸腿者和宣講福音"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "最後的耶路撒冷之旅"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌使拉撒路復活"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌安慰祂的門徒"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌應許聖靈的降臨"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌是真葡萄樹"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌治好十個麻風病人"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌的升天"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌的復活"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌的比喻-無知財主、警醒的僕人、不結實的無花果、大筵席、 失味的鹽、迷羊、失錢、浪子、不義的管家"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌的禱告"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶穌被出賣，審判，受難"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "耶路撒冷傳道的結束"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "逾越節前夕的星期四"
+    },
+    {
+        "year_num": 30.000,
+        "year_text": "30 AD",
+        "event_type": "Bible",
+        "event": "馬提亞(猶士都)接替猶大位份"
+    },
+    {
+        "year_num": 31.000,
+        "year_text": "31 AD",
+        "event_type": "Bible",
+        "event": "司提反的申訴、石刑和死亡"
+    },
+    {
+        "year_num": 31.000,
+        "year_text": "31 AD",
+        "event_type": "Bible",
+        "event": "掃羅逼迫主的教會"
+    },
+    {
+        "year_num": 31.000,
+        "year_text": "31 AD",
+        "event_type": "Bible",
+        "event": "腓利和衣索匹亞的太監"
+    },
+    {
+        "year_num": 31.000,
+        "year_text": "31 AD",
+        "event_type": "Bible",
+        "event": "腓力在撒瑪利亞傳福音"
+    },
+    {
+        "year_num": 31.000,
+        "year_text": "31 AD",
+        "event_type": "Bible",
+        "event": "行邪術的西門"
+    },
+    {
+        "year_num": 34.000,
+        "year_text": "34 AD",
+        "event_type": "Bible",
+        "event": "掃羅的轉變"
+    },
+    {
+        "year_num": 37.000,
+        "year_text": "37 AD",
+        "event_type": "Bible",
+        "event": "彼得向外邦人宣講福音"
+    },
+    {
+        "year_num": 37.000,
+        "year_text": "37 AD",
+        "event_type": "World",
+        "event": "卡利古拉成為羅馬皇帝"
+    },
+    {
+        "year_num": 40.000,
+        "year_text": "40 AD",
+        "event_type": "World",
+        "event": "希律·亞基帕被任命為猶大王"
+    },
+    {
+        "year_num": 41.000,
+        "year_text": "41 AD",
+        "event_type": "World",
+        "event": "革老丟成為羅馬皇帝"
+    },
+    {
+        "year_num": 42.000,
+        "year_text": "42 AD",
+        "event_type": "Bible",
+        "event": "差派巴拿巴往安提阿"
+    },
+    {
+        "year_num": 42.000,
+        "year_text": "42 AD",
+        "event_type": "Bible",
+        "event": "彼得獲天使救援出獄"
+    },
+    {
+        "year_num": 43.000,
+        "year_text": "43 AD",
+        "event_type": "World",
+        "event": "倫敦城的建立"
+    },
+    {
+        "year_num": 44.000,
+        "year_text": "44 AD",
+        "event_type": "Bible",
+        "event": "大希律-亞基帕的死"
+    },
+    {
+        "year_num": 45.000,
+        "year_text": "45 AD",
+        "event_type": "Bible",
+        "event": "雅各寫他的書信"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "保羅和巴拿巴回敘利亞的安提阿"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "保羅和巴拿巴在以念哥傳道"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "保羅和巴拿巴在路司得、特庇"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "保羅在彼西底的安提阿傳道"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "保羅的第一次宣教之旅"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "回到敘利亞的安提阿"
+    },
+    {
+        "year_num": 48.000,
+        "year_text": "48 AD",
+        "event_type": "Bible",
+        "event": "耶路撒冷大會"
+    },
+    {
+        "year_num": 49.000,
+        "year_text": "49 AD",
+        "event_type": "Bible",
+        "event": "保羅和巴拿巴因馬可而分手"
+    },
+    {
+        "year_num": 49.000,
+        "year_text": "49 AD",
+        "event_type": "Bible",
+        "event": "保羅在帖撒羅尼迦、庇哩亞、雅典"
+    },
+    {
+        "year_num": 49.000,
+        "year_text": "49 AD",
+        "event_type": "Bible",
+        "event": "保羅在腓立比"
+    },
+    {
+        "year_num": 49.000,
+        "year_text": "49 AD",
+        "event_type": "Bible",
+        "event": "保羅帶西拉開始第二次宣教之旅"
+    },
+    {
+        "year_num": 50.000,
+        "year_text": "50 AD",
+        "event_type": "World",
+        "event": "羅馬人開始使用肥皂"
+    },
+    {
+        "year_num": 51.000,
+        "year_text": "51 AD",
+        "event_type": "Bible",
+        "event": "保羅在哥林多"
+    },
+    {
+        "year_num": 51.000,
+        "year_text": "51 AD",
+        "event_type": "Bible",
+        "event": "保羅寫給帖撒羅尼迦教會"
+    },
+    {
+        "year_num": 52.000,
+        "year_text": "52 AD",
+        "event_type": "Bible",
+        "event": "保羅再次寫信給帖撒羅尼迦教會"
+    },
+    {
+        "year_num": 54.000,
+        "year_text": "54 AD",
+        "event_type": "Bible",
+        "event": "保羅在以弗所"
+    },
+    {
+        "year_num": 54.000,
+        "year_text": "54 AD",
+        "event_type": "Bible",
+        "event": "保羅寫信給加拉太教會"
+    },
+    {
+        "year_num": 54.000,
+        "year_text": "54 AD",
+        "event_type": "Bible",
+        "event": "保羅寫信給哥林多教會"
+    },
+    {
+        "year_num": 54.000,
+        "year_text": "54 AD",
+        "event_type": "World",
+        "event": "革老丟被他的皇后毒死"
+    },
+    {
+        "year_num": 54.000,
+        "year_text": "54 AD",
+        "event_type": "World",
+        "event": "尼祿成為羅馬皇帝"
+    },
+    {
+        "year_num": 57.000,
+        "year_text": "57 AD",
+        "event_type": "Bible",
+        "event": "保羅再次寫信給哥林多教會"
+    },
+    {
+        "year_num": 57.000,
+        "year_text": "57 AD",
+        "event_type": "Bible",
+        "event": "保羅在馬其頓和希臘"
+    },
+    {
+        "year_num": 57.000,
+        "year_text": "57 AD",
+        "event_type": "Bible",
+        "event": "保羅寫信給羅馬教會"
+    },
+    {
+        "year_num": 59.000,
+        "year_text": "59 AD",
+        "event_type": "Bible",
+        "event": "保羅回到耶路撒冷"
+    },
+    {
+        "year_num": 60.000,
+        "year_text": "60 AD",
+        "event_type": "Bible",
+        "event": "保羅在該撒利亞 的獄中"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅啟程前往羅馬"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅在亞基帕王面前申辯"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅在羅馬宣講福音"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅在非斯都面前申辯"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅在馬耳他上岸"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅寫信給以弗所教會"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅寫歌羅西教會"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅寫給腓立比教會"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "保羅寫腓利門書"
+    },
+    {
+        "year_num": 62.000,
+        "year_text": "62 AD",
+        "event_type": "Bible",
+        "event": "沉船"
+    },
+    {
+        "year_num": 63.000,
+        "year_text": "63 AD",
+        "event_type": "Bible",
+        "event": "保羅寫信給提摩太"
+    },
+    {
+        "year_num": 64.000,
+        "year_text": "64 AD",
+        "event_type": "Bible",
+        "event": "彼得寫第一封書信"
+    },
+    {
+        "year_num": 64.000,
+        "year_text": "64 AD",
+        "event_type": "World",
+        "event": "焚燒羅馬城事件促使尼祿迫害基督徒"
+    },
+    {
+        "year_num": 66.000,
+        "year_text": "66 AD",
+        "event_type": "World",
+        "event": "開始在畫布上繪畫"
+    },
+    {
+        "year_num": 66.000,
+        "year_text": "66 AD",
+        "event_type": "Bible",
+        "event": "保羅寫信給提多"
+    },
+    {
+        "year_num": 67.000,
+        "year_text": "67 AD",
+        "event_type": "Bible",
+        "event": "保羅再次寫信給提摩太"
+    },
+    {
+        "year_num": 67.000,
+        "year_text": "67 AD",
+        "event_type": "Bible",
+        "event": "彼得寫第二封書信"
+    },
+    {
+        "year_num": 68.000,
+        "year_text": "68 AD",
+        "event_type": "Bible",
+        "event": "猶大寫書信"
+    },
+    {
+        "year_num": 68.000,
+        "year_text": "68 AD",
+        "event_type": "Bible",
+        "event": "給希伯來人的書信"
+    },
+    {
+        "year_num": 68.000,
+        "year_text": "68 AD",
+        "event_type": "World",
+        "event": "羅馬摧毀昆蘭公社"
+    },
+    {
+        "year_num": 74.000,
+        "year_text": "74 AD",
+        "event_type": "World",
+        "event": "中國和西方開始絲綢交易"
+    },
+    {
+        "year_num": 75.000,
+        "year_text": "75 AD",
+        "event_type": "World",
+        "event": "羅馬人開始建築羅馬競技場"
+    },
+    {
+        "year_num": 79.000,
+        "year_text": "79 AD",
+        "event_type": "World",
+        "event": "維蘇威火山爆發"
+    },
+    {
+        "year_num": 81.000,
+        "year_text": "81 AD",
+        "event_type": "World",
+        "event": "圖密善成為羅馬皇帝"
+    },
+    {
+        "year_num": 90.000,
+        "year_text": "90 AD",
+        "event_type": "Bible",
+        "event": "約翰寫第一封書信"
+    },
+    {
+        "year_num": 92.000,
+        "year_text": "92 AD",
+        "event_type": "Bible",
+        "event": "約翰寫第二封書信"
+    },
+    {
+        "year_num": 94.000,
+        "year_text": "94 AD",
+        "event_type": "Bible",
+        "event": "約翰寫第三封書信"
+    },
+    {
+        "year_num": 95.000,
+        "year_text": "95 AD",
+        "event_type": "Bible",
+        "event": "約翰在拔摩島寫啟示錄"
+    }
+]
