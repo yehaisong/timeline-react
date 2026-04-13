@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - cbapp-timeline-demo
 on:
   push:
     branches:
-      - main
+      - demo-release
   workflow_dispatch:
 
 jobs:
