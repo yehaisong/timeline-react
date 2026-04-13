@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { ReactNode } from 'react';
 import type { CSSProperties } from 'react';
 import type { NormalizedTimelineEvent, TimelineViewport } from '../lib/types';
+import { formatNormalizedEventDate } from '../lib/eventDisplay';
 import { mapTimeToY } from '../lib/timeScale';
 import { TimelineEventCard } from './TimelineEventCard';
 
@@ -10,6 +11,7 @@ type TimelineEventLayerProps = {
   viewport: TimelineViewport;
   height: number;
   laneLimit: number;
+  collapseGroups?: boolean;
   renderEvent?: (event: NormalizedTimelineEvent) => ReactNode;
   onEventClick?: (event: NormalizedTimelineEvent) => void;
 };
@@ -46,26 +48,6 @@ const CARD_BASE_HEIGHT = 52;
 const BADGE_GAP = 12;
 const BADGE_HEIGHT = 26;
 const STACK_VERTICAL_OFFSET = 10;
-const STACK_HORIZONTAL_OFFSET = 10;
-
-function formatEventDate(startMs: number, endMs: number, isRange: boolean) {
-  const start = new Date(startMs).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-    timeZone: 'UTC',
-  });
-  if (!isRange) {
-    return start;
-  }
-  const end = new Date(endMs).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-    timeZone: 'UTC',
-  });
-  return `${start} - ${end}`;
-}
 
 function getVisibleEvents(events: NormalizedTimelineEvent[], viewport: TimelineViewport) {
   return events.filter(
@@ -88,14 +70,15 @@ function clusterEvents(
   viewport: TimelineViewport,
   height: number,
   laneLimit: number,
-  groupLanes: GroupLane[]
+  groupLanes: GroupLane[],
+  collapseGroups: boolean
 ): Cluster[] {
   const clusters: Cluster[] = [];
   const threshold = 18;
 
   for (const groupLane of groupLanes) {
     const sorted = getVisibleEvents(events, viewport)
-      .filter((event) => getEventGroupId(event) === groupLane.id)
+      .filter((event) => (collapseGroups ? true : getEventGroupId(event) === groupLane.id))
       .map((event) => ({
         event,
         y: mapTimeToY(viewport, event.startMs, height),
@@ -164,6 +147,7 @@ export function TimelineEventLayer({
   viewport,
   height,
   laneLimit,
+  collapseGroups = false,
   renderEvent,
   onEventClick,
 }: TimelineEventLayerProps) {
@@ -175,8 +159,8 @@ export function TimelineEventLayer({
   const [popoverOffsets, setPopoverOffsets] = useState<Record<string, number>>({});
   const [openClusterKey, setOpenClusterKey] = useState<string | null>(null);
   const [activeEventId, setActiveEventId] = useState<string | null>(null);
-  const groupLanes = buildGroupLanes(events);
-  const clusters = clusterEvents(events, viewport, height, laneLimit, groupLanes);
+  const groupLanes = collapseGroups ? [{ id: '__all__', label: 'All', lane: 0 }] : buildGroupLanes(events);
+  const clusters = clusterEvents(events, viewport, height, laneLimit, groupLanes, collapseGroups);
   const clusterRenderData = buildClusterRenderData(clusters);
 
   useEffect(() => {
@@ -332,9 +316,6 @@ export function TimelineEventLayer({
             CARD_BASE_HEIGHT +
             Math.max(0, cluster.visibleEvents.length - 1) * STACK_VERTICAL_OFFSET +
             (cluster.hiddenCount > 0 ? BADGE_GAP + BADGE_HEIGHT : 0),
-          ['--tl-card-width' as string]: 'fit-content',
-          ['--tl-card-max-width' as string]: 'min(200px, calc(100% - 52px))',
-          ['--tl-card-stack-offset' as string]: `${STACK_HORIZONTAL_OFFSET}px`,
           zIndex:
             activeEventInCluster
               ? 350
@@ -457,7 +438,7 @@ export function TimelineEventLayer({
                       >
                         <span className="tl-cluster-popover-item-title">{event.title}</span>
                         <span className="tl-cluster-popover-item-date">
-                          {formatEventDate(event.startMs, event.endMs, event.isRange)}
+                          {formatNormalizedEventDate(event)}
                         </span>
                       </button>
                     ))}

@@ -65,6 +65,37 @@ export function useTimelineViewport(args: UseTimelineViewportArgs) {
     setInternalViewport(deriveInitialViewport(args));
   }, []);
 
+  useEffect(() => {
+    if (controlled) {
+      return;
+    }
+
+    setInternalViewport((current) => {
+      const centerMs = current.visibleStartMs + (current.visibleEndMs - current.visibleStartMs) / 2;
+      const resizedViewport = clampViewportToBounds(
+        createViewportAround(centerMs, current.zoomUnit, args.viewportHeight, args.unitHeight),
+        normalizeDateInput(args.startBound),
+        normalizeDateInput(args.endBound)
+      );
+
+      if (
+        resizedViewport.visibleStartMs === current.visibleStartMs &&
+        resizedViewport.visibleEndMs === current.visibleEndMs &&
+        resizedViewport.zoomUnit === current.zoomUnit
+      ) {
+        return current;
+      }
+
+      return resizedViewport;
+    });
+  }, [
+    controlled,
+    args.viewportHeight,
+    args.unitHeight,
+    args.startBound,
+    args.endBound,
+  ]);
+
   const activeViewport = args.viewport ?? internalViewport;
 
   function setViewport(nextViewport: TimelineViewport) {

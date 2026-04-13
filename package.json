@@ -1,14 +1,33 @@
 {
-  "name": "timeline_react",
-  "private": true,
+  "name": "@yehaisong/timeline-react",
+  "private": false,
   "version": "0.0.1",
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "access": "restricted"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "npm run build:lib",
+    "build:demo": "tsc -b && vite build --mode demo",
+    "build:lib": "rm -rf dist && tsc -p tsconfig.lib.json && vite build --mode library",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
@@ -20,4 +39,3 @@
     "vite": "^7.1.12"
   }
 }
-

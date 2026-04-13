@@ -63,6 +63,41 @@ This document is the working spec for implementation.
   - responding to viewport changes
   - customizing event rendering
 
+### Reuse Boundary
+
+- Treat the timeline as a reusable library surface, separate from the demo app shell.
+- Extract the library boundary before doing further responsive fine tuning.
+- Demo-only features such as the settings panel, detail drawer, and sample data must remain outside the reusable package surface.
+- Downstream configuration should be exposed through public component props rather than app-specific wrapper logic.
+
+Recommended public config surfaces:
+
+```ts
+type TimelineDisplayOptions = {
+  showMiniMap?: boolean;
+  showMajorTicks?: boolean;
+  showMajorLabels?: boolean;
+  showMinorTicks?: boolean;
+  showMinorLabels?: boolean;
+  miniMapWidth?: number;
+  clusterLaneLimit?: number;
+};
+
+type TimelineTheme = {
+  axisColor?: string;
+  majorTickColor?: string;
+  minorTickColor?: string;
+  labelPillBg?: string;
+  labelPillText?: string;
+  cardWidth?: number;
+  cardMaxWidth?: number;
+  stackOffset?: number;
+  axisWidth?: number;
+  axisOffset?: number;
+  labelShift?: number;
+};
+```
+
 ## Non-Goals For V1
 
 - No BCE date support unless implementation is naturally compatible.

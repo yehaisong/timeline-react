@@ -7,6 +7,7 @@ type TimelineMiniMapProps = {
   height: number;
   domainStartMs: number;
   domainEndMs: number;
+  variant?: 'default' | 'nano';
   onViewportChange?: (nextViewport: TimelineViewport) => void;
 };
 
@@ -97,6 +98,7 @@ export function TimelineMiniMap({
   height,
   domainStartMs,
   domainEndMs,
+  variant = 'default',
   onViewportChange,
 }: TimelineMiniMapProps) {
   const bodyRef = useRef<HTMLDivElement | null>(null);
@@ -196,6 +198,7 @@ export function TimelineMiniMap({
     miniMapHeight
   );
   const binHeight = binCount > 0 ? miniMapHeight / binCount : miniMapHeight;
+  const isNano = variant === 'nano';
 
   function jumpToPointerY(clientY: number) {
     if (!onViewportChange || miniMapHeight <= 0) {
@@ -212,13 +215,15 @@ export function TimelineMiniMap({
   }
 
   return (
-    <aside className="tl-minimap" aria-label="Timeline overview">
-      <div className="tl-minimap-header">
-        <span>Overview</span>
-        <span className="tl-minimap-range">
-          {new Date(domainStartMs).getUTCFullYear()} - {new Date(domainEndMs).getUTCFullYear()}
-        </span>
-      </div>
+    <aside className={`tl-minimap${isNano ? ' tl-minimap-nano' : ''}`} aria-label="Timeline overview">
+      {!isNano ? (
+        <div className="tl-minimap-header">
+          <span>Overview</span>
+          <span className="tl-minimap-range">
+            {new Date(domainStartMs).getUTCFullYear()} - {new Date(domainEndMs).getUTCFullYear()}
+          </span>
+        </div>
+      ) : null}
       <div
         ref={bodyRef}
         className="tl-minimap-body"
@@ -243,7 +248,7 @@ export function TimelineMiniMap({
                 style={{
                   top: safeTop,
                   height: Math.max(3, binHeight),
-                  width: `${8 + intensity * 18}px`,
+                  width: isNano ? '5px' : `${8 + intensity * 18}px`,
                   backgroundColor: getDensityColor(intensity),
                 }}
               />
@@ -265,15 +270,17 @@ export function TimelineMiniMap({
             height: viewportHeight,
           }}
         />
-        {majorYears.map((year, index) => (
-          <div
-            key={`${year}-${index}`}
-            className="tl-minimap-label"
-            style={{ top: `${index * 50}%` }}
-          >
-            {year}
-          </div>
-        ))}
+        {!isNano
+          ? majorYears.map((year, index) => (
+              <div
+                key={`${year}-${index}`}
+                className="tl-minimap-label"
+                style={{ top: `${index * 50}%` }}
+              >
+                {year}
+              </div>
+            ))
+          : null}
       </div>
     </aside>
   );

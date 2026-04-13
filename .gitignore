@@ -3,6 +3,7 @@ node_modules/
 
 # build output
 dist/
+dist-demo/
 .vite/
 
 # local env files
@@ -24,4 +25,3 @@ Thumbs.db
 
 # TypeScript incremental build info
 *.tsbuildinfo
-

@@ -7,26 +7,32 @@ type TimelineEventCardProps = {
   onClick?: (event: NormalizedTimelineEvent) => void;
 };
 
+const YEAR_LABEL_PATTERN = /^(?:\d+|\d+AD|\d+BC|1BC)$/;
+
 function formatEventYear(event: NormalizedTimelineEvent) {
+  if (YEAR_LABEL_PATTERN.test(event.displayStartLabel)) {
+    return event.displayStartLabel;
+  }
+
   const originalYearNum = event.metadata?.originalYearNum;
   if (typeof originalYearNum === 'number' && Number.isFinite(originalYearNum)) {
     const year = Math.trunc(originalYearNum);
     if (year < 0) {
-      return `${Math.abs(year)} BC`;
+      return `${Math.abs(year)}BC`;
     }
     if (year > 0) {
-      return `${year} AD`;
+      return `${year}AD`;
     }
   }
 
   const astronomicalYear = new Date(event.startMs).getUTCFullYear();
   if (astronomicalYear < 0) {
-    return `${Math.abs(astronomicalYear) + 1} BC`;
+    return `${Math.abs(astronomicalYear) + 1}BC`;
   }
   if (astronomicalYear === 0) {
-    return '1 BC';
+    return '1BC';
   }
-  return `${astronomicalYear} AD`;
+  return `${astronomicalYear}AD`;
 }
 
 export function TimelineEventCard({ event, isActive = false, onClick }: TimelineEventCardProps) {

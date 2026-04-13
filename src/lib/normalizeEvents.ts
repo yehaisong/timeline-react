@@ -1,4 +1,5 @@
 import type { NormalizedTimelineEvent, TimelineEvent } from './types';
+import { formatDateInputForDisplay } from './eventDisplay';
 import { normalizeDateInput } from './timeScale';
 
 function isNormalizedTimelineEvent(
@@ -9,8 +10,13 @@ function isNormalizedTimelineEvent(
 
 export function normalizeEvents(events: TimelineEvent[]): NormalizedTimelineEvent[] {
   const normalized: Array<NormalizedTimelineEvent | null> = events.map((event) => {
-      const startMs = normalizeDateInput(event.start);
-      const rawEndMs = normalizeDateInput(event.end);
+      const startMs = normalizeDateInput(event.placementStart ?? event.start);
+      const rawEndMs = normalizeDateInput(event.placementEnd ?? event.end);
+      const displayStartLabel =
+        formatDateInputForDisplay(event.displayStart) ?? formatDateInputForDisplay(event.start);
+      const displayEndLabel =
+        formatDateInputForDisplay(event.displayEnd) ??
+        formatDateInputForDisplay(event.end);
       if (startMs === null) {
         return null;
       }
@@ -18,11 +24,16 @@ export function normalizeEvents(events: TimelineEvent[]): NormalizedTimelineEven
       if (endMs < startMs) {
         return null;
       }
+      if (!displayStartLabel) {
+        return null;
+      }
       return {
         id: event.id,
         title: event.title,
         startMs,
         endMs,
+        displayStartLabel,
+        displayEndLabel,
         isRange: endMs > startMs,
         allDay: Boolean(event.allDay),
         description: event.description,

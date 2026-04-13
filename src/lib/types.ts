@@ -52,6 +52,10 @@ export type TimelineEvent = {
   title: string;
   start: string | Date;
   end?: string | Date;
+  placementStart?: string | Date;
+  placementEnd?: string | Date;
+  displayStart?: string;
+  displayEnd?: string;
   allDay?: boolean;
   description?: string;
   groupId?: string;
@@ -69,6 +73,8 @@ export type NormalizedTimelineEvent = {
   title: string;
   startMs: number;
   endMs: number;
+  displayStartLabel: string;
+  displayEndLabel?: string;
   isRange: boolean;
   allDay: boolean;
   description?: string;
@@ -87,6 +93,53 @@ export type TimelineViewport = {
   visibleEndMs: number;
   zoomUnit: TimelineZoomUnit;
 };
+
+export type TimelineLayoutMode = 'desktop' | 'tablet' | 'mobile';
+
+export type TimelineResponsiveConfig = {
+  mode: TimelineLayoutMode;
+  showMiniMap: boolean;
+  showMajorTicks: boolean;
+  showMajorLabels: boolean;
+  showMinorTicks: boolean;
+  showMinorLabels: boolean;
+  cardWidth: number;
+  cardMaxWidth: number;
+  stackOffset: number;
+  labelShift: number;
+  axisWidth: number;
+  axisOffset: number;
+  clusterLaneLimit: number;
+  miniMapWidth: number;
+  detailPanelMode: 'drawer' | 'sheet';
+  clusterRevealMode: 'popover' | 'sheet';
+};
+
+export type TimelineDisplayOptions = {
+  showMiniMap?: boolean;
+  showMajorTicks?: boolean;
+  showMajorLabels?: boolean;
+  showMinorTicks?: boolean;
+  showMinorLabels?: boolean;
+  miniMapWidth?: number;
+  clusterLaneLimit?: number;
+};
+
+export type TimelineTheme = {
+  axisColor?: string;
+  majorTickColor?: string;
+  minorTickColor?: string;
+  labelPillBg?: string;
+  labelPillText?: string;
+  cardWidth?: number;
+  cardMaxWidth?: number;
+  stackOffset?: number;
+  axisWidth?: number;
+  axisOffset?: number;
+  labelShift?: number;
+};
+
+export type TimelineDetailMode = 'none' | 'modal' | 'slide';
 
 export type EventCluster = {
   key: string;
@@ -109,10 +162,14 @@ export type VerticalTimelineProps = {
   viewport?: TimelineViewport;
   onViewportChange?: (viewport: TimelineViewport) => void;
   renderEvent?: (event: NormalizedTimelineEvent) => ReactNode;
+  renderDetail?: (event: NormalizedTimelineEvent) => ReactNode;
   onEventClick?: (event: NormalizedTimelineEvent) => void;
+  detailMode?: TimelineDetailMode;
   height?: number | string;
   unitHeight?: number;
   clusterLaneLimit?: number;
+  display?: TimelineDisplayOptions;
+  theme?: TimelineTheme;
   className?: string;
   style?: CSSProperties;
 };
