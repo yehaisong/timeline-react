@@ -26,23 +26,6 @@ export function TimelineAxis({
   return (
     <div className="tl-axis">
       <div className="tl-axis-line" />
-      {showMinorTicks || showMinorLabels
-        ? minorTicks.map((tick) => {
-            const top = mapTimeToY(viewport, tick.ts, height);
-            return (
-              <div
-                key={tick.key}
-                className="tl-tick tl-tick-minor"
-                style={{ top }}
-              >
-                {showMinorTicks ? <div className="tl-tick-mark" /> : null}
-                {showMinorLabels ? (
-                  <div className="tl-tick-label tl-tick-label-minor">{tick.label}</div>
-                ) : null}
-              </div>
-            );
-          })
-        : null}
       {showMajorTicks || showMajorLabels
         ? majorTicks.map((tick) => {
             const top = mapTimeToY(viewport, tick.ts, height);
@@ -57,6 +40,23 @@ export function TimelineAxis({
                   <div className="tl-tick-label">
                     <span className="tl-tick-label-major">{tick.label}</span>
                   </div>
+                ) : null}
+              </div>
+            );
+          })
+        : null}
+      {showMinorTicks || showMinorLabels
+        ? minorTicks.map((tick) => {
+            const top = mapTimeToY(viewport, tick.ts, height);
+            return (
+              <div
+                key={tick.key}
+                className="tl-tick tl-tick-minor"
+                style={{ top }}
+              >
+                {showMinorTicks ? <div className="tl-tick-mark" /> : null}
+                {showMinorLabels ? (
+                  <div className="tl-tick-label tl-tick-label-minor">{tick.label}</div>
                 ) : null}
               </div>
             );

@@ -1,5 +1,5 @@
 {
-  "name": "@yehaisong/timeline-react",
+  "name": "historical-timeline-react",
   "private": false,
   "version": "0.0.1",
   "license": "MIT",
@@ -18,8 +18,8 @@
     "./styles.css": "./dist/styles.css"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com",
-    "access": "restricted"
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
   },
   "scripts": {
     "dev": "vite",

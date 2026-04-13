@@ -1,10 +1,13 @@
-# `@yehaisong/timeline-react`
+# `historical-timeline-react`
 
 Private React vertical timeline component with discrete zoom from `century` down to `day`.
 
 This repo currently contains:
 - the reusable timeline library
 - a local demo app used for development and iteration
+
+Related repo:
+- consumer example app: `https://github.com/yehaisong/timeline-react-consumer`
 
 ## Status
 
@@ -21,7 +24,7 @@ Use a local file dependency instead:
 ```json
 {
   "dependencies": {
-    "@yehaisong/timeline-react": "file:../timeline_react"
+    "historical-timeline-react": "file:../timeline_react"
   }
 }
 ```
@@ -56,7 +59,7 @@ GitHub Packages setup for a consuming project:
 Then install:
 
 ```bash
-npm install @yehaisong/timeline-react
+npm install historical-timeline-react
 ```
 
 ## Usage
@@ -64,7 +67,7 @@ npm install @yehaisong/timeline-react
 Import the library stylesheet once:
 
 ```ts
-import '@yehaisong/timeline-react/styles.css';
+import 'historical-timeline-react/styles.css';
 ```
 
 Minimal usage:
@@ -73,7 +76,7 @@ Minimal usage:
 import {
   VerticalTimeline,
   type TimelineEvent,
-} from '@yehaisong/timeline-react';
+} from 'historical-timeline-react';
 
 const events: TimelineEvent[] = [
   {
@@ -259,7 +262,7 @@ import {
   VerticalTimeline,
   type NormalizedTimelineEvent,
   type TimelineEvent,
-} from '@yehaisong/timeline-react';
+} from 'historical-timeline-react';
 
 const events: TimelineEvent[] = [
   {

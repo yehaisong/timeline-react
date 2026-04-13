@@ -100,7 +100,7 @@ The demo settings panel should edit these public surfaces rather than controllin
 Ship one compiled CSS file for consumers:
 
 ```ts
-import '@yehaisong/timeline-react/styles.css';
+import 'historical-timeline-react/styles.css';
 ```
 
 Keep CSS variables as the supported theme implementation detail under the typed `theme` prop.
@@ -112,7 +112,7 @@ Add a library build that outputs:
 - `dist/styles.css`
 
 Update `package.json` with:
-- scoped package name, for example `@yehaisong/timeline-react`
+- package name, for example `historical-timeline-react`
 - `publishConfig.registry` pointing to GitHub Packages
 - `peerDependencies` for `react` and `react-dom`
 - `files` limited to `dist`

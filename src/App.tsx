@@ -282,7 +282,7 @@ export default function App() {
 
           {settingsPanelCollapsed ? (
             <div className="app-settings-collapsed-actions">
-              <div>
+              <div className="app-settings-collapsed-title">
                 <p className="app-settings-eyebrow">Desktop Settings</p>
                 <h2 className="app-settings-title">Timeline settings</h2>
               </div>
@@ -293,7 +293,20 @@ export default function App() {
                 aria-expanded="false"
                 aria-label="Expand settings panel"
               >
-                Open
+                <svg
+                  className="app-settings-open-icon"
+                  viewBox="0 0 20 20"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M5.5 7.5L10 12l4.5-4.5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </button>
             </div>
           ) : (
@@ -445,7 +458,7 @@ export default function App() {
                     <span>Stack offset</span>
                     <input
                       type="range"
-                      min="40"
+                      min="0"
                       max="220"
                       step="4"
                       value={desktopSettings.theme.stackOffset ?? 40}
