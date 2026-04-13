@@ -26,7 +26,8 @@
     "build": "npm run build:lib",
     "build:demo": "tsc -b && vite build --mode demo",
     "build:lib": "rm -rf dist && tsc -p tsconfig.lib.json && vite build --mode library",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "react": "^19.2.0",
