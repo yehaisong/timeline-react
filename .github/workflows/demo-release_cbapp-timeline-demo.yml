@@ -23,17 +23,23 @@ jobs:
         with:
           node-version: '24.x'
 
-      - name: npm install, build, and test
+      - name: Install dependencies
         run: |
-          npm install
-          npm run build --if-present
+          npm ci
+
+      - name: Build demo app
+        run: |
+          npm run build:demo
+
+      - name: Run tests
+        run: |
           npm run test --if-present
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: node-app
-          path: .
+          name: demo-app
+          path: dist-demo
 
   deploy:
     runs-on: ubuntu-latest
@@ -43,7 +49,8 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: node-app
+          name: demo-app
+          path: dist-demo
       
       - name: 'Deploy to Azure Web App'
         id: deploy-to-webapp
@@ -51,5 +58,5 @@ jobs:
         with:
           app-name: 'cbapp-timeline-demo'
           slot-name: 'Production'
-          package: .
+          package: dist-demo
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D626C8B735E14D2EBB793D8BAC98CF62 }}
