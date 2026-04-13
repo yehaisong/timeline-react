@@ -10,7 +10,7 @@
   --tl-card-offset: 28px;
   --tl-card-stack-offset: calc(var(--tl-card-width) + var(--tl-space-3));
   --tl-leader-length: 12px;
-  --tl-axis-offset: 0px;
+  --tl-axis-offset: -70px;
 }
 
 .tl-controls {
@@ -70,7 +70,7 @@
   gap: var(--tl-space-6);
   height: 100%;
   min-height: 0;
-  padding: var(--tl-space-6) var(--tl-space-6) var(--tl-space-6) var(--tl-space-4);
+  padding: var(--tl-space-6) var(--tl-space-6) var(--tl-space-6) var(--tl-space-2);
 }
 
 .tl-axis {
@@ -120,22 +120,24 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transform: translateY(-8px);
+  transform: translate(-50px, -8px);
 }
 
 .tl-tick-label-major {
-  font-size: var(--tl-font-size-md);
+  font-size: 12px;
   font-weight: 600;
   color: var(--tl-color-label);
 }
 
 .tl-tick-label-minor {
-  font-size: var(--tl-font-size-xs);
+  font-size: 10px;
   color: var(--tl-color-label-muted);
 }
 
 .tl-event-layer {
   position: relative;
+  left: var(--tl-axis-offset);
+  width: calc(100% - var(--tl-axis-offset));
   height: 100%;
   min-height: 0;
   padding-left: var(--tl-space-5);

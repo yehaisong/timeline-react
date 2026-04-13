@@ -654,6 +654,295 @@ Acceptance criteria for clustering:
   - attachment count if present
   - geo presence indicator if present
 
+## Responsive Rendering
+
+Responsive behavior is a first-class requirement, not a visual afterthought.
+
+The implementation must adapt these systems independently:
+
+- timeline chrome
+  - rail
+  - labels
+  - minimap
+  - zoom controls
+- event rendering
+  - card width
+  - stack behavior
+  - lane spacing
+  - cluster overflow behavior
+- detail surfaces
+  - popovers
+  - right-side drawer
+  - mobile sheet behavior
+- interaction model
+  - mouse and trackpad
+  - touch and drag
+
+### Breakpoints
+
+Start with these explicit layout ranges:
+
+- desktop: `>= 1200px`
+- tablet: `768px - 1199px`
+- mobile: `< 768px`
+
+These are implementation defaults. Container-aware overrides are allowed if they preserve the same intent.
+
+### Responsive Layout Rules
+
+#### Desktop
+
+- full rail labels remain visible
+- minimap remains visible
+- event cards may use full configured width
+- clustered events may stack horizontally
+- detail panel may use a right-side drawer
+- anchored popovers are allowed
+
+#### Tablet
+
+- rail labels may shrink
+- minor labels may be reduced or selectively hidden
+- minimap may remain visible but narrower
+- event cards should reduce width
+- cluster stack offsets should reduce
+- detail panel should remain an overlay drawer, not a permanent column
+
+#### Mobile
+
+- major labels only by default
+- minimap should be hidden unless explicitly reintroduced behind a toggle
+- event cards must become narrower and easier to tap
+- cluster rendering should avoid wide horizontal expansion
+- popovers should become a bottom sheet or full-width sheet
+- detail panel should become a mobile overlay or bottom sheet
+
+### Container-Aware Rendering
+
+The implementation should not rely only on viewport width. It should also consider:
+
+- timeline container width
+- timeline container height
+- event-layer width
+- remaining width after rail and minimap
+
+These measurements should drive:
+
+- event card width
+- cluster stack offset
+- whether minor labels are shown
+- whether the minimap is shown
+- whether popovers can remain anchored
+
+### Recommended Responsive Config
+
+Use a derived layout object instead of scattering breakpoint logic.
+
+Suggested shape:
+
+```ts
+type TimelineLayoutMode = 'desktop' | 'tablet' | 'mobile';
+
+type TimelineResponsiveConfig = {
+  mode: TimelineLayoutMode;
+  showMiniMap: boolean;
+  showMinorLabels: boolean;
+  cardWidth: number;
+  stackOffset: number;
+  clusterLaneLimit: number;
+  detailPanelMode: 'drawer' | 'sheet' | 'hidden';
+  clusterRevealMode: 'popover' | 'sheet';
+};
+```
+
+Rules:
+
+- compute this once per layout change
+- use it to drive render decisions and CSS variables
+- avoid duplicating breakpoint values across unrelated files
+
+### Rail And Label Responsiveness
+
+Rules:
+
+- rail x-position may shift by breakpoint
+- label width may shrink by breakpoint
+- minor labels may be hidden before major labels are truncated
+- labels must never overlap the rail
+- truncation is allowed, but rail alignment must remain readable
+
+Suggested defaults:
+
+- desktop:
+  - full major and minor labels
+  - widest label column
+- tablet:
+  - smaller labels
+  - reduced label width
+  - optional minor-label suppression
+- mobile:
+  - major labels only
+  - shortest label width
+
+### Event Card Responsiveness
+
+Rules:
+
+- event cards must never render off-screen horizontally
+- clustered cards must not create unusable horizontal sprawl
+- card width should shrink before text becomes unreadable
+- title remains the highest priority content
+
+Suggested defaults:
+
+- desktop:
+  - `cardWidth: 260px - 320px`
+  - full cluster stack offset allowed
+- tablet:
+  - `cardWidth: 220px - 260px`
+  - reduced stack offset
+- mobile:
+  - `cardWidth: min(220px, available width)`
+  - compact cluster rendering
+
+### Cluster Responsiveness
+
+Cluster behavior must change by breakpoint.
+
+Suggested rules:
+
+- desktop:
+  - horizontal stacked cards
+  - `+N more` badge
+  - anchored popover or drawer reveal
+- tablet:
+  - reduced-width stacked cards
+  - smaller stack offset
+  - keep `+N more`
+- mobile:
+  - show only one visible card by default
+  - prefer `+N more` early
+  - reveal full cluster using a sheet instead of a tiny anchored popover
+
+Acceptance criteria:
+
+- same-point events remain readable at all breakpoints
+- cluster reveal does not overflow the visible screen
+- mobile clusters do not create a wide horizontal deck
+
+### Popover And Detail Surface Responsiveness
+
+Rules:
+
+- desktop:
+  - anchored popovers are allowed
+  - right-side detail drawer is preferred
+- tablet:
+  - anchored popovers allowed only if enough room exists
+  - drawer remains overlay-based
+- mobile:
+  - replace anchored popovers with a sheet
+  - detail panel should become a full-width or near-full-width overlay
+
+If a floating surface would clip:
+
+- reposition it first
+- if repositioning is not enough, switch to the sheet mode
+
+### Minimap Responsiveness
+
+Rules:
+
+- desktop:
+  - show minimap
+  - allow dragging the viewport indicator
+- tablet:
+  - minimap may remain visible in narrower form
+  - labels may simplify
+- mobile:
+  - minimap should usually be hidden
+  - if retained, it must not consume a large fraction of width
+
+The minimap must:
+
+- reflect the true drawable body height
+- clamp the viewport indicator to the visible body
+- keep density visualization readable at all sizes
+
+### Touch Interaction Rules
+
+Touch support must be explicitly considered.
+
+Rules:
+
+- touch targets should be at least `36px` high, preferably larger
+- draggable minimap viewport should use `touch-action: none`
+- popover scrolling must not accidentally pan the main timeline
+- mobile drawers and sheets must be easy to dismiss
+
+### Responsive Implementation Phases
+
+#### Phase R1: Breakpoint Config
+
+Build:
+
+- responsive config derivation
+- CSS variables or layout tokens per mode
+- container measurement hooks if needed
+
+Acceptance criteria:
+
+- one source of truth exists for responsive mode decisions
+
+#### Phase R2: Rail, Labels, And Minimap
+
+Build:
+
+- responsive rail offsets
+- responsive label visibility
+- minimap show/hide rules
+
+Acceptance criteria:
+
+- labels remain readable
+- minimap never overflows or distorts
+
+#### Phase R3: Event Cards And Clusters
+
+Build:
+
+- responsive card widths
+- responsive stack offsets
+- mobile cluster behavior
+
+Acceptance criteria:
+
+- no off-screen horizontal overflow
+- dense clusters remain usable
+
+#### Phase R4: Detail Surfaces
+
+Build:
+
+- desktop drawer
+- tablet drawer refinement
+- mobile sheet mode
+
+Acceptance criteria:
+
+- every event remains inspectable at all breakpoints
+
+### Responsive Acceptance Criteria
+
+Responsive rendering is acceptable when:
+
+- rail labels never overlap the rail in a broken way
+- event cards remain readable across desktop, tablet, and mobile
+- cluster reveal surfaces do not clip or become unreachable
+- the detail surface remains usable on touch devices
+- the minimap is either usable or intentionally hidden
+- no breakpoint introduces trapped scroll, blank states, or major layout collapse
+
 ## Performance Requirements
 
 - Do not render every tick and event across the entire dataset.
