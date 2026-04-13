@@ -271,6 +271,18 @@ export function VerticalTimeline({
     ['--tl-color-minor-tick' as string]: theme?.minorTickColor,
     ['--tl-label-pill-bg' as string]: theme?.labelPillBg,
     ['--tl-label-pill-text' as string]: theme?.labelPillText,
+    ['--tl-color-event-card-bg' as string]: theme?.eventCardBg,
+    ['--tl-color-event-card-text' as string]: theme?.eventCardText,
+    ['--tl-color-event-card-border' as string]: theme?.eventCardBorder,
+    ['--tl-color-event-card-hover-bg' as string]: theme?.eventCardHoverBg,
+    ['--tl-color-event-card-active-border' as string]: theme?.eventCardActiveBorder,
+    ['--tl-color-minimap-bg' as string]: theme?.miniMapBg,
+    ['--tl-color-minimap-border' as string]: theme?.miniMapBorder,
+    ['--tl-color-minimap-track' as string]: theme?.miniMapTrackColor,
+    ['--tl-color-minimap-viewport-border' as string]: theme?.miniMapViewportBorder,
+    ['--tl-color-minimap-viewport-bg' as string]: theme?.miniMapViewportBg,
+    ['--tl-color-minimap-density-low' as string]: theme?.miniMapDensityLow,
+    ['--tl-color-minimap-density-high' as string]: theme?.miniMapDensityHigh,
   };
 
   const boundsSummary =

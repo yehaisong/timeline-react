@@ -59,9 +59,7 @@ function buildDensityBins(
 
 function getDensityColor(intensity: number) {
   const clamped = clamp01(intensity);
-  const lightness = 88 - clamped * 50;
-  const saturation = 58 + clamped * 20;
-  return `hsl(212 ${saturation}% ${lightness}%)`;
+  return `color-mix(in srgb, var(--tl-color-minimap-density-low) ${(1 - clamped) * 100}%, var(--tl-color-minimap-density-high) ${clamped * 100}%)`;
 }
 
 function centerViewportOnRatio(

@@ -131,6 +131,18 @@ export type TimelineTheme = {
   minorTickColor?: string;
   labelPillBg?: string;
   labelPillText?: string;
+  eventCardBg?: string;
+  eventCardText?: string;
+  eventCardBorder?: string;
+  eventCardHoverBg?: string;
+  eventCardActiveBorder?: string;
+  miniMapBg?: string;
+  miniMapBorder?: string;
+  miniMapTrackColor?: string;
+  miniMapViewportBorder?: string;
+  miniMapViewportBg?: string;
+  miniMapDensityLow?: string;
+  miniMapDensityHigh?: string;
   cardWidth?: number;
   cardMaxWidth?: number;
   stackOffset?: number;
@@ -140,6 +152,17 @@ export type TimelineTheme = {
 };
 
 export type TimelineDetailMode = 'none' | 'modal' | 'slide';
+
+export type TimelineSettingsTemplate = {
+  version: 1;
+  maxZoomUnit: TimelineZoomUnit;
+  minZoomUnit: TimelineZoomUnit;
+  initialZoomUnit: TimelineZoomUnit;
+  unitHeight: number;
+  detailMode: TimelineDetailMode;
+  display: TimelineDisplayOptions;
+  theme: TimelineTheme;
+};
 
 export type EventCluster = {
   key: string;

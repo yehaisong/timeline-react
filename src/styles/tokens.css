@@ -14,6 +14,18 @@
   --tl-color-cluster-text: #ffffff;
   --tl-color-focus: #0f766e;
   --tl-color-shadow: rgba(17, 24, 39, 0.08);
+  --tl-color-event-card-bg: #ffffff;
+  --tl-color-event-card-text: #111827;
+  --tl-color-event-card-border: #d1d5db;
+  --tl-color-event-card-hover-bg: #f8fafc;
+  --tl-color-event-card-active-border: #94a3b8;
+  --tl-color-minimap-bg: rgba(255, 255, 255, 0.72);
+  --tl-color-minimap-border: #d1d5db;
+  --tl-color-minimap-track: #1f2937;
+  --tl-color-minimap-viewport-border: #0f766e;
+  --tl-color-minimap-viewport-bg: rgba(15, 118, 110, 0.1);
+  --tl-color-minimap-density-low: #dbeafe;
+  --tl-color-minimap-density-high: #1d4ed8;
 
   --tl-font-ui: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --tl-font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
@@ -60,4 +72,3 @@
   --tl-category-classroom-organization: #65a30d;
   --tl-category-misc: #6b7280;
 }
-

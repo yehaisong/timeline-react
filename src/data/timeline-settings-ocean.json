@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "maxZoomUnit": "century",
+  "minZoomUnit": "year",
+  "initialZoomUnit": "decade",
+  "unitHeight": 100,
+  "detailMode": "slide",
+  "display": {
+    "showMiniMap": true,
+    "miniMapWidth": 140,
+    "showMajorTicks": true,
+    "showMajorLabels": true,
+    "showMinorTicks": true,
+    "showMinorLabels": true,
+    "clusterLaneLimit": 2
+  },
+  "theme": {
+    "axisWidth": 136,
+    "axisOffset": -70,
+    "labelShift": 62,
+    "cardWidth": 236,
+    "cardMaxWidth": 248,
+    "stackOffset": 40,
+    "labelPillBg": "#0f3d57",
+    "labelPillText": "#ecfeff",
+    "axisColor": "#0b3954",
+    "majorTickColor": "#117c8d",
+    "minorTickColor": "#7dd3fc",
+    "eventCardBg": "#f0f9ff",
+    "eventCardText": "#0f172a",
+    "eventCardBorder": "#7dd3fc",
+    "eventCardHoverBg": "#e0f2fe",
+    "eventCardActiveBorder": "#0891b2",
+    "miniMapBg": "rgba(224, 242, 254, 0.7)",
+    "miniMapBorder": "#7dd3fc",
+    "miniMapTrackColor": "#0b3954",
+    "miniMapViewportBorder": "#0f766e",
+    "miniMapViewportBg": "rgba(14, 116, 144, 0.14)",
+    "miniMapDensityLow": "#bae6fd",
+    "miniMapDensityHigh": "#0f766e"
+  }
+}

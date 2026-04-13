@@ -125,6 +125,27 @@ const events: TimelineEvent[] = [
 ];
 ```
 
+## Demo Settings Template
+
+The demo app loads its timeline behavior and appearance from:
+
+- `src/data/timeline-settings.json`
+
+Sample alternate templates are included at:
+
+- `src/data/timeline-settings-ocean.json`
+- `src/data/timeline-settings-ember.json`
+
+That JSON file is the template for:
+- zoom bounds
+- default zoom
+- unit height
+- detail mode
+- display options
+- theme options
+
+The settings panel edits that same shape in memory, and `Reset` restores the values from the JSON file.
+
 ## Public Config Surface
 
 Behavior options:
@@ -150,6 +171,18 @@ type TimelineTheme = {
   minorTickColor?: string;
   labelPillBg?: string;
   labelPillText?: string;
+  eventCardBg?: string;
+  eventCardText?: string;
+  eventCardBorder?: string;
+  eventCardHoverBg?: string;
+  eventCardActiveBorder?: string;
+  miniMapBg?: string;
+  miniMapBorder?: string;
+  miniMapTrackColor?: string;
+  miniMapViewportBorder?: string;
+  miniMapViewportBg?: string;
+  miniMapDensityLow?: string;
+  miniMapDensityHigh?: string;
   cardWidth?: number;
   cardMaxWidth?: number;
   stackOffset?: number;
@@ -289,3 +322,9 @@ Demo-only code:
 - `src/main.tsx`
 - `src/styles/app.css`
 - local sample data
+
+## Copyright
+
+Copyright (c) 2026 Haisong Ye. Released under the MIT License.
+
+Built with Codex GPT-5.4.
