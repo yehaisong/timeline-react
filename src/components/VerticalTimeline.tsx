@@ -28,6 +28,11 @@ const PAN_GESTURE_THRESHOLD_PX = 4;
 const PINCH_ZOOM_IN_THRESHOLD = 1.07;
 const PINCH_ZOOM_OUT_THRESHOLD = 0.93;
 
+type DetailItem = {
+  label: string;
+  value: string;
+};
+
 function summarizeGeometry(geometry: TimelineGeoJSONGeometry) {
   if (geometry.type === 'Point') {
     const [longitude, latitude] = geometry.coordinates;
@@ -37,6 +42,76 @@ function summarizeGeometry(geometry: TimelineGeoJSONGeometry) {
     return `LineString with ${geometry.coordinates.length} points`;
   }
   return `Polygon with ${geometry.coordinates.length} rings`;
+}
+
+function formatMetadataLabel(key: string) {
+  return key
+    .replace(/[_-]+/g, ' ')
+    .replace(/([a-z0-9])([A-Z])/g, '$1 $2')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function formatDetailValue(value: unknown): string | null {
+  if (value === null || value === undefined) {
+    return null;
+  }
+  if (typeof value === 'string') {
+    const trimmed = value.trim();
+    return trimmed.length > 0 ? trimmed : null;
+  }
+  if (typeof value === 'number' || typeof value === 'boolean') {
+    return String(value);
+  }
+  if (value instanceof Date) {
+    return value.toISOString();
+  }
+  return null;
+}
+
+function buildDetailItems(event: NormalizedTimelineEvent): DetailItem[] {
+  const items: DetailItem[] = [
+    {
+      label: 'Type',
+      value: event.isRange ? 'Range event' : 'Point event',
+    },
+  ];
+
+  if (event.groupId?.trim()) {
+    items.push({
+      label: 'Group',
+      value: event.groupId.trim(),
+    });
+  }
+
+  if (event.media?.length) {
+    items.push({
+      label: 'Media',
+      value: String(event.media.length),
+    });
+  }
+
+  if (event.attachments?.length) {
+    items.push({
+      label: 'Attachments',
+      value: String(event.attachments.length),
+    });
+  }
+
+  for (const [key, rawValue] of Object.entries(event.metadata ?? {})) {
+    const value = formatDetailValue(rawValue);
+    if (!value) {
+      continue;
+    }
+
+    items.push({
+      label: formatMetadataLabel(key),
+      value,
+    });
+  }
+
+  return items;
 }
 
 export function VerticalTimeline({
@@ -225,6 +300,7 @@ export function VerticalTimeline({
     display?.clusterLaneLimit ?? clusterLaneLimit,
     responsive.clusterLaneLimit
   );
+  const detailItems = detailEvent ? buildDetailItems(detailEvent) : [];
   const collapseMobileGroups = responsive.mode === 'mobile' && mobileGroupCount > 2;
   const viewportDuration = viewport.visibleEndMs - viewport.visibleStartMs;
   const atTopBound =
@@ -621,35 +697,19 @@ export function VerticalTimeline({
                   </section>
                 ) : null}
 
-                <section className="tl-detail-section">
-                  <h3 className="tl-detail-section-title">Details</h3>
-                  <dl className="tl-detail-grid">
-                    <div>
-                      <dt>ID</dt>
-                      <dd>{detailEvent.id}</dd>
-                    </div>
-                    <div>
-                      <dt>Type</dt>
-                      <dd>{detailEvent.isRange ? 'Range event' : 'Point event'}</dd>
-                    </div>
-                    <div>
-                      <dt>Importance</dt>
-                      <dd>{detailEvent.importance}</dd>
-                    </div>
-                    <div>
-                      <dt>All day</dt>
-                      <dd>{detailEvent.allDay ? 'Yes' : 'No'}</dd>
-                    </div>
-                    <div>
-                      <dt>Media</dt>
-                      <dd>{detailEvent.media?.length ?? 0}</dd>
-                    </div>
-                    <div>
-                      <dt>Attachments</dt>
-                      <dd>{detailEvent.attachments?.length ?? 0}</dd>
-                    </div>
-                  </dl>
-                </section>
+                {detailItems.length ? (
+                  <section className="tl-detail-section">
+                    <h3 className="tl-detail-section-title">Details</h3>
+                    <dl className="tl-detail-grid">
+                      {detailItems.map((item) => (
+                        <div key={`${detailEvent.id}-${item.label}`}>
+                          <dt>{item.label}</dt>
+                          <dd>{item.value}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </section>
+                ) : null}
 
                 {detailEvent.geo ? (
                   <section className="tl-detail-section">

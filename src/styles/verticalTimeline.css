@@ -869,11 +869,14 @@
   .tl-detail-surface-slide,
   .tl-detail-surface-modal {
     top: auto;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
     width: auto;
-    max-height: min(68dvh, 540px);
+    max-height: min(52dvh, 420px);
+    padding: 14px;
+    gap: 12px;
+    border-radius: 12px;
     transform: translateY(calc(100% + 20px));
   }
 
@@ -882,7 +885,34 @@
     transform: translateY(0);
   }
 
+  .tl-detail-header {
+    gap: 10px;
+  }
+
+  .tl-detail-title {
+    font-size: 20px;
+  }
+
+  .tl-detail-close {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+  }
+
+  .tl-detail-body {
+    gap: 12px;
+  }
+
+  .tl-detail-copy,
+  .tl-detail-date,
+  .tl-detail-grid dd,
+  .tl-detail-list {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
   .tl-detail-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 10px;
   }
 }
