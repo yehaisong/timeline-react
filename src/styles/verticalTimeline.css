@@ -75,6 +75,7 @@
   height: 100%;
   min-height: 0;
   padding: var(--tl-space-6) var(--tl-space-6) var(--tl-space-6) var(--tl-space-2);
+  touch-action: none;
 }
 
 .tl-axis {

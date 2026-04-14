@@ -1,9 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
-import type { WheelEvent } from 'react';
+import type { MouseEvent, PointerEvent, WheelEvent } from 'react';
 import type {
   NormalizedTimelineEvent,
   TimelineGeoJSONGeometry,
   TimelineResponsiveConfig,
+  TimelineViewport,
   VerticalTimelineProps,
 } from '../lib/types';
 import {
@@ -22,6 +23,10 @@ import { useResponsiveTimelineConfig } from '../hooks/useResponsiveTimelineConfi
 import { TimelineAxis } from './TimelineAxis';
 import { TimelineEventLayer } from './TimelineEventLayer';
 import { TimelineMiniMap } from './TimelineMiniMap';
+
+const PAN_GESTURE_THRESHOLD_PX = 4;
+const PINCH_ZOOM_IN_THRESHOLD = 1.07;
+const PINCH_ZOOM_OUT_THRESHOLD = 0.93;
 
 function summarizeGeometry(geometry: TimelineGeoJSONGeometry) {
   if (geometry.type === 'Point') {
@@ -65,6 +70,27 @@ export function VerticalTimeline({
   const effectiveInitialZoom = clampZoomUnit(initialZoomUnit, maxZoomUnit, minZoomUnit);
   const rootRef = useRef<HTMLDivElement | null>(null);
   const detailCloseTimeoutRef = useRef<number | null>(null);
+  const activePointersRef = useRef<
+    Map<number, { clientX: number; clientY: number; pointerType: string }>
+  >(new Map());
+  const panStateRef = useRef<{
+    pointerId: number;
+    startY: number;
+    startViewport: {
+      visibleStartMs: number;
+      visibleEndMs: number;
+    };
+    moved: boolean;
+  } | null>(null);
+  const pinchStateRef = useRef<{
+    distance: number;
+    viewport: {
+      visibleStartMs: number;
+      visibleEndMs: number;
+      zoomUnit: TimelineViewport['zoomUnit'];
+    };
+  } | null>(null);
+  const suppressClickRef = useRef(false);
   const [measuredWidth, setMeasuredWidth] = useState(1200);
   const [measuredHeight, setMeasuredHeight] = useState(
     typeof height === 'number' ? height : 800
@@ -256,6 +282,181 @@ export function VerticalTimeline({
     setViewport(shiftViewport(viewport, ratio, startBoundMs, endBoundMs));
   }
 
+  function getTouchPair() {
+    const touchPointers = Array.from(activePointersRef.current.entries()).filter(
+      ([, pointer]) => pointer.pointerType === 'touch'
+    );
+    return touchPointers.length >= 2 ? touchPointers.slice(0, 2) : null;
+  }
+
+  function handlePointerDown(event: PointerEvent<HTMLDivElement>) {
+    if (event.pointerType !== 'touch' && event.pointerType !== 'pen') {
+      return;
+    }
+
+    activePointersRef.current.set(event.pointerId, {
+      clientX: event.clientX,
+      clientY: event.clientY,
+      pointerType: event.pointerType,
+    });
+
+    const touchPair = getTouchPair();
+    if (touchPair) {
+      const [, firstPointer] = touchPair[0];
+      const [, secondPointer] = touchPair[1];
+      pinchStateRef.current = {
+        distance: Math.hypot(
+          secondPointer.clientX - firstPointer.clientX,
+          secondPointer.clientY - firstPointer.clientY
+        ),
+        viewport: {
+          visibleStartMs: viewport.visibleStartMs,
+          visibleEndMs: viewport.visibleEndMs,
+          zoomUnit: viewport.zoomUnit,
+        },
+      };
+      panStateRef.current = null;
+      suppressClickRef.current = true;
+      event.preventDefault();
+      return;
+    }
+
+    if (!event.isPrimary) {
+      return;
+    }
+
+    panStateRef.current = {
+      pointerId: event.pointerId,
+      startY: event.clientY,
+      startViewport: {
+        visibleStartMs: viewport.visibleStartMs,
+        visibleEndMs: viewport.visibleEndMs,
+      },
+      moved: false,
+    };
+
+    event.currentTarget.setPointerCapture(event.pointerId);
+  }
+
+  function handlePointerMove(event: PointerEvent<HTMLDivElement>) {
+    const activePointer = activePointersRef.current.get(event.pointerId);
+    if (activePointer) {
+      activePointer.clientX = event.clientX;
+      activePointer.clientY = event.clientY;
+    }
+
+    const touchPair = getTouchPair();
+    const pinchState = pinchStateRef.current;
+    if (touchPair && pinchState) {
+      const [, firstPointer] = touchPair[0];
+      const [, secondPointer] = touchPair[1];
+      const distance = Math.hypot(
+        secondPointer.clientX - firstPointer.clientX,
+        secondPointer.clientY - firstPointer.clientY
+      );
+
+      if (distance > 0 && pinchState.distance > 0) {
+        const scale = distance / pinchState.distance;
+        const rect = event.currentTarget.getBoundingClientRect();
+        const midpointY = (firstPointer.clientY + secondPointer.clientY) / 2;
+        const ratio = rect.height > 0 ? (midpointY - rect.top) / rect.height : 0.5;
+        const focalMs =
+          pinchState.viewport.visibleStartMs +
+          (pinchState.viewport.visibleEndMs - pinchState.viewport.visibleStartMs) * ratio;
+
+        let nextZoom = pinchState.viewport.zoomUnit;
+        if (scale >= PINCH_ZOOM_IN_THRESHOLD) {
+          nextZoom = getZoomedInUnit(pinchState.viewport.zoomUnit, minZoomUnit);
+        } else if (scale <= PINCH_ZOOM_OUT_THRESHOLD) {
+          nextZoom = getZoomedOutUnit(pinchState.viewport.zoomUnit, maxZoomUnit);
+        }
+
+        if (nextZoom !== pinchState.viewport.zoomUnit) {
+          const nextViewport = zoomViewport(
+            {
+              visibleStartMs: pinchState.viewport.visibleStartMs,
+              visibleEndMs: pinchState.viewport.visibleEndMs,
+              zoomUnit: pinchState.viewport.zoomUnit,
+            },
+            nextZoom,
+            focalMs,
+            measuredHeight,
+            unitHeight,
+            startBoundMs,
+            endBoundMs
+          );
+          setViewport(nextViewport);
+          pinchStateRef.current = {
+            distance,
+            viewport: nextViewport,
+          };
+        }
+      }
+
+      suppressClickRef.current = true;
+      event.preventDefault();
+      return;
+    }
+
+    const panState = panStateRef.current;
+    if (!panState || panState.pointerId !== event.pointerId) {
+      return;
+    }
+
+    const deltaY = event.clientY - panState.startY;
+    if (Math.abs(deltaY) > PAN_GESTURE_THRESHOLD_PX) {
+      panState.moved = true;
+      suppressClickRef.current = true;
+    }
+
+    const ratio = -deltaY / Math.max(measuredHeight, 1);
+    if (ratio === 0) {
+      return;
+    }
+
+    event.preventDefault();
+    setViewport(
+      shiftViewport(
+        {
+          visibleStartMs: panState.startViewport.visibleStartMs,
+          visibleEndMs: panState.startViewport.visibleEndMs,
+          zoomUnit: viewport.zoomUnit,
+        },
+        ratio,
+        startBoundMs,
+        endBoundMs
+      )
+    );
+  }
+
+  function handlePointerEnd(event: PointerEvent<HTMLDivElement>) {
+    activePointersRef.current.delete(event.pointerId);
+
+    const panState = panStateRef.current;
+    if (panState && panState.pointerId === event.pointerId) {
+      if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+        event.currentTarget.releasePointerCapture(event.pointerId);
+      }
+
+      panStateRef.current = null;
+    }
+
+    const touchPair = getTouchPair();
+    if (!touchPair) {
+      pinchStateRef.current = null;
+    }
+  }
+
+  function handleClickCapture(event: MouseEvent<HTMLDivElement>) {
+    if (!suppressClickRef.current) {
+      return;
+    }
+
+    suppressClickRef.current = false;
+    event.preventDefault();
+    event.stopPropagation();
+  }
+
   const containerStyle = {
     ...style,
     height,
@@ -329,6 +530,11 @@ export function VerticalTimeline({
       data-layout-mode={responsive.mode}
       style={containerStyle}
       onWheel={handleWheel}
+      onPointerDown={handlePointerDown}
+      onPointerMove={handlePointerMove}
+      onPointerUp={handlePointerEnd}
+      onPointerCancel={handlePointerEnd}
+      onClickCapture={handleClickCapture}
     >
       <div className="tl-controls">
         <button type="button" className="tl-control-button" onClick={() => updateZoom('out')}>
