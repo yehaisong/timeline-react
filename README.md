@@ -15,49 +15,6 @@ The library surface is being extracted for private publishing through GitHub Pac
 
 ## Install
 
-### Use It Locally In Your Own Project
-
-If you only need the timeline in your own local React project, do not publish it yet.
-
-Use a local file dependency instead:
-
-```json
-{
-  "dependencies": {
-    "historical-timeline-react": "file:../timeline_react"
-  }
-}
-```
-
-Then run:
-
-```bash
-npm install
-```
-
-This is the simplest path for local development and avoids package registry setup entirely.
-
-You can also build a tarball for local installation:
-
-```bash
-cd /path/to/timeline_react
-npm run build:lib
-npm pack
-```
-
-Then install the generated `.tgz` file from your consuming project.
-
-### Publish Later If Needed
-
-GitHub Packages setup for a consuming project:
-
-```ini
-@yehaisong:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
-```
-
-Then install:
-
 ```bash
 npm install historical-timeline-react
 ```
